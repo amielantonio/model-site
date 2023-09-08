@@ -29,5 +29,5 @@ if ( ! has_custom_logo() ) { ?>
 
 	<?php
 } else {
-	the_custom_logo();
+	model_custom_logo();
 }

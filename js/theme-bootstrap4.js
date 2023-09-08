@@ -6074,6 +6074,51 @@
     }
   })();
 
+  // Add your JS customizations here
+  window.addEventListener('DOMContentLoaded', function () {
+    console.log('starting custom javascript');
+    logoAnimate();
+    mainNavEvents();
+  });
+  var logoAnimate = function logoAnimate() {
+    console.log('logo animate initiated');
+    var $main = document.querySelector('.custom-logo-link');
+    $main.addEventListener('mouseenter', function () {});
+    $main.addEventListener('mouseleave', function () {});
+  };
+
+  /**
+   * Main navigation event handler, add all custom events for the header here
+   */
+  var mainNavEvents = function mainNavEvents() {
+    console.log('nav events initiated');
+
+    // add the onscroll event under main nav events for the header
+    window.onscroll = function () {
+      headerScrollEvent();
+    };
+  };
+
+  /**
+   * Scroll events for the header to identify weather the user is scrolling up or down
+   */
+  var headerScrollEvent = function headerScrollEvent() {
+    var $header = document.getElementById('main-nav');
+    var _headerHeight = _header.offsetHeight;
+    var $navLinks = _header.querySelectorAll('.nav-link');
+    if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+      $header.classList.add('bg-cream');
+      $navLinks.forEach(function (_link) {
+        return _link.classList.add('text-primary');
+      });
+    } else {
+      $header.classList.remove('bg-cream');
+      $navLinks.forEach(function (_link) {
+        return _link.classList.remove('text-primary');
+      });
+    }
+  };
+
   exports.Alert = Alert;
   exports.Button = Button;
   exports.Carousel = Carousel;

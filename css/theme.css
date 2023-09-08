@@ -5333,7 +5333,7 @@ textarea.form-control-lg {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-padding-y: 37px;
   --bs-navbar-color: rgba(35, 35, 35, 0.55);
   --bs-navbar-hover-color: rgba(35, 35, 35, 0.7);
   --bs-navbar-disabled-color: rgba(35, 35, 35, 0.3);
@@ -19546,6 +19546,30 @@ body {
   width: 100vw;
 }
 
+.custom-logo-link {
+  position: relative;
+}
+.custom-logo-link .custom-logo:not(.custom-logo-m) {
+  position: absolute;
+  left: 37px;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.custom-logo-link:hover .custom-logo:not(.custom-logo-m) {
+  opacity: 1;
+}
+.custom-logo-link:hover .custom-logo-o {
+  left: 44px;
+}
+.custom-logo-link:hover .custom-logo-d {
+  left: 74px;
+}
+.custom-logo-link:hover .custom-logo-e {
+  left: 105px;
+}
+.custom-logo-link:hover .custom-logo-l {
+  left: 135px;
+}
 .navbar-nav .nav-item {
   margin-right: 37px;
 }

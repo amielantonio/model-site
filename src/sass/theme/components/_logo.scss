@@ -1,0 +1,51 @@
+.custom-logo-link {
+    position: relative;
+
+    .custom-logo {
+        &:not(.custom-logo-m) {
+            position: absolute;
+            left: 37px;
+            opacity: 0;
+            transition: 0.5s all;
+        }
+    }
+
+    &:hover {
+        .custom-logo {
+            &:not(.custom-logo-m) {
+                opacity: 1;
+            }
+        }
+        .custom-logo-m {
+        
+        }
+        .custom-logo-o {
+            left: 44px;
+        }
+        .custom-logo-d {
+            left: 74px;
+        }
+        .custom-logo-e {
+            left: 105px;
+        }
+        .custom-logo-l {
+            left: 135px;
+        }
+    }
+    
+    .custom-logo-m {
+        
+    }
+    .custom-logo-o {
+        
+    }
+    .custom-logo-d {
+        
+    }
+    .custom-logo-e {
+        
+    }
+    .custom-logo-l {
+        
+    }
+}

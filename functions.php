@@ -50,6 +50,38 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-function custom_logo() {
+function model_custom_logo() {
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
 
+	$custom_logo_attr = array(
+		'class'   => 'custom-logo custom-logo-m',
+		'loading' => false,
+	);
+
+	$image = wp_get_attachment_image( $custom_logo_id, 'full', false, $custom_logo_attr );
+
+	$oImage = get_stylesheet_directory_uri(). "/img/logo-o.png";
+	$dImage = get_stylesheet_directory_uri(). "/img/logo-d.png";
+	$eImage = get_stylesheet_directory_uri(). "/img/logo-e.png";
+	$lImage = get_stylesheet_directory_uri(). "/img/logo-l.png";
+
+	$oHtml = "<img src='{$oImage}' class='custom-logo custom-logo-o'/>";
+	$dHtml = "<img src='{$dImage}' class='custom-logo custom-logo-d'/>";
+	$eHtml = "<img src='{$eImage}' class='custom-logo custom-logo-e'/>";
+	$lHtml = "<img src='{$lImage}' class='custom-logo custom-logo-l'/>";
+
+	$home = site_url();
+
+	$html = "
+		<a href='{$home}' class='navbar-brand custom-logo-link' rel='home' aria-current='page'>
+			{$image}
+			{$oHtml}
+			{$dHtml}
+			{$eHtml}
+			{$lHtml}
+		</a>
+	";
+
+
+	echo $html;
 }

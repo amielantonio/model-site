@@ -9,7 +9,17 @@ window.addEventListener( 'DOMContentLoaded', function() {
 const logoAnimate = () => {
     console.log('logo animate initiated')
 
-    
+    const $main = document.querySelector('.custom-logo-link');
+
+    $main.addEventListener('mouseenter', () => {
+        console.log('logo enter');
+    });
+
+    $main.addEventListener('mouseleave', () => {
+        console.log('logo leave');
+    });
+
+
 }
 
 /**
@@ -28,13 +38,16 @@ const mainNavEvents = () => {
  * Scroll events for the header to identify weather the user is scrolling up or down
  */
 const headerScrollEvent = () => {
-    const _header = document.getElementById('main-nav');
-    const _headerHeight = _header.offsetHeight
-
+    const $header = document.getElementById('main-nav');
+    const _headerHeight = $header.offsetHeight
+    const $navLinks = $header.querySelectorAll('.nav-link');
 
     if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
-        console.log('scroll');
+        $header.classList.add('bg-cream');
+        
+        $navLinks.forEach( _link => _link.classList.add('text-primary'));
     } else {
-        console.log('remove scroll');
+        $header.classList.remove('bg-cream');
+        $navLinks.forEach( _link => _link.classList.remove('text-primary'));
     }
 }
