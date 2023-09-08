@@ -1,28 +1,33 @@
-<section class="model-hero-section" id="model-hero-section">
+<section class="section--home-hero" id="section--home-hero">
 
-    <div class="model-hero-video">
-        <video loop autoplay muted>
+    <div class="section--home-hero__object">
+
+        <video loop autoplay muted class="section--home-hero__video">
             <source src="<?php echo get_stylesheet_directory_uri() . "/img/above-the-fold-video.mp4" ?>" type="video/mp4">
         </video>
-
-        <div class="hero-transparent">
-            <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>">
-            
-            <div class="hero-logo">
-                <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo.png" ?>">
-            </div>
-
-            <div class="hero-text">
-                <img src="<?php echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
-            </div>
+        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>">
+        
+        <div class="hero-logo">
+            <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo.png" ?>">
         </div>
+
+        <div class="hero-text">
+            <img src="<?php echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
+        </div>
+
+
     </div>
     <!-- end model hero video-->
 
-    <div class="row">
+    <div class="row hero-content">
         <div class="col-md-6 offset-md-6">
-            <h1 class="text-light">The new, Australian purpose-first build-to-rent group</h1>
+            <h1 class="display-1 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
         </div>
+    </div>
+    
+
+    <div class="hero-scroll-button">
+        <?php get_template_part( 'template-parts/svg/scroll-button' ); ?>
     </div>
 
 </section>

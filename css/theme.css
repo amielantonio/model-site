@@ -125,7 +125,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h1, .h1 {
@@ -512,8 +512,8 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-1 {
@@ -523,8 +523,8 @@ progress {
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-2 {
@@ -534,8 +534,8 @@ progress {
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-3 {
@@ -545,8 +545,8 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-4 {
@@ -556,8 +556,8 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-5 {
@@ -567,8 +567,8 @@ progress {
 
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   .display-6 {
@@ -19348,60 +19348,6 @@ body {
   font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
 }
 
-.model-hero-section {
-  background-color: #CB6959;
-  height: 100vh;
-  width: 1000vw;
-}
-.model-hero-section .model-hero-video {
-  position: relative;
-}
-.model-hero-section .model-hero-video video {
-  width: 100vw;
-  z-index: 50;
-  position: relative;
-  margin-top: -1%;
-}
-.model-hero-section .model-hero-video .hero-transparent {
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  /* transform: translate(-50%,-50%); */
-  z-index: 100;
-}
-.model-hero-section .model-hero-video .hero-transparent > img {
-  width: 100vw;
-  height: auto;
-}
-.model-hero-section .model-hero-video .hero-transparent::before, .model-hero-section .model-hero-video .hero-transparent::after {
-  content: "";
-  background-color: #CB6959;
-  position: absolute;
-}
-.model-hero-section .model-hero-video .hero-transparent::before {
-  height: 13vh;
-  width: 100vw;
-  top: -13vh;
-}
-.model-hero-section .model-hero-video .hero-transparent::after {
-  bottom: -38vh;
-  left: 0;
-  height: 38vh;
-  width: 100vw;
-}
-.model-hero-section .model-hero-video .hero-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 120;
-  transform: translate(-50%, -50%);
-}
-.model-hero-section .model-hero-video .hero-text {
-  position: absolute;
-  bottom: 40px;
-  right: 20vw;
-}
-
 .section {
   padding-top: 99px;
   padding-bottom: 99px;
@@ -19604,9 +19550,9 @@ body {
   color: #CB6959;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  font-variation-settings: "wght" 400, "wdth" 130;
 }
 
 #wrapper-navbar {
@@ -19638,6 +19584,60 @@ body {
 }
 .img-hoverable:hover {
   filter: grayscale(0);
+}
+
+.section--home-hero {
+  background-color: #CB6959;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.section--home-hero .hero-content {
+  position: absolute;
+  width: 100%;
+  transform: translateY(183px);
+}
+.section--home-hero__object {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  /* transform: translate(-50%,-50%); */
+  z-index: 100;
+  overflow: hidden;
+}
+.section--home-hero__object video {
+  display: block;
+  height: 56.25vw;
+  left: 0;
+  min-height: auto;
+  min-width: auto;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, -35%);
+  width: 100vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+.section--home-hero__object > img {
+  width: 100vw;
+  height: auto;
+}
+.section--home-hero__object .hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 120;
+  transform: translate(-50%, -50%);
+}
+.section--home-hero__object .hero-text {
+  position: absolute;
+  bottom: 40px;
+  right: 20vw;
 }
 
 .site-footer {

@@ -1,0 +1,64 @@
+.section--home-hero {
+    background-color: $primary;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    // content below the transparent logo
+    .hero-content {
+        position: absolute;
+        // bottom: 20%;
+        width: 100%;
+        transform: translateY(183px);
+    }
+
+    &__object {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        /* transform: translate(-50%,-50%); */
+        z-index: 100;
+        overflow: hidden;
+
+        video {
+            display: block;
+            height: 56.25vw;
+            left: 0;
+            min-height: auto;
+            min-width: auto;
+            position: absolute;
+            top: 0;
+            transform: translate(0%,-35%);
+            width: 100vw;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        & > img {
+            width: 100vw;
+            height: auto;
+        }
+
+        .hero-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 120;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 40px;
+            right: 20vw;
+        }
+
+        
+
+
+    }
+}
