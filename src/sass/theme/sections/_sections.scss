@@ -160,3 +160,59 @@
 
 
 }
+
+.section--content {
+    padding: 130px 0;
+
+    .h4-title {
+        font-size: 36px;
+        font-style: normal;
+        line-height: 120%; /* 43.2px */
+        font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+        margin-bottom: 38px;
+    }
+
+    .content {
+        font-size: 24px;
+        font-style: normal;
+        font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
+        line-height: 1.6;
+        margin-bottom: 38px;
+    }
+}
+
+.section--large-content {
+    padding: 122px 0;
+    background: $primary;
+
+    .main-title {
+        font-size: 60px;
+        font-style: normal;
+        line-height: 110%; /* 66px */
+        font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+        margin-bottom: 0;
+    }
+
+    .headline {
+        font-size: 40px;
+        font-style: normal;
+        line-height: 120%;
+        font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+    }
+
+    .article-content {
+        font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
+        line-height: 1.6;
+    }
+
+    .bordered-content {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $black;
+        &.white {
+            border-color: $white;
+        }
+        
+        height: 100%;
+    }
+}

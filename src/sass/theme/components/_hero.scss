@@ -78,4 +78,31 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .subtitle {
+        color: $primary;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        font-variation-settings: "wght" 700, "wdth" 130;
+    }
+
+    .title {
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 60px;
+        font-style: normal;
+        line-height: 110%;
+        font-variation-settings: "wght" 800, "wdth" 125;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 156px;
+    }
 }

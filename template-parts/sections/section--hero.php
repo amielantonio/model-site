@@ -2,15 +2,21 @@
 $featuredImage = get_the_post_thumbnail_url();
 
 $background = $args['background'] ?? $featuredImage ?? "";
+$title = $args['title'] ?? "";
+$subtitle = $args['subtitle'] ?? "";
 ?>
 
-<section class="section--hero bg-cream" id="section--hero" style="<?php echo $background != "" ? "background-image: url({$background});" : "" ?>">
+<section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? "background-image: url({$background});" : "" ?>">
     
-
-    <div class="hero-content">
-        <small>About Model</small>
-        <h1>Developing Change</h1>
+    <div class="container">
+        <div class="row hero-content">
+            <div class="col-12 px-sm-1">
+                <small class="subtitle">About Model</small>
+                <h1 class="title"><?php echo $title?></h1>
+            </div>
+        </div>
     </div>
+    
 
    
 
