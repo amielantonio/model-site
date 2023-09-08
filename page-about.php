@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="" id="content" tabindex="-1">
 
     <div>
-        <?php get_pe?>
+        <?php get_template_part('template-parts/sections/section--hero')?>
     </div>
 
     <div class="row">

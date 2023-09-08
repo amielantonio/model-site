@@ -6174,15 +6174,20 @@
    * Scroll events for the header to identify weather the user is scrolling up or down
    */
   const headerScrollEvent = () => {
+    const $body = document.querySelector('body');
     const $header = document.getElementById('main-nav');
     const _headerHeight = $header.offsetHeight;
     const $navLinks = $header.querySelectorAll('.nav-link');
     if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
-      $header.classList.add('bg-cream');
-      $navLinks.forEach(_link => _link.classList.add('text-primary'));
+      if ($body.classList.contains('home')) {
+        $header.classList.add('bg-cream');
+        $navLinks.forEach(_link => _link.classList.add('text-primary'));
+      }
     } else {
-      $header.classList.remove('bg-cream');
-      $navLinks.forEach(_link => _link.classList.remove('text-primary'));
+      if ($body.classList.contains('home')) {
+        $header.classList.remove('bg-cream');
+        $navLinks.forEach(_link => _link.classList.remove('text-primary'));
+      }
     }
   };
 

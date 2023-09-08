@@ -19487,11 +19487,6 @@ body {
   margin: auto;
 }
 
-.section--hero {
-  height: 100vh;
-  width: 100vw;
-}
-
 .custom-logo-link {
   position: relative;
 }
@@ -19524,12 +19519,19 @@ body {
 }
 .navbar-nav .nav-item .nav-link {
   font-size: 16px;
-  color: #F7F2E5;
   padding: 0;
   border-bottom: 1px solid transparent;
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom-color: #F7F2E5;
+}
+
+.home .navbar-nav .nav-item .nav-link {
+  color: #F7F2E5;
+}
+
+div:not(.home) .navbar-nav .nav-item .nav-link {
+  color: #CB6959;
 }
 
 .footer-main-menu-container {
@@ -19601,6 +19603,10 @@ body {
   width: 100%;
   transform: translateY(183px);
 }
+.section--home-hero .hero-scroll-button {
+  position: absolute;
+  bottom: -65px;
+}
 .section--home-hero__object {
   position: absolute;
   top: 20%;
@@ -19638,6 +19644,20 @@ body {
   position: absolute;
   bottom: 40px;
   right: 20vw;
+}
+
+.section--hero {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section--hero .hero-scroll-button {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-footer {

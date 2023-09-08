@@ -16,6 +16,11 @@
         transform: translateY(183px);
     }
 
+    .hero-scroll-button {
+        position: absolute;
+        bottom: -65px;
+    }
+
     &__object {
         position: absolute;
         top: 20%;
@@ -56,9 +61,21 @@
             bottom: 40px;
             right: 20vw;
         }
+    }
+}
 
-        
+.section--hero {
+    height: 100vh;
+    width: 100vw;
 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
+    .hero-scroll-button {
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

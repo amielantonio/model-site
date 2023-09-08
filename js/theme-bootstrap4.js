@@ -6083,8 +6083,12 @@
   var logoAnimate = function logoAnimate() {
     console.log('logo animate initiated');
     var $main = document.querySelector('.custom-logo-link');
-    $main.addEventListener('mouseenter', function () {});
-    $main.addEventListener('mouseleave', function () {});
+    $main.addEventListener('mouseenter', function () {
+      console.log('logo enter');
+    });
+    $main.addEventListener('mouseleave', function () {
+      console.log('logo leave');
+    });
   };
 
   /**
@@ -6103,19 +6107,24 @@
    * Scroll events for the header to identify weather the user is scrolling up or down
    */
   var headerScrollEvent = function headerScrollEvent() {
+    var $body = document.querySelector('body');
     var $header = document.getElementById('main-nav');
-    var _headerHeight = _header.offsetHeight;
-    var $navLinks = _header.querySelectorAll('.nav-link');
+    var _headerHeight = $header.offsetHeight;
+    var $navLinks = $header.querySelectorAll('.nav-link');
     if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
-      $header.classList.add('bg-cream');
-      $navLinks.forEach(function (_link) {
-        return _link.classList.add('text-primary');
-      });
+      if ($body.classList.contains('home')) {
+        $header.classList.add('bg-cream');
+        $navLinks.forEach(function (_link) {
+          return _link.classList.add('text-primary');
+        });
+      }
     } else {
-      $header.classList.remove('bg-cream');
-      $navLinks.forEach(function (_link) {
-        return _link.classList.remove('text-primary');
-      });
+      if ($body.classList.contains('home')) {
+        $header.classList.remove('bg-cream');
+        $navLinks.forEach(function (_link) {
+          return _link.classList.remove('text-primary');
+        });
+      }
     }
   };
 
