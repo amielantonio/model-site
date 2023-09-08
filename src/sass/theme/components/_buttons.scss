@@ -1,0 +1,20 @@
+.btn {
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+
+    svg {
+        margin-top: -5px;
+        margin-left: 25px;
+    }
+}
+
+
+.btn-outline-primary {
+
+    &:hover {
+        color: $white;
+    }
+}

@@ -1,0 +1,32 @@
+#clip-me {
+    clip-path: url(#model-mask);
+    -webkit-clip-path: url(#model-mask);
+    width: 100%;
+}
+
+video {
+    object-fit: cover;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ratio-4x3 {
+    --bs-aspect-ratio: 75%;
+}
+
+.ratio::before {
+    display: block;
+    padding-top: var(--bs-aspect-ratio);
+    content: "";
+}

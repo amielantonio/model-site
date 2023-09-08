@@ -1,0 +1,24 @@
+.social-media-container {
+    display: flex;
+    justify-content: end;
+
+    .social-media {
+
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $primary;
+
+        &__item {
+            border-bottom: 1px solid $primary;
+            padding: 13px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &.row {
+            flex-direction: row;
+        }
+    }
+}

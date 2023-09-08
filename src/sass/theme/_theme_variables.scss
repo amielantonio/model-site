@@ -1,0 +1,112 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+// COLORS
+$cream:                     #F7F2E5;
+$blue:                      #3982CF;
+$deepBlue:                  #2459B7;
+$teal:                      #4A928F;
+$deepTeal:                  #316A67;
+$mustard:                   #D6C868;
+$deepMustard:               #C0AB49;
+$gray-100:                  #DCDEDD;
+$black:                     #232323;
+$melon:                     #CB6959;
+$red:                       #B64637;
+$peach:                     #C19294;
+
+
+$primary:                     $melon;  // Once we've changed the value, we'll also make it the primary brand color.
+
+$dark:                        $black;
+$light:                       $gray-100;
+$gray-900:                    $black;
+
+
+$theme-colors: (
+  "primary":     $primary,
+  "secondary":   $cream,
+  "success":     $teal,
+  "info":        $blue,
+  "warning":     $mustard,
+  "danger":      $red,
+  "light":       $gray-100,
+  "dark":        $black,
+  "cream":       $cream,
+  "teal":        $teal,
+  "deepTeal":    $deepTeal,
+  "mustard":     $mustard,
+  "deepMustard": $deepMustard,
+  "melon":       $melon,
+  "peach":       $peach,
+);
+
+$body-color: $black;
+
+// FONTS
+$font-family-sans-serif: "loew-variable", sans-serif;
+
+$font-size-base:              1.25rem;
+$font-size-base-xl:           30px;
+$font-size-base-lg:           24px;
+$font-size-base-sm:           16px;
+$font-size-base-xs:           14px;
+$font-size-list:              18px;
+
+$line-height-base:            1.2;
+$line-height-sm:              1;
+$line-height-lg:              1.5;
+
+$h1-font-size:                60px;
+$h2-font-size:                48px;
+$h3-font-size:                40px;
+$h4-font-size:                36px;
+$h5-font-size:                16px;
+$h6-font-size:                14px;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+) !default;
+
+
+// SPACING
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5,
+  9: $spacer * 5,
+  10: $spacer * 7,
+  15: $spacer * 15,
+  36px: 36px,
+  60px: 60px,
+  85px: 85px,
+) !default;
+    
+
+// BUTTON
+$btn-border-radius: 0;
+$btn-padding-y: 1em;
+$btn-padding-x: 1.6em;

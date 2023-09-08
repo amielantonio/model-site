@@ -1,0 +1,240 @@
+.model-hero-section {
+    background-color: $primary;
+    height: 100vh;
+    width: 1000vw;
+
+    .model-hero-video {
+        position: relative;
+
+        video {
+            width: 100vw;
+            z-index: 50;
+            position: relative;
+            margin-top: -1%;
+        }
+
+        .hero-transparent {
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            /* transform: translate(-50%,-50%); */
+            z-index: 100;
+            
+            & > img {
+                width: 100vw;
+                height: auto;
+            }
+
+            &::before, &::after {
+                content: "";
+                background-color: $primary;
+                position: absolute;
+            }
+
+            &::before {
+                height: 13vh;
+                width: 100vw;
+                top: -13vh;
+            }
+
+            &::after {
+                bottom: -38vh;
+                left: 0;
+                height: 38vh;
+                width: 100vw;
+            }
+
+            
+        }
+
+        .hero-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 120;
+            transform: translate(-50%, -50%);
+
+            img {
+
+            }
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 40px;
+            right: 20vw;
+        }
+
+
+
+    }
+}
+
+
+.section {
+    padding-top: 99px;
+    padding-bottom: 99px;
+}
+
+.bordered-section {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    padding-top: 77px;
+    padding-bottom: 62px;
+}
+
+
+.section--home-video-cta {  
+    z-index: 100;
+    // position: relative;
+    // overflow: hidden;
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        // position: fixed;
+        z-index: 0;
+        margin-bottom: -4px;
+    }
+}
+
+.section--decarbonise {
+    height: 1206px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+    }
+
+    video {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+}
+
+
+.section--concept {
+    .content-container {
+        width: 38.3%;
+    }
+
+    .content-container-bottom {
+        height: 100%;
+    }
+    
+    .content {
+        padding-top: 120px;
+    }
+
+    .img-concept {
+        position: absolute;
+        top: 15%;
+        left: 17%;
+        z-index: 100;
+    }
+}
+
+.vertical-link-container {
+    height: 682px;
+
+    .vertical-link {
+        transform: rotate(270deg);   
+        position: absolute;
+        left: 120px;
+        bottom: 125px;
+    
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .vertical-link-lg {
+        transform: rotate(270deg);   
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 30.8px */
+        text-transform: uppercase;
+        text-decoration: none;
+        
+
+        &.vl-1 {
+            bottom: 175px;
+            left: 180px
+        }
+        &.vl-2 {
+            bottom: 225px;
+            left: 360px
+        }
+        &.vl-3 {
+            bottom: 210px;
+            right: 155px
+        }
+    }
+
+    .vertical-links {
+        flex-basis: 60%;
+        position: relative;
+    }
+}
+
+.section--vision {
+    background: $melon;
+    padding-bottom: 255px;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../img/vision-section.png) no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        transform: translateY(-40%);
+    }
+}
+
+
+.section--call-to-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        position: absolute;
+        top: 50%;
+        /* left: 0; */
+        transform: translateY(-50%);
+        margin: auto;
+    }
+
+
+}
+
+.section--hero {
+    height: 100vh;
+    width: 100vw;
+}

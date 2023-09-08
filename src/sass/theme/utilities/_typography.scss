@@ -1,0 +1,153 @@
+.fs--base {
+    font-size: $font-size-base;
+}
+
+.fs--base-xl {
+    font-size: $font-size-base-xl;
+}
+
+.fs-xl--base-xl {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-base-xl;
+    }
+}
+
+.fs-lg--base-xl {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base-xl;
+    }
+}
+
+.fs-md--base-xl {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base-xl;
+    }
+}
+
+.fs-sm--base-xl {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base-xl;
+    }
+}
+
+
+
+
+.fs--base-lg {
+    font-size: $font-size-base-lg;
+}
+
+.fs-xl--base-lg {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-base-lg;
+    }
+}
+
+.fs-lg--base-lg {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base-lg;
+    }
+}
+
+.fs-md--base-lg {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base-lg;
+    }
+}
+
+.fs-sm--base-lg {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base-lg;
+    }
+}
+
+
+
+.fs--base-sm {
+    font-size: $font-size-base-sm;
+}
+
+.fs-xl--base-sm {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-base-sm;
+    }
+}
+
+.fs-lg--base-sm {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base-sm;
+    }
+}
+
+.fs-md--base-sm {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base-sm;
+    }
+}
+
+.fs-sm--base-sm {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base-sm;
+    }
+}
+
+
+
+.fs--base-xs {
+    font-size: $font-size-base-xs;
+}
+
+.fs-xl--base-xs {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-base-xs;
+    }
+}
+
+.fs-lg--base-xs {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base-xs;
+    }
+}
+
+.fs-md--base-xs {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base-xs;
+    }
+}
+
+.fs-sm--base-xs {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base-xs;
+    }
+}
+
+
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.lh--md {
+    line-height: 1.6;
+}
+
+
+.section-title {
+    font-size: $h1-font-size;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.section-subtitle {
+    // font-family: Loew Variable;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.td-none {
+    text-decoration: none;
+}
