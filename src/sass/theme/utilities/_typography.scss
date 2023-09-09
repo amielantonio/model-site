@@ -134,20 +134,27 @@
 
 .section-title {
     font-size: $h1-font-size;
-    font-weight: 800;
     font-style: normal;
-    font-weight: 800;
-    line-height: 110%;
+    line-height: 1.1;
+    font-variation-settings: "ital" 0, "wght" 800, "wdth" 125
 }
 
 .section-subtitle {
     // font-family: Loew Variable;
     font-size: 40px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    line-height: 1.2;
+    font-variation-settings: "ital" 0, "wght" 700, "wdth" 125
 }
 
 .td-none {
     text-decoration: none;
+}
+
+.loew-semibold {
+    font-variation-settings: "ital" 0, "wght" 500, "wdth" 100 !important;
+}
+
+.loew-bold {
+    font-variation-settings: "ital" 0, "wght" 700, "wdth" 100 !important;
 }

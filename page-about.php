@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-5">
                         
                         <div class="col-sm-6 pe-md-5 d-flex align-items-center">
-                            <div class="d-flex align-items-center bordered-content">
+                            <div class="d-flex align-items-center bordered-content border-white">
                                 <div>
                                     <h4 class="mb-md-36px">Model throws out conventional ways of how rentals work.</h4>
                                     <p class="article-content mb-0">
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3 img-hoverable">
                         </div>
                     </div>
 
@@ -106,7 +106,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                     </div>
                     <!-- -end row -->
+
+                    
                 </div>
+                <!-- end container -->
             </section>
 
             <!-- section melon content -->
@@ -127,7 +130,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-5">
                         
                         <div class="col-sm-6 pe-md-5 d-flex align-items-center">
-                            <div class="d-flex align-items-center bordered-content">
+                            <div class="d-flex align-items-center bordered-content white">
                                 <div>
                                     <h4 class="mb-md-36px">We asked ourselves - not if, but how can the built form address all three issues?</h4>
                                     <p class="article-content mb-0">
@@ -137,13 +140,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-md-3">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-md-3 img-hoverable">
                         </div>
                     </div>
 
                     <div class="row mt-md-8 mt-5">
                         <div class="col-sm-6">
-                            <p class="article-content mb-0 pe-md-9">
+                            <p class="article-content mb-4 pe-md-9">
                                 Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary project that echoes from existing developments Rory has led.
                             </p>
                             <p class="article-content mb-0 pe-md-9">
@@ -151,7 +154,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="article-content mb-0 pe-md-9 pe-md-6">
+                            <p class="article-content mb-4 ps-md-3 pe-md-6">
                                 Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge certified development.
                             </p>
                            
@@ -161,8 +164,153 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                     </div>
                     <!-- -end row -->
+
+                    <div class="row mt-sm-6 mt-4">
+                        <div class="col-sm-5">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-banner.png" ?>" alt="">
+                        </div>
+                        <div class="col-sm-6 offset-sm-1">
+                            <div>
+                                <h3 class="headline mb-md-36px">Making an impact at home</h3>
+                                <p class="article-body article-content mb-36px">
+                                    Having travelled, lived in and experienced cultures around the world, Rory believes his greatest contribution can be back home in Australia, where the frameworks, policies and institutions have the capacity to amplify ideas and entrepreneurship. For Rory, the next decade is dedicated to addressing long-term challenges including climate action and biodiversity loss, and Model is a distinct example of how we do that. 
+                                </p>
+
+                                <p class="article-body article-content mb-36px loew-semibold">
+                                   This will be a built form that dismantles the rental norms. 
+                                </p>
+
+                                <p class="article-body article-content mb-36px">
+                                    One which embodies better equality and quality of life. An environment that enables greater connections with each other and our planet. A home with intelligent, intuitive design that creates secure, connected, carbon neutral communities where health and wellbeing are at the core of the everyday experience.
+                                </p>
+
+                                <p class="article-body article-content mb-36px">
+                                    Model is a purpose-first developer that’s leading the race to meet our emissions reductions target. One where decarbonisation isn’t a vague vision; it’s a commitment etched into the very foundation of who we are. Model is more than just a structure, it is a shift in redefining how we can and should live. Join us. 
+                                </p>
+
+                                <p class="article-body article-content">
+                                    To learn more about our founder, Rory, ,<br>
+                                    visit his Linkedin profile <a href="#" class="text-dark">here.</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row-->
+                </div>
+                <!-- end container -->
+            </section>
+
+
+            <section class="section--with-divider bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" height="768" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 255.71V0C141.22 0 255.71 114.482 255.71 255.71C255.71 114.482 370.192 0 511.421 0H1441.6V767.131H0V255.71Z" fill="#232323"/>
+                </svg>
+            </section>
+
+            <section class="section bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>Model Values</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <figure class="callout text-center">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/anti-status-quo.png"?>" alt="">
+                                <figcaption class="">
+                                    <small class="text-primary">We are</small>
+                                    <h3 class="text-white">Anti-status quo</h3>
+                                    <p class="text-white">A commitment to do things the right way sets us apart from the rest. We look for ways to break new ground in everything we do, going beyond perceived limitations..</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4">
+                            <figure class="callout text-center">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/always-accountable.png" ?>" alt="">
+                                <figcaption class="">
+                                    <small class="text-primary">We are</small>
+                                    <h3 class="text-white">Always <br />accountable</h3>
+                                    <p class="text-white">Actions drive change, and that’s what we are here to do. We will happily be measured by the impact we make.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4">
+                            <figure class="callout text-center">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/open-and-agile.png" ?>" alt="">
+                                <figcaption class="">
+                                    <small class="text-primary">We are</small>
+                                    <h3 class="text-white">Open and Agile</h3>
+                                    <p class="text-white">
+                                        Open-mindedness has brought us here, agility will keep us ahead. These are the qualities that help us learn, grow, and win together.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-sm-4 offset-sm-2">
+                            <figure class="callout text-center">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/community-mavens.png" ?>" alt="">
+                                <figcaption>
+                                    <small class="text-primary">We are</small>
+                                    <h3 class="text-white">Community<br /> Mavens</h3>
+                                    <p class="text-white">Our focus on meaningful connection is powered by experience, empathy and expertise. We foster communities that thrive.</p>
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                        <div class="col-sm-4">
+                            <figure class="text-center callout">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/proud-placemakers.png" ?>" alt="">
+                                <figcaption class="">
+                                    <small class="text-primary">We are</small>
+                                    <h3 class="text-white">Proud <br /> Placemakers</h3>
+                                    <p class="text-white">Our customers are our sole reason for being, this is something we never forget. With a laser focus on their needs and an obsession over every detail, we create a unique sense of place and homes like no other.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <section class="section bg-cream">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="">Collaborators</h2>
+                        </div>
+                        <div class="col-sm-6 offset-sm-1">
+                            <p>
+                                It takes collective effort to make change happen and we're proud to partner with these leaders who are as determined as we are in making a lasting and meaningful impact on the way we live.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="d-flex justify-content-between">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/GBCA.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/LFIA.png" ?>" alt="">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- call to action -->
+            <?php get_template_part( 'template-parts/sections/section--call-to-action' ) ?>
 
         </main>
 

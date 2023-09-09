@@ -200,6 +200,11 @@
         font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
     }
 
+    .article-body {
+        font-size: 20px;
+        font-style: normal;
+    }
+
     .article-content {
         font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
         line-height: 1.6;
@@ -209,7 +214,7 @@
         border-top: 1px solid;
         border-bottom: 1px solid;
         border-color: $black;
-        &.white {
+        &.border-white {
             border-color: $white;
         }
         

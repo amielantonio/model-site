@@ -19529,6 +19529,10 @@ body {
   line-height: 120%;
   font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
 }
+.section--large-content .article-body {
+  font-size: 20px;
+  font-style: normal;
+}
 .section--large-content .article-content {
   font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
   line-height: 1.6;
@@ -19539,7 +19543,7 @@ body {
   border-color: #232323;
   height: 100%;
 }
-.section--large-content .bordered-content.white {
+.section--large-content .bordered-content.border-white {
   border-color: #fff;
 }
 
@@ -19636,12 +19640,24 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 .bg-hoverable {
   width: 100vw;
 }
+.img-greyscale-hoverable,
 .img-hoverable {
+  cursor: pointer;
   filter: grayscale(1);
   transition: 0.3s filter;
 }
+.img-greyscale-hoverable:hover,
 .img-hoverable:hover {
   filter: grayscale(0);
+}
+
+.img-black-hoverable {
+  cursor: pointer;
+  filter: brightness(0) saturate(0%);
+  transition: 0.3s filter;
+}
+.img-black-hoverable:hover {
+  filter: brightness(1) saturate(1);
 }
 
 .section--home-hero {
@@ -19809,6 +19825,24 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
   left: 68px;
 }
 
+.callout small, .callout .small {
+  color: #CB6959;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-variation-settings: "ital" 0, "wght" 700, "wdth" 100;
+}
+.callout p {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 0;
+  font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
+  line-height: 1.6;
+}
+
 .fs--base {
   font-size: 1.25rem;
 }
@@ -19935,21 +19969,28 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 
 .section-title {
   font-size: 60px;
-  font-weight: 800;
   font-style: normal;
-  font-weight: 800;
-  line-height: 110%;
+  line-height: 1.1;
+  font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
 }
 
 .section-subtitle {
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
+  line-height: 1.2;
+  font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
 }
 
 .td-none {
   text-decoration: none;
+}
+
+.loew-semibold {
+  font-variation-settings: "ital" 0, "wght" 500, "wdth" 100 !important;
+}
+
+.loew-bold {
+  font-variation-settings: "ital" 0, "wght" 700, "wdth" 100 !important;
 }
 
 .img-absolute-center {
