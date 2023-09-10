@@ -19,3 +19,27 @@ body {
     position: sticky;
     top: 0;
 }
+
+.with-line {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 97%;
+        border-bottom: 2px solid;
+    }
+
+    &.line-white {
+        &::after {
+            border-color: $white;
+        }
+    }
+    &.line-black {
+        &::after {
+            border-color: $black;
+        }
+    }
+}

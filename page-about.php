@@ -66,9 +66,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--large-content bg-primary" id="section--large-content-primary">
                 <div class="container text-white px-sm-0">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <h2 class="main-title text-white">Purpose</h2>
-                        </div> 
+                        </div>
+                        <div class="col-sm-9 with-line line-white"></div>
                     </div>
                     <div class="row">
                         <div class="col-sm-8 offset-sm-3 mt-3 ps-md-4">
@@ -117,24 +118,25 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--large-content bg-white" id="section--large-content-primary">
                 <div class="container text-dark px-sm-0">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <h2 class="main-title">Story</h2>
-                        </div> 
+                        </div>
+                        <div class="col-sm-9 with-line line-black"></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-3 mt-3 ps-md-4">
+                        <div class="col-sm-8 offset-sm-3 mt-1 ps-md-4">
                             <p class="headline">
                                 Model began as a question and an intention. We knew we were faced with a climate, housing and mental health crisis in Australia.
                             </p>
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-6">
                         
                         <div class="col-sm-6 pe-md-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
-                                <div>
+                                <div class="pe-md-9">
                                     <h4 class="mb-md-36px">We asked ourselves - not if, but how can the built form address all three issues?</h4>
-                                    <p class="article-content mb-0">
+                                    <p class="headline-body mb-0">
                                         It spurred the vision to create something better, something worth sharing and something worth acting upon.
                                     </p>
                                 </div>
@@ -145,9 +147,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                     </div>
 
-                    <div class="row mt-md-8 mt-5">
+                    <div class="row mt-md-90px mt-5">
                         <div class="col-sm-6">
-                            <p class="article-content mb-4 pe-md-9">
+                            <p class="article-content mb-4 pe-md-8">
                                 Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary project that echoes from existing developments Rory has led.
                             </p>
                             <p class="article-content mb-0 pe-md-9">
@@ -166,14 +168,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <!-- -end row -->
 
-                    <div class="row mt-sm-6 mt-4">
-                        <div class="col-sm-5">
+                    <div class="row mt-sm-90px mt-4">
+                        <div class="col-sm-6">
                             <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-banner.png" ?>" alt="">
                         </div>
-                        <div class="col-sm-6 offset-sm-1">
-                            <div>
-                                <h3 class="headline mb-md-36px">Making an impact at home</h3>
-                                <p class="article-body article-content mb-36px">
+                        <div class="col-sm-6">
+                            <div class="ps-md-3 pe-md-3">
+                                <h3 class="headline mb-md-43px">Making an impact at home</h3>
+                                <p class="article-body article-content mb-43px pe-md-3">
                                     Having travelled, lived in and experienced cultures around the world, Rory believes his greatest contribution can be back home in Australia, where the frameworks, policies and institutions have the capacity to amplify ideas and entrepreneurship. For Rory, the next decade is dedicated to addressing long-term challenges including climate action and biodiversity loss, and Model is a distinct example of how we do that. 
                                 </p>
 

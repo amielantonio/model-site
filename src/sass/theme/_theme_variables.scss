@@ -67,7 +67,7 @@ $h4-font-size:                36px;
 $h5-font-size:                16px;
 $h6-font-size:                14px;
 
-$headings-line-height:        1.1;
+$headings-line-height:        1.2;
 
 $display-font-weight:         800;
 $display-line-height:         1.1;
@@ -108,8 +108,10 @@ $spacers: (
   10: $spacer * 7,
   15: $spacer * 15,
   36px: 36px,
+  43px: 43px,
   60px: 60px,
   85px: 85px,
+  90px: 90px,
 ) !default;
     
 
