@@ -6,8 +6,8 @@
     letter-spacing: 0.7px;
 
     svg {
-        margin-top: -5px;
-        margin-left: 25px;
+        margin-top: 0px;
+        margin-left: 20px;
     }
 }
  
@@ -16,5 +16,35 @@
 
     &:hover {
         color: $white;
+        svg {
+            path {
+                fill: $white;
+            }
+        }
+    }
+
+    svg {
+        path {
+            fill: $primary;
+        }
+    }
+}
+
+.btn-outline-light {
+
+    &:hover {
+        color: $white;
+
+        svg {
+            path {
+                fill: $black;
+            }
+        }
+    }
+
+    svg {
+        path {
+            fill: $white;
+        }
     }
 }

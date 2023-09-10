@@ -1,17 +1,17 @@
 <section class="section--concept" id="section--concept">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row position-relative">
 
             <div class="content-container bg-cream content">
                 <div class="row">
-                    <div class="offset-sm-2 col-sm-9 ps-sm-85px pe-sm-60px">
+                    <div class="col-sm-10">
                         <h2 class="h1 bd--b-primary pb-36px fw-800 text-danger">The <br /> Concept</h2>
 
                         <p class="fs--base-lg fw-light mt-60px lh--md">
                             Climate action, community building,  and design innovation with a focus on mental wellbeing - these are the pillars upon which Model is built. They set the foundation for everything we do and are the threads that weave through each decision we make.
                         </p>
 
-                        <a href="" type="button" class="btn btn-outline-melon mt-3">Learn More <?php get_template_part( 'template-parts/svg/arrow' )?></a>
+                        <a href="" type="button" class="btn btn-outline-melon mt-3">Learn More <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
                     </div>
                 </div>
                 <!-- end content container-->
