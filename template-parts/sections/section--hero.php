@@ -4,6 +4,14 @@ $featuredImage = get_the_post_thumbnail_url();
 $background = $args['background'] ?? $featuredImage ?? "";
 $title = $args['title'] ?? "";
 $subtitle = $args['subtitle'] ?? "";
+
+if( isset($args['noScroll']) ) {
+    $noScroll = $args['noScroll'];
+} elseif( $noScroll !== "" )  {
+    $noScroll = true;
+} else {
+    false;
+}
 ?>
 
 <section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? "background-image: url({$background});" : "" ?>">
@@ -19,9 +27,10 @@ $subtitle = $args['subtitle'] ?? "";
     
 
    
-
-    <div class="hero-scroll-button">
-        <?php get_template_part( 'template-parts/svg/scroll-button' );?>
-    </div>
+    <?php if( $noScroll ) : ?>
+        <div class="hero-scroll-button">
+            <?php get_template_part( 'template-parts/svg/scroll-button' );?>
+        </div>
+    <?php endif; ?>
 
 </section>

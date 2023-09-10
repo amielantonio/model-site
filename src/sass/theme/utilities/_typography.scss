@@ -158,3 +158,12 @@
 .loew-bold {
     font-variation-settings: "ital" 0, "wght" 700, "wdth" 100 !important;
 }
+
+
+.fs-110px {
+    // font-family: Loew Variable;
+    font-size: 110px;
+    font-style: normal;
+    line-height: 110%; /* 121px */
+    font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+}

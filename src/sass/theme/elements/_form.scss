@@ -1,0 +1,25 @@
+form {
+
+
+    [type="text"],
+    [type="email"],
+    textarea {
+        border: none !important;
+        border-bottom: 1px solid $primary !important;
+        border-radius: 0 !important;
+        margin-bottom: 38px !important;
+    }
+
+    label {
+        position: absolute !important;
+        top: 28px;
+    }
+
+    .wp-forms-field {
+        position: relative;
+    }
+
+    [type='submit'] {
+        @extend .btn, .btn-outline-primary; 
+    }
+}

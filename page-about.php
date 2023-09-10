@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div>
         <?php get_template_part('template-parts/sections/section--hero', '' , [
             'title' => 'Developing Change',
-            'subtitle' => 'about-model'
+            'subtitle' => 'About Model'
         ])?>
     </div>
 

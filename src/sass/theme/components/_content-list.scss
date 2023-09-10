@@ -1,0 +1,29 @@
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    
+    
+    &__item {
+        border-bottom: 1px solid;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+
+        font-size: 18px;
+        font-style: normal;
+        font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+        line-height: normal;
+
+        &.teal {
+            border-color: $deepTeal;
+        }
+
+        &.blue {
+            border-color: $blue;
+        }
+
+        &.melon {
+            border-color: $melon;
+        }
+    }
+}
