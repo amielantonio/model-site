@@ -21,7 +21,7 @@
 
     <div class="row hero-content">
         <div class="col-md-6 offset-md-6">
-            <h1 class="display-1 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
+            <h1 class="display-3 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
         </div>
     </div>
     

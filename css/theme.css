@@ -19742,7 +19742,7 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 .section--home-hero .hero-content {
   position: absolute;
   width: 100%;
-  transform: translateY(183px);
+  transform: translateY(205px);
 }
 .section--home-hero .hero-scroll-button {
   position: absolute;
@@ -19880,7 +19880,7 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 
 @keyframes rotate-btn {
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 .rotating-button #text {
@@ -20053,7 +20053,7 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 }
 
 .fw-800 {
-  font-weight: 800;
+  font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
 }
 
 .lh--md {
