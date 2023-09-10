@@ -19373,6 +19373,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 body {
+  overflow-x: hidden;
   font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
 }
 
@@ -19531,7 +19532,7 @@ form .wp-forms-field {
   top: 0;
   left: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: -1;
   transform: translateY(-40%);
@@ -19674,7 +19675,7 @@ form .wp-forms-field {
   color: #F7F2E5;
 }
 
-div:not(.home) .navbar-nav .nav-item .nav-link {
+body:not(.home) .navbar-nav .nav-item .nav-link {
   color: #CB6959;
 }
 
@@ -19728,7 +19729,7 @@ div:not(.home) .navbar-nav .nav-item .nav-link {
 }
 
 .btn-outline-light:hover {
-  color: #fff;
+  color: #232323;
 }
 .btn-outline-light:hover svg path {
   fill: #232323;

@@ -22,8 +22,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <div>
         <?php get_template_part('template-parts/sections/section--hero', '' , [
-            'title' => 'Developing Change',
-            'subtitle' => 'About Model'
+            'title'     => 'Developing Change',
+            'subtitle'  => 'About Model',
+            'noScroll'  => true
         ])?>
     </div>
 

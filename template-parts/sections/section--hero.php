@@ -7,10 +7,10 @@ $subtitle = $args['subtitle'] ?? "";
 
 if( isset($args['noScroll']) ) {
     $noScroll = $args['noScroll'];
-} elseif( $noScroll !== "" )  {
+} elseif( isset($args['noScroll']) && $args['noScroll'] != "" )  {
     $noScroll = true;
 } else {
-    false;
+    $noScroll = false;
 }
 ?>
 

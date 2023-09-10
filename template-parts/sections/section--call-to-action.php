@@ -4,10 +4,10 @@
     </div>
     <div class="container content">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-7">
                 <p class="section-title text-white">The future is calling. Will you join us in answering?</p>
                 <div class="mt-5">
-                    <a href="#" class="btn btn-outline-light">get in touch</a>
+                    <a href="#" class="btn btn-outline-light">get in touch <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
                 </div>
             </div>
         </div>
