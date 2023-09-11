@@ -181,7 +181,7 @@
 
 
 }
-
+.section--content-lg,
 .section--content {
     padding: 130px 0;
 
@@ -200,6 +200,10 @@
         line-height: 1.6;
         margin-bottom: 38px;
     }
+}
+
+.section--content-lg {
+    padding: 235px 0;
 }
 
 .section--large-content {

@@ -23,8 +23,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <div>
         <?php get_template_part('template-parts/sections/section--hero', '' , [
-            'title' => 'A unique approach to placemaking',
-            'subtitle' => 'Concept'
+            'title'     => 'Beyond the Now',
+            'subtitle'  => 'Our VIsion',
+            'noScroll'  => true
         ])?>
     </div>
 
@@ -37,14 +38,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <main class="site-main" id="main">
 
-            <section class="section--content bg-cream">
+            <section class="section--content-lg bg-cream">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <div>
-                                <h3 class="mb-sm-7">We are one for thinking beyond - beyond today, beyond the conventional, beyond our local markets. </h3>
+                            <div class="pe-md-3">
+                                <h4 class="mb-sm-7 fw-500-w-100">We are one for thinking beyond - beyond today, beyond the conventional, beyond our local markets. </h4>
                                 <p class="content mb-0">
-                                Our vision is our guide to reach our goals. They are bold. They are brave. They will change the way rental works. This is your invitation to join us. 
+                                    Our vision is our guide to reach our goals. They are bold. They are brave. They will change the way rental works. This is your invitation to join us. 
                                 </p>
                             </div>
                         </div>
