@@ -12,13 +12,21 @@ if( isset($args['noScroll']) ) {
 } else {
     $noScroll = false;
 }
+
+$haveGradient = isset($args['gradient']) ? $args['gradient'] : false; 
+
+if( $haveGradient) {
+    $background = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url({$featuredImage}), lightgray 50% / cover no-repeat;";
+} else {
+    $background = "background-image: url({$background});";
+}
 ?>
 
-<section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? "background-image: url({$background});" : "" ?>">
+<section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? $background : "" ?>">
     
     <div class="container">
         <div class="row hero-content">
-            <div class="col-12 px-sm-1">
+            <div class="col-7 px-sm-1">
                 <small class="subtitle">About Model</small>
                 <h1 class="title"><?php echo $title?></h1>
             </div>

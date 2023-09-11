@@ -2,17 +2,18 @@
     list-style: none;
     padding: 0;
     margin-bottom: 0;
+    padding-left: 26px;
     
     
     &__item {
         border-bottom: 1px solid;
-        padding-bottom: 16px;
+        padding-bottom: 13px;
         margin-bottom: 24px;
 
         font-size: 18px;
         font-style: normal;
         font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
-        line-height: normal;
+        line-height: 1.6;
 
         &.teal {
             border-color: $deepTeal;

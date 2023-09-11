@@ -24,8 +24,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <div>
         <?php get_template_part('template-parts/sections/section--hero', '' , [
-            'title' => 'A unique approach to placemaking',
-            'subtitle' => 'Concept'
+            'title'     => 'A unique approach to placemaking',
+            'subtitle'  => 'Concept',
+            'gradient'  => true,
+            "noScroll"  => true
         ])?>
     </div>
 
@@ -40,18 +42,18 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--content bg-cream" id="section--content">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-sm-5 pe-sm-0 mt-sm-5">
+                        <div class="col-sm-6 pe-md-7 mt-sm-5">
                             <h4 class="h4-title">
-                                Forget conventions. We're moving beyond outdated norms and profit-at-all-costs thinking.
+                                Forget conventions. We’re moving beyond outdated norms and profit-at-all-costs thinking.
                             </h4>
 
-                            <p class="content">
+                            <p class="content mt-6 pe-md-7">
                                 Model is the new, Australian purpose-first built-to-rent group and we’re taking a distinct approach to the housing crisis.
                             </p>
                         </div>
                         <!-- end column -->
 
-                        <div class="col-sm-6 offset-sm-1 pe-sm-0 ps-sm-4">
+                        <div class="col-sm-6 offset-sm-1 pe-sm-0 ps-sm-5">
                             <img src="<?php echo get_stylesheet_directory_uri(). "/img/concept-featured.png" ?>" alt="">
                         </div>
                     </div>
@@ -60,6 +62,19 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <!-- end container -->
             </section>
             <!-- end section-->
+
+            <section class="py-85px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2 class="text-primary h1 fw-800">Our Pillars</h2>
+                        </div>
+                        <div class="col-sm-8 with-line line-primary">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <?php 
             $background = get_stylesheet_directory_uri() . "/img/climate-action.png";

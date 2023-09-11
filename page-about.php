@@ -205,22 +205,24 @@ $container = get_theme_mod( 'understrap_container_type' );
             </section>
 
 
-            <section class="section--with-divider bg-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="768" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 255.71V0C141.22 0 255.71 114.482 255.71 255.71C255.71 114.482 370.192 0 511.421 0H1441.6V767.131H0V255.71Z" fill="#232323"/>
-                </svg>
+            <section class="section--with-divider mt-3 position-relative">
+                <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-section.png" ?>" alt="">
+                <div class="centered">
+                    <img src="<?php  echo get_stylesheet_directory_uri() . "/img/model-outline-cream.png"?>" alt="">
+                </div>
             </section>
 
-            <section class="section bg-dark">
-                <div class="container">
+            <section class="bg-dark pb-125px">
+                <div class="container px-md-0">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <h2>Model Values</h2>
+                        <div class="col-sm-7 with-line line-white"></div>
+                        <div class="col-sm-5 text-end">
+                            <h2 class="h1 text-white fw-800">Model Values</h2>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-4">
+                    <div class="row mt-6">
+                        <div class="col-sm-4 ps-md-0 pe-md-3">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/anti-status-quo.png"?>" alt="">
                                 <figcaption class="">
@@ -240,12 +242,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 ps-md-3 pe-0">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/open-and-agile.png" ?>" alt="">
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Open and Agile</h3>
+                                    <h3 class="text-white">Open and agile</h3>
                                     <p class="text-white">
                                         Open-mindedness has brought us here, agility will keep us ahead. These are the qualities that help us learn, grow, and win together.
                                     </p>
@@ -255,14 +257,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <!-- end row-->
 
-                    <div class="row">
-                        <div class="col-sm-4 offset-sm-2">
+                    <div class="row mt-md-60px">
+                        <div class="col-sm-4 offset-sm-2 ps-md-0 pe-md-3">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/community-mavens.png" ?>" alt="">
                                 <figcaption>
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Community<br /> Mavens</h3>
-                                    <p class="text-white">Our focus on meaningful connection is powered by experience, empathy and expertise. We foster communities that thrive.</p>
+                                    <h3 class="text-white">Community<br /> mavens</h3>
+                                    <p class="text-white px-md-43px">Our focus on meaningful connection is powered by experience, empathy and expertise. We foster communities that thrive.</p>
                                 </figcaption>
                             </figure>
                             
@@ -281,21 +283,21 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
             </section>
 
-            <section class="section bg-cream">
+            <section class="py-125px bg-cream">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2 class="">Collaborators</h2>
+                            <h2 class="h1 fw-800">Collaborators</h2>
                         </div>
-                        <div class="col-sm-6 offset-sm-1">
-                            <p>
+                        <div class="col-sm-6 offset-sm-1 ps-md-4 pt-3">
+                            <p class="lh--md">
                                 It takes collective effort to make change happen and we're proud to partner with these leaders who are as determined as we are in making a lasting and meaningful impact on the way we live.
                             </p>
                         </div>
                     </div>
                     <!-- end row-->
 
-                    <div class="row">
+                    <div class="row mt-6">
                         <div class="d-flex justify-content-between">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">

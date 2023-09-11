@@ -56,6 +56,12 @@
     
 }
 
+.section--with-divider {
+    background: linear-gradient(to left, #232323 50%, #fff 61%);
+    // margin-bottom: -1px;
+    z-index: -1;
+    margin-bottom: -1px;
+}
 
 .section--concept {
 

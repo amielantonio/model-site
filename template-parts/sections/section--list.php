@@ -10,8 +10,8 @@
         <div class="row">
             <div class="col-sm-5 position-relative">
                 <div class="sticky-content">
-                    <h4><?php echo $headline ?></h4>
-                    <p>
+                    <h4 class="fs--base-lg"><?php echo $headline ?></h4>
+                    <p class="mt-36px lh--md">
                         <?php echo $content; ?>
                     </p>
                 </div>

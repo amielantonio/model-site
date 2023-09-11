@@ -42,4 +42,16 @@ body {
             border-color: $black;
         }
     }
+    &.line-primary {
+        &::after {
+            border-color: $primary;
+        }
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(6%, 3%);
 }
