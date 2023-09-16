@@ -15,6 +15,7 @@ $black:                     #232323;
 $melon:                     #CB6959;
 $red:                       #B64637;
 $peach:                     #C19294;
+$white:                     #ffffff;
 
 
 $primary:                     $melon;  // Once we've changed the value, we'll also make it the primary brand color.
@@ -121,3 +122,4 @@ $btn-padding-x: 1.6em;
 // NAVBAR
 $navbar-padding-y: 37px;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$melon}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-white-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$white}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");

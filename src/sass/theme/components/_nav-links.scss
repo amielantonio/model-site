@@ -6,6 +6,13 @@
             box-shadow: none;
             &.collapsed {
                 background-color: transparent;
+                .navbar-toggler-icon {
+                    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+                }
+            }
+                       
+            .navbar-toggler-icon {
+                background-image: escape-svg($navbar-white-toggler-icon-bg);
             }
         }
     }
@@ -24,7 +31,9 @@
                 // color: $cream;
                 padding: 0;
                 border-bottom: 1px solid transparent;
-
+                @include media-breakpoint-down(md) {
+                    padding: 15px 0;
+                }
                 &:hover {
                     border-bottom-color: $cream;
                 }
