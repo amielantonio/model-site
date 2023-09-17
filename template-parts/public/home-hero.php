@@ -5,14 +5,14 @@
         <video loop autoplay muted class="section--home-hero__video">
             <source src="<?php echo get_stylesheet_directory_uri() . "/img/above-the-fold-video.mp4" ?>" type="video/mp4">
         </video>
-        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>">
+        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon-with-text.png" ?>">
         
         <div class="hero-logo">
             <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo.png" ?>">
         </div>
 
         <div class="hero-text">
-            <img src="<?php echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
+            <img src="<?php //echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
         </div>
 
 
@@ -21,7 +21,7 @@
 
     <div class="row hero-content">
         <div class="col-md-6 offset-md-6">
-            <h1 class="display-3 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
+            <h1 class="display-2 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
         </div>
     </div>
     

@@ -29,7 +29,7 @@ if( !is_front_page() ) {
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 
 		<button
-			class="navbar-toggler"
+			class="navbar-toggler collapsed"
 			type="button"
 			data-bs-toggle="collapse"
 			data-bs-target="#navbarNavDropdown"
