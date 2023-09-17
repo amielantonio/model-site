@@ -29,7 +29,7 @@ if( !is_front_page() ) {
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 
 		<button
-			class="navbar-toggler collapsed"
+			class="navbar-toggler collapsed btn-mobile-menu"
 			type="button"
 			data-bs-toggle="collapse"
 			data-bs-target="#navbarNavDropdown"
@@ -37,8 +37,16 @@ if( !is_front_page() ) {
 			aria-expanded="false"
 			aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
 		>
-			<span class="navbar-toggler-icon"></span>
+			<span class="burger"></span>
+			<span class="burger"></span>
+			<span class="burger"></span>
+			<div class="burger-text">
+				<span class="open">Menu</span>
+				<span class="close">Close</span>
+			</div>
 		</button>
+
+
 
 		<!-- The WordPress Menu goes here -->
 		<?php

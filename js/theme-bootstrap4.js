@@ -6080,21 +6080,59 @@
     logoAnimate();
     mainNavEvents();
     formAnimate();
+    mobileNav();
     var joshers = document.querySelector('josh-js');
     if (joshers) {
       new Josh();
     }
   });
+
+  /**
+   * Form events for floating labels
+   */
   var formAnimate = function formAnimate() {
     var $form = document.querySelector('.animated-form');
-    var $input = $form.querySelectorAll('.wpforms-field-large');
-    $input.forEach(function (_in) {
-      _in.addEventListener('focus', function () {
-        var $label = _in.previousElementSibling;
-        $label.classList.add('float');
-      });
-    });
+    if ($form) {
+      var $input = $form.querySelectorAll('.wpforms-field-large');
+      var $textArea = $form.querySelectorAll('textarea');
+      if ($input) {
+        $input.forEach(function (_in) {
+          _in.addEventListener('focus', function () {
+            var $label = _in.previousElementSibling;
+            if (!$label.classList.contains('float')) {
+              $label.classList.add('float');
+            }
+          });
+          _in.addEventListener('blur', function () {
+            var $label = _in.previousElementSibling;
+            if ($label.classList.contains('float') && _in.value == "") {
+              $label.classList.remove('float');
+            }
+          });
+        });
+      }
+      if ($textArea) {
+        $textArea.forEach(function (_in) {
+          _in.addEventListener('focus', function () {
+            var $label = _in.previousElementSibling;
+            if (!$label.classList.contains('float')) {
+              $label.classList.add('float');
+            }
+          });
+          _in.addEventListener('blur', function () {
+            var $label = _in.previousElementSibling;
+            if ($label.classList.contains('float') && _in.value == "") {
+              $label.classList.remove('float');
+            }
+          });
+        });
+      }
+    }
   };
+
+  /**
+   * Animate the logo
+   */
   var logoAnimate = function logoAnimate() {
     console.log('logo animate initiated');
     var $main = document.querySelector('.custom-logo-link');
@@ -6141,6 +6179,21 @@
         });
       }
     }
+  };
+  var mobileNav = function mobileNav() {
+    var $mobileNav = document.querySelector('.btn-mobile-menu');
+    var $logo = document.querySelector('#main-nav .custom-logo-link');
+
+    // Add active class
+    $mobileNav.addEventListener('click', function () {
+      if (!$mobileNav.classList.contains('active')) {
+        $mobileNav.classList.add('active');
+        $logo.classList.add('mobile-active');
+      } else {
+        $mobileNav.classList.remove('active');
+        $logo.classList.remove('mobile-active');
+      }
+    });
   };
 
   exports.Alert = Alert;
