@@ -1,13 +1,50 @@
 .section {
     padding-top: 99px;
     padding-bottom: 99px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .bordered-section {
-    border-top: 1px solid $primary;
-    border-bottom: 1px solid $primary;
+    position: relative;
+    // border-top: 1px solid $primary;
+    // border-bottom: 1px solid $primary;
     padding-top: 77px;
     padding-bottom: 62px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    &::after {
+        content: " ";
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-top: 1px solid $primary;
+        @include media-breakpoint-down(sm) {
+            width: 95%;
+        }
+    }
+    &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid $primary;
+        @include media-breakpoint-down(sm) {
+            width: 95%;
+        }
+    }
 }
 
 
@@ -29,6 +66,24 @@
         z-index: 0;
         margin-bottom: -4px;
     }
+    @include media-breakpoint-up(lg) {
+        height: 767px;
+    }
+    @include media-breakpoint-down(lg) {
+        height: 700px;
+    }
+    @include media-breakpoint-down(sm) {
+        .img-absolute-center {
+            top: 40%;
+            img {
+                height: 300px;
+            }
+        }
+        .rb-container {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    } 
 }
 
 .section--decarbonise {
