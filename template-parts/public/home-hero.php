@@ -5,14 +5,14 @@
         <video loop autoplay muted class="section--home-hero__video">
             <source src="<?php echo get_stylesheet_directory_uri() . "/img/above-the-fold-video.mp4" ?>" type="video/mp4">
         </video>
-        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon-with-text.png" ?>">
+        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>">
         
         <div class="hero-logo">
             <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo.png" ?>">
         </div>
 
         <div class="hero-text">
-            <img src="<?php //echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
+            <img src="<?php echo get_stylesheet_directory_uri() . "/img/rent-for-good.png" ?>">
         </div>
 
 

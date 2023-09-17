@@ -142,22 +142,43 @@
         text-transform: uppercase;
         text-decoration: none;
         z-index: 100;
+        transform-origin: center;
         
         a {
+            display: block;
             font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
             text-decoration: none;
         }
         &.vl-1 {
             bottom: 204px;
             left: 175px;
+
+            &::after {
+                width: 120%;
+            }
         }
         &.vl-2 {
             bottom: 260px;
             left: 330px;
+            &::after {
+                width: 115%;
+            }
         }
         &.vl-3 {
             bottom: 238px;
             right: -13%;
+            &::after {
+                width: 150%;
+            }
+        }
+        &::after {
+            content: "";
+            border-bottom: 1px solid var(--bs-melon);
+            bottom: 1px;
+            height: 1px;
+            position: absolute;
+            bottom: -14px;
+            left: 0;
         }
     }
 
