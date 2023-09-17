@@ -35,13 +35,13 @@
 
             <div class="vertical-links mb-4">
                 <div class="vertical-link-lg vl-1">
-                    <a href="#">CLIMATE ACTION</a>
+                    <a href="<?php echo site_url('concept'). "#concept-climate-action" ?>">CLIMATE ACTION</a>
                 </div>
                 <div class="vertical-link-lg vl-2">
-                    <a href="#">COMMUNITY BUILDING</a>
+                    <a href="<?php echo site_url('concept'). "#concept-community-building" ?>">COMMUNITY BUILDING</a>
                 </div>
                 <div class="vertical-link-lg vl-3">
-                    <a href="#">DESIGN INNOVATION </a>
+                    <a href="<?php echo site_url('concept'). "#concept-design-innovation" ?>">DESIGN INNOVATION </a>
                 </div>
             </div>
 

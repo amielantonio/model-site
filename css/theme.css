@@ -22025,7 +22025,10 @@ form .wp-forms-field {
   position: absolute;
   top: 15%;
   left: 10%;
-  z-index: 100;
+  z-index: 2;
+}
+.section--concept .img-concept img {
+  position: relative;
 }
 
 .vertical-link-container {
@@ -22056,6 +22059,7 @@ form .wp-forms-field {
   line-height: 110%; /* 30.8px */
   text-transform: uppercase;
   text-decoration: none;
+  z-index: 100;
 }
 .vertical-link-container .vertical-link-lg a {
   font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;

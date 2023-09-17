@@ -89,7 +89,12 @@
         position: absolute;
         top: 15%;
         left: 10%;
-        z-index: 100;
+        z-index: 2;
+        
+        img {
+            // z-index: ;
+            position: relative;
+        }
     }
 }
 
@@ -125,6 +130,7 @@
         line-height: 110%; /* 30.8px */
         text-transform: uppercase;
         text-decoration: none;
+        z-index: 100;
         
         a {
             font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;

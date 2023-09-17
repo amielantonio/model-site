@@ -81,7 +81,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Climate Action',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-climate-action'
             ]); ?>
 
             <!-- Section List -->
@@ -110,7 +111,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Community Building',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-community-building'
             ]); ?>
 
 
@@ -139,7 +141,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Design Innovation',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-design-innovation'
             ]); ?>
 
             <!-- Section List -->
