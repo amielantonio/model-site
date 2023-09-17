@@ -196,8 +196,8 @@ h4 {
     font-style: normal;
     line-height: 1.1;
     font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
-
-    @include media-breakpoint-down(sm) {
+  
+    @include media-breakpoint-down(md) {
         font-size: $h3-font-size;
     }
 }

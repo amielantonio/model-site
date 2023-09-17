@@ -6,13 +6,13 @@
     
     <div class="container content mt-md-15">
         <div class="row">
-            <div class="col-sm-4 offset-sm-1">
+            <div class="col-lg-4 offset-lg-1 col-md-6">
                 <h2 class="h1 text-white fw-700">
                     Decarbonise.<br />
                     Now.
                 </h2>
             </div>
-            <div class="col-sm-6 offset-sm-1 text-white fs--base-lg">
+            <div class="col-lg-6 offset-lg-1 col-md-6 text-white fs--base-lg">
                 <p class="mb-6 fw-300 lh--md fs--base-lg">
                     A net-zero carbon future cannot happen without decarbonising buildings, since buildings and the construction sector account account for 40% of all global energy-related CO2 emissions. 
                 </p>
@@ -29,7 +29,7 @@
     </div>
 
 
-    <div class="floating-title-container">
+    <div class="floating-title-container d-none d-md-block">
         <div class="floating-title">
             <span class="text-primary">DECARBONISATION</span>
         </div>
@@ -41,17 +41,17 @@
 <section class="section--vision" id="section--vision">
 
     <!-- floating title -->
-    <div class="floating-title-container" style="margin-top: -8%">
+    <div class="floating-title-container d-none d-md-block" style="margin-top: -8%">
         <div class="floating-title">
             <span class="text-white">VISION</span>
         </div>
     </div>
 
     <div class="container">
-        <div class="col-sm-8 offset-sm-4 p-sm-4">
-            <h2 class="section-title text-white mb-6">Vision</h2>
-            <p class="section-subtitle text-white mb-6">Where we begin matters and so does the question of - where do we want to go from here?</p>
-            <p class="fs--base-lg text-white mb-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
+        <div class="col-md-8 offset-md-4 p-md-4">
+            <h2 class="section-title text-white mb-4 mb-md-6">Vision</h2>
+            <p class="section-subtitle text-white mb-4 mb-md-6">Where we begin matters and so does the question of - where do we want to go from here?</p>
+            <p class="fs--base-lg text-white mb-4 mb-md-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
 
             <div>
                 <a href="" class="btn btn-outline-light">our roadmap <?php get_template_part( 'template-parts/svg/arrow' )?></a>

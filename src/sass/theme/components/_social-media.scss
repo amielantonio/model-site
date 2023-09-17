@@ -1,18 +1,26 @@
 .social-media-container {
     display: flex;
     justify-content: end;
-
+    @include media-breakpoint-down(sm) {
+        justify-content: start;
+    }
     .social-media {
 
         display: flex;
         flex-direction: column;
         border: 1px solid $primary;
-
+        @include media-breakpoint-down(sm) {
+            flex-direction: row;
+        }
         &__item {
             border-bottom: 1px solid $primary;
             padding: 13px;
-
+            @include media-breakpoint-down(sm) {
+                border-right: 1px solid $primary;
+                border-bottom: none;
+            }
             &:last-child {
+                border-right: none;
                 border-bottom: none;
             }
         }
