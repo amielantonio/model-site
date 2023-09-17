@@ -6079,8 +6079,22 @@
     console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
-    new Josh();
+    formAnimate();
+    var joshers = document.querySelector('josh-js');
+    if (joshers) {
+      new Josh();
+    }
   });
+  var formAnimate = function formAnimate() {
+    var $form = document.querySelector('.animated-form');
+    var $input = $form.querySelectorAll('.wpforms-field-large');
+    $input.forEach(function (_in) {
+      _in.addEventListener('focus', function () {
+        var $label = _in.previousElementSibling;
+        $label.classList.add('float');
+      });
+    });
+  };
   var logoAnimate = function logoAnimate() {
     console.log('logo animate initiated');
     var $main = document.querySelector('.custom-logo-link');

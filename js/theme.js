@@ -6146,8 +6146,45 @@
     console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
-    new Josh();
+    formAnimate();
+    let joshers = document.querySelector('josh-js');
+    if (joshers) {
+      new Josh();
+    }
   });
+  const formAnimate = () => {
+    const $form = document.querySelector('.animated-form');
+    const $input = $form.querySelectorAll('.wpforms-field-large');
+    const $textArea = $form.querySelectorAll('textarea');
+    $input.forEach(_in => {
+      _in.addEventListener('focus', () => {
+        let $label = _in.previousElementSibling;
+        if (!$label.classList.contains('float')) {
+          $label.classList.add('float');
+        }
+      });
+      _in.addEventListener('blur', () => {
+        let $label = _in.previousElementSibling;
+        if ($label.classList.contains('float') && _in.value == "") {
+          $label.classList.remove('float');
+        }
+      });
+    });
+    $textArea.forEach(_in => {
+      _in.addEventListener('focus', () => {
+        let $label = _in.previousElementSibling;
+        if (!$label.classList.contains('float')) {
+          $label.classList.add('float');
+        }
+      });
+      _in.addEventListener('blur', () => {
+        let $label = _in.previousElementSibling;
+        if ($label.classList.contains('float') && _in.value == "") {
+          $label.classList.remove('float');
+        }
+      });
+    });
+  };
   const logoAnimate = () => {
     console.log('logo animate initiated');
     const $main = document.querySelector('.custom-logo-link');
