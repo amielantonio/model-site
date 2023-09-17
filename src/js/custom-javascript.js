@@ -3,6 +3,9 @@ window.addEventListener( 'DOMContentLoaded', function() {
     console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
+
+
+    const josh = new Josh();
 });
 
 
