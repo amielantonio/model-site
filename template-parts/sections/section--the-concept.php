@@ -4,7 +4,7 @@
 
             <div class="content-container bg-cream content">
                 <div class="row">
-                    <div class="col-sm-10">
+                    <div class="col-sm-12 col-md-12 col-lg-10">
                         <h2 class="h1 bd--b-primary pb-36px fw-800 text-danger">The <br /> Concept</h2>
 
                         <p class="fs--base-lg fw-light mt-60px lh--md">
@@ -35,7 +35,7 @@
 
         <div class="row vertical-link-container">
             <div class="content-container bg-cream position-relative content-container-bottom">
-                <div class="vertical-link d-flex mb-4">
+                <div class="vertical-link d-flex mb-4 d-none d-md-block">
                     <a href="#" class="">THE CONCEPT</a>
                 </div>
             </div>

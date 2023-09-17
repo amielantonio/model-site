@@ -183,7 +183,10 @@ h4 {
     font-size: $h1-font-size;
     font-style: normal;
     line-height: 1.1;
-    font-variation-settings: "ital" 0, "wght" 800, "wdth" 125
+    font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+    }
 }
 
 .section-subtitle {
