@@ -76,6 +76,6 @@
     "terser": "^5.15.1"
   },
   "dependencies": {
-    "joshjs": "^1.0.8"
+    
   }
 }

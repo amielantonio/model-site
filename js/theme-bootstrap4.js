@@ -6079,6 +6079,7 @@
     console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
+    new Josh();
   });
   var logoAnimate = function logoAnimate() {
     console.log('logo animate initiated');

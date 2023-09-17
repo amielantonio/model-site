@@ -43,6 +43,9 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
+		wp_enqueue_script('joshjs', 'https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js');
+		wp_enqueue_style('animatecss','https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 
 		// wp_enqueue_style( 'model-type-font'. 'https://use.typekit.net/dde2qvx.css' );
 	}

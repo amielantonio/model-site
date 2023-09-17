@@ -22027,6 +22027,15 @@ form .wp-forms-field {
   left: 10%;
   z-index: 2;
 }
+.section--concept .img-concept .outline {
+  position: relative;
+  z-index: 3;
+}
+.section--concept .img-concept .fill {
+  position: absolute;
+  top: 54px;
+  left: 23px;
+}
 .section--concept .img-concept img {
   position: relative;
 }

@@ -18,7 +18,14 @@
 
 
                 <div class="img-concept">
-                    <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-pillars-outline.png"  ?>" alt="">
+                    <div class="outline">
+                        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-pillars-outline.png"  ?>" alt="">
+                    </div>
+                    <div class="fill josh-js" 
+                        data-josh-anim-name="fadeInUp"
+                        data-josh-duration="1000ms">
+                        <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-pillars-fill.png"  ?>" alt="">
+                    </div>
                 </div>
                 
             </div>
