@@ -15,15 +15,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<footer class="site-footer py-sm-9" id="wrapper-footer">
+<footer class="site-footer py-sm-9 py-60px" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?> px-0">
+	<div class="<?php echo esc_attr( $container ); ?> px-sm-0">
 
 		<div class="row">
 
 			<div class="col-md-3">
 
-				<img src="<?php echo get_stylesheet_directory_uri() . "/img/model-outline-vertical.png"?>" alt="">
+				<!-- Desktop Image -->
+				<div class="d-sm-block d-none">
+					<img src="<?php echo get_stylesheet_directory_uri() . "/img/model-outline-vertical.png"?>" alt="">
+				</div>
+
+				<!-- MObile Image -->
+				<div class="d-sm-none d-block">
+					<img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-footer.png"?>" alt="">
+				</div>
+				
 
 			</div><!-- col -->
 
@@ -31,8 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="row">
 					<div class="col-sm-5 fs--base-sm pe-md-7">
 						
-						<div class="mt-3">
-							<p class="text-primary">
+						<div class="mt-sm-3 mt-5">
+							<p class="text-primary lh--md">
 								Model acknowledges the Traditional Owners of Country throughout Australia. We pay our respects to Elders past and present.
 							</p>
 						</div>
@@ -68,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<!-- END COL -->
 
-					<div class="col-sm-2 pt-3">
+					<div class="col-sm-2 mt-sm-3 mt-5 mb-sm-0 mb-5">
 						<?php get_template_part( 'template-parts/public/social-media' ) ?>
 					</div>
 					<!-- END COL-->
@@ -77,10 +86,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="row mt-md-10">
 					<div class="col-12">
 						<div id="colophon">
-							<nav>
-								<a href="#" class="text-primary fs--base-xs td-none me-sm-7">Terms of Use</a>
+							<nav class="d-sm-block d-flex flex-column">
+								<a href="#" class="text-primary fs--base-xs td-none me-sm-7 mb-sm-0 mb-4">Terms of Use</a>
 
-								<a href="#" class="text-primary fs--base-xs td-none me-sm-7">Privacy</a>
+								<a href="#" class="text-primary fs--base-xs td-none me-sm-7 mb-4">Privacy</a>
 
 								<span class="fs--base-xs text-primary">Copyright 2023 &copy; Model Australia Pty Ltd.</span>
 							</nav>

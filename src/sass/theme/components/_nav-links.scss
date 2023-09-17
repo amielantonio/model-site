@@ -98,4 +98,10 @@ body:not(.home) .navbar-nav {
             }
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+        margin-top: 48px;
+        margin-bottom: 28px;
+    }
 }
