@@ -104,6 +104,10 @@
         font-variation-settings: "wght" 800, "wdth" 125;
         margin-top: 8px;
         margin-bottom: 0;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 40px;
+        }
     }
 
     .hero-content {
