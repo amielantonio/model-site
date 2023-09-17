@@ -15,6 +15,7 @@ $black:                     #232323;
 $melon:                     #CB6959;
 $red:                       #B64637;
 $peach:                     #C19294;
+$white:                     #ffffff;
 
 
 $primary:                     $melon;  // Once we've changed the value, we'll also make it the primary brand color.
@@ -68,7 +69,7 @@ $h4-font-size:                36px;
 $h5-font-size:                16px;
 $h6-font-size:                14px;
 
-$headings-line-height:        1.2;
+$headings-line-height:        1.1;
 
 $display-font-weight:         800;
 $display-line-height:         1.1;
@@ -80,7 +81,7 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size
-);
+) !default;
 
 $display-font-sizes: (
   1: 5rem,
@@ -89,7 +90,7 @@ $display-font-sizes: (
   4: 3.5rem,
   5: 3rem,
   6: 2.5rem
-);
+) !default;
 
 
 // SPACING
@@ -108,9 +109,7 @@ $spacers: (
   9: $spacer * 5,
   10: $spacer * 7,
   15: $spacer * 15,
-  25px: 25px,
   36px: 36px,
-  43px: 43px,
   60px: 60px,
   75px: 75px,
   85px: 85px,
@@ -119,6 +118,7 @@ $spacers: (
   155px: 155px,
   215px: 215px,
 );
+
     
 
 // BUTTON
@@ -128,3 +128,5 @@ $btn-padding-x: 1.6em;
 
 // NAVBAR
 $navbar-padding-y: 37px;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$melon}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-white-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$white}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
