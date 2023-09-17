@@ -425,6 +425,10 @@
             font-size: 20px;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        padding: 75px 0;
+    }
 }
 
 .section--content-lg {
@@ -445,6 +449,9 @@
         line-height: 110%; /* 66px */
         font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
         margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 40px;
+        }
     }
 
     .headline {
@@ -452,6 +459,10 @@
         font-style: normal;
         line-height: 120%;
         font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+        @include media-breakpoint-down(sm) {
+            font-size: 28px;
+            margin-top: 24px;
+        }
     }
 
     .headline-body {

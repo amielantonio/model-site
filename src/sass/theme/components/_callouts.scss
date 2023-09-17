@@ -32,4 +32,13 @@
         margin-top: 20px;
         padding: 0 25px;
     }
+
+    @include media-breakpoint-down(sm) {
+        h3  {
+            font-size: 34px;
+        }
+        p {
+            padding: 0;
+        }
+    }
 }

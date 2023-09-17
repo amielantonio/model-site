@@ -81,16 +81,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-5">
                         
                         <div class="col-sm-6 pe-md-5 d-flex align-items-center">
-                            <div class="d-flex align-items-center bordered-content border-white">
+                            <div class="d-flex align-items-center bordered-content border-white pt-sm-0 pt-4 ">
                                 <div>
                                     <h4 class="mb-md-36px">Model throws out conventional ways of how rentals work.</h4>
-                                    <p class="article-content mb-0">
+                                    <p class="article-content mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
                                         For us, there is an equal importance between craft and community-building, and enduring materials matter just as much as the mental wellbeing of our future residents.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-sm-0 mt-6">
                             <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3 img-hoverable">
                         </div>
                     </div>
@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 Our rental communities combine the magnetism of the world's most revered cultural hubs, the heartbeat of a home with innovative design, and the urgency to decarbonise our planet through the framework of regenerative development.
                             </p>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-sm-0 mt-6">
                             <p class="article-content mb-0 ps-md-3 pe-md-6">
                                 Model is where the experience of hotel hospitality meets the warmth of family - an enriching and soulful space that feels not just lived in, but alive - creating the environment for renters to feel supported, grounded and empowered with a sense of certainty and security in their living situation.
                             </p>
@@ -135,14 +135,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-sm-6 pe-md-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
                                 <div class="pe-md-9">
-                                    <h4 class="mb-md-36px">We asked ourselves - not if, but how can the built form address all three issues?</h4>
-                                    <p class="headline-body mb-0">
+                                    <h4 class="mb-md-36px mt-sm-0 mt-5">We asked ourselves - not if, but how can the built form address all three issues?</h4>
+                                    <p class="headline-body mb-0 mt-sm-0 mt-5 pb-sm-0 pb-5">
                                         It spurred the vision to create something better, something worth sharing and something worth acting upon.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-sm-0 mt-5">
                             <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-md-3 img-hoverable">
                         </div>
                     </div>
@@ -237,7 +237,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/always-accountable.png" ?>" alt="">
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Always <br />accountable</h3>
+                                    <h3 class="text-white">Always <br class="d-sm-block d-none" />accountable</h3>
                                     <p class="text-white">Actions drive change, and that’s what we are here to do. We will happily be measured by the impact we make.</p>
                                 </figcaption>
                             </figure>
@@ -263,7 +263,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/community-mavens.png" ?>" alt="">
                                 <figcaption>
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Community<br /> mavens</h3>
+                                    <h3 class="text-white">Community<br class="d-sm-block d-none"  /> mavens</h3>
                                     <p class="text-white px-md-43px">Our focus on meaningful connection is powered by experience, empathy and expertise. We foster communities that thrive.</p>
                                 </figcaption>
                             </figure>
@@ -274,7 +274,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/proud-placemakers.png" ?>" alt="">
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Proud <br /> Placemakers</h3>
+                                    <h3 class="text-white">Proud <br class="d-sm-block d-none"  /> Placemakers</h3>
                                     <p class="text-white">Our customers are our sole reason for being, this is something we never forget. With a laser focus on their needs and an obsession over every detail, we create a unique sense of place and homes like no other.</p>
                                 </figcaption>
                             </figure>
@@ -283,7 +283,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
             </section>
 
-            <section class="py-125px bg-cream">
+            <section class="py-125px bg-cream d-sm-block d-none">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">

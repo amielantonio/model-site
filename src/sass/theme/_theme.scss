@@ -1,13 +1,14 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-
-
-
-
-
 .home .wrapper {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.content-area {
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
 }
 
 body {
@@ -39,6 +40,7 @@ body {
     @include media-breakpoint-down(sm) {
         &::after {
             top: 10px;
+            left: 15px;
             width: 88%;
         }
     }
