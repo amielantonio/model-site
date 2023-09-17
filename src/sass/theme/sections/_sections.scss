@@ -27,7 +27,7 @@
 }
 
 .section--decarbonise {
-    height: 1206px;
+    height: 1256px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -265,19 +265,37 @@
 
 
 .section--dates {
-    padding-top: 67px;
+    padding-top: 80px;
     padding-bottom: 138px;
 
     &-with-bg {
-        background-size: cover;
+        height: 899px;
+        padding-top: 110px;
+        padding-bottom: 138px;
+        
         background-repeat: no-repeat;
         background-position: center center;
-        background: url('../img/date-background.png');
+        background-image: url('../img/date-background.png');
+        background-size: cover;
+
+        .date-title-lg {
+            flex-basis: 58%
+        }
     }
 
     &-lg {
         padding-top: 110px;
         padding-bottom: 205px;
+    }
+
+    .date-title {
+        flex-basis: 15%;
+    }
+    .arrow {
+        flex-basis: 53%;
+    }
+    .right-title {
+        flex-basis: 35%;
     }
 }
 

@@ -7,17 +7,17 @@
     <div class="container content mt-md-15">
         <div class="row">
             <div class="col-sm-4 offset-sm-1">
-                <h2 class="h1 text-white">
+                <h2 class="h1 text-white fw-700">
                     Decarbonise.<br />
                     Now.
                 </h2>
             </div>
             <div class="col-sm-6 offset-sm-1 text-white fs--base-lg">
-                <p class="mb-6 fw-light">
+                <p class="mb-6 fw-300 lh--md fs--base-lg">
                     A net-zero carbon future cannot happen without decarbonising buildings, since buildings and the construction sector account account for 40% of all global energy-related CO2 emissions. 
                 </p>
 
-                <p class="fw-light">
+                <p class="fw-300 lh--md fs--base-md">
                     Together with the ____, we have identified a structure and set of practices to guide building policies, including energy efficient retrofits, installing high performance equipment and promoting renewable energy. 
                 </p>
 
@@ -51,7 +51,7 @@
         <div class="col-sm-8 offset-sm-4 p-sm-4">
             <h2 class="section-title text-white mb-6">Vision</h2>
             <p class="section-subtitle text-white mb-6">Where we begin matters and so does the question of - where do we want to go from here?</p>
-            <p class="fs--base-lg text-white mb-6">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
+            <p class="fs--base-lg text-white mb-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
 
             <div>
                 <a href="" class="btn btn-outline-light">our roadmap <?php get_template_part( 'template-parts/svg/arrow' )?></a>
