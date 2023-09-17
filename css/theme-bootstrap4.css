@@ -19974,6 +19974,12 @@ body {
   position: sticky;
   top: 135px;
 }
+@media (max-width: 767.98px) {
+  .sticky-content {
+    position: inherit;
+    top: auto;
+  }
+}
 
 .with-line {
   position: relative;
@@ -19985,6 +19991,12 @@ body {
   left: 25px;
   width: 97%;
   border-bottom: 2px solid;
+}
+@media (max-width: 767.98px) {
+  .with-line::after {
+    top: 10px;
+    width: 88%;
+  }
 }
 .with-line.line-white::after {
   border-color: #ffffff;
