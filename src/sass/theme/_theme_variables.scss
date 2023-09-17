@@ -53,6 +53,7 @@ $display-font-family:         "loew-variable", sans-serif;
 $font-size-base:              1.25rem;
 $font-size-base-xl:           30px;
 $font-size-base-lg:           24px;
+$font-size-base-md:           20px;
 $font-size-base-sm:           16px;
 $font-size-base-xs:           14px;
 $font-size-list:              18px;
@@ -110,8 +111,14 @@ $spacers: (
   15: $spacer * 15,
   36px: 36px,
   60px: 60px,
+  75px: 75px,
   85px: 85px,
-) !default;
+  90px: 90px,
+  125px: 125px,
+  155px: 155px,
+  215px: 215px,
+);
+
     
 
 // BUTTON

@@ -25,9 +25,10 @@
         </div>
     </div>
     
-
-    <div class="hero-scroll-button">
-        <?php get_template_part( 'template-parts/svg/scroll-button' ); ?>
-    </div>
+    <a href="#next-section">
+        <div class="hero-scroll-button">
+            <?php get_template_part( 'template-parts/svg/scroll-button' ); ?>
+        </div>
+    </a>
 
 </section>

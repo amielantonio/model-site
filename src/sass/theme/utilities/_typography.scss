@@ -68,6 +68,34 @@ h4 {
 }
 
 
+.fs--base-md {
+    font-size: $font-size-base-md;
+}
+
+.fs-xl--base-md {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-base-md;
+    }
+}
+
+.fs-lg--base-md {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base-md;
+    }
+}
+
+.fs-md--base-md {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base-md;
+    }
+}
+
+.fs-sm--base-md {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base-md;
+    }
+}
+
 
 .fs--base-sm {
     font-size: $font-size-base-sm;
@@ -127,6 +155,16 @@ h4 {
     }
 }
 
+.fw-300 {
+    font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
+}
+
+.fw-500-w-100 {
+    font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+}
+.fw-500 {
+    font-variation-settings: "ital" 0, "wght" 500, "wdth" 125;
+}
 
 .fw-700 {
     font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;

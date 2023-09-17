@@ -13,7 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-        <div class="entry-content">
+        <div class="entry-content" id="next-section">
 
             <section class="section bg-secondary">
                 <div class="<?php echo esc_attr( $container ); ?>">

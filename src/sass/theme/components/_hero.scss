@@ -13,10 +13,13 @@
         position: absolute;
         // bottom: 20%;
         width: 100%;
-        transform: translateY(183px);
+        transform: translate(-25px, 198px);
+
         @include media-breakpoint-up(xxl) {
             transform: translateY(250px);
         }
+ 
+
     }
 
     .hero-scroll-button {
@@ -107,5 +110,6 @@
         position: absolute;
         bottom: 0;
         padding-bottom: 156px;
+        width: 100%;
     }
 }

@@ -74,5 +74,8 @@
     "rollup": "^3.2.5",
     "sass": "^1.56.0",
     "terser": "^5.15.1"
+  },
+  "dependencies": {
+    "joshjs": "^1.0.8"
   }
 }

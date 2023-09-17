@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <main class="site-main" id="main">
             
-            <section class="section--content bg-cream" id="section--content">
+            <section class="section--content bg-cream" id="next-section">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-sm-6 pe-md-7 mt-sm-5">
@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                         <!-- end column -->
 
-                        <div class="col-sm-6 offset-sm-1 pe-sm-0 ps-sm-5">
+                        <div class="col-sm-6 pe-sm-0 ps-sm-5">
                             <img src="<?php echo get_stylesheet_directory_uri(). "/img/concept-featured.png" ?>" alt="">
                         </div>
                     </div>
@@ -81,7 +81,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Climate Action',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-climate-action'
             ]); ?>
 
             <!-- Section List -->
@@ -110,7 +111,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Community Building',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-community-building'
             ]); ?>
 
 
@@ -139,7 +141,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             get_template_part('template-parts/sections/section--jumbotron', '', [
                 'title'      => 'Design Innovation',
-                'background' => $background
+                'background' => $background,
+                'section-id' => 'concept-design-innovation'
             ]); ?>
 
             <!-- Section List -->

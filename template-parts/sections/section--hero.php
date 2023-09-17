@@ -26,7 +26,7 @@ if( $haveGradient) {
     
     <div class="container">
         <div class="row hero-content">
-            <div class="col-7 px-sm-1">
+            <div class="col-5 px-sm-1">
                 <small class="subtitle">About Model</small>
                 <h1 class="title"><?php echo $title?></h1>
             </div>
@@ -36,9 +36,11 @@ if( $haveGradient) {
 
    
     <?php if( $noScroll ) : ?>
-        <div class="hero-scroll-button">
-            <?php get_template_part( 'template-parts/svg/scroll-button' );?>
-        </div>
+        <a href="#next-section">
+            <div class="hero-scroll-button">
+                <?php get_template_part( 'template-parts/svg/scroll-button' );?>
+            </div>
+        </a>
     <?php endif; ?>
 
 </section>

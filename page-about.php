@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <main class="site-main" id="main">
 
-            <section class="section--content bg-cream" id="section--content">
+            <section class="section--content bg-cream" id="next-section">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-sm-5 pe-sm-0 mt-sm-5">
