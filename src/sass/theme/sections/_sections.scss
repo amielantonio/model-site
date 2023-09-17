@@ -267,6 +267,10 @@
 
 .section--content-lg {
     padding: 235px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 75px 0;
+    }
 }
 
 .section--large-content {

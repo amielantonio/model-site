@@ -43,8 +43,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row align-items-center">
                         <div class="col-sm-5">
                             <div class="pe-md-3">
-                                <h4 class="mb-sm-7 fw-500-w-100">We are one for thinking beyond - beyond today, beyond the conventional, beyond our local markets. </h4>
-                                <p class="content mb-0">
+                                <h4 class="mb-sm-7 mb-5 fw-500-w-100 lh--md">We are one for thinking beyond - beyond today, beyond the conventional, beyond our local markets. </h4>
+                                <p class="content mb-md-0 mb-7">
                                     Our vision is our guide to reach our goals. They are bold. They are brave. They will change the way rental works. This is your invitation to join us. 
                                 </p>
                             </div>
@@ -59,16 +59,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <section class="section--dates" id="">
                 <div class="container">
-                    <div class="d-flex">
+                    <div class="d-flex flex-sm-row flex-column">
                         <div class="date-title">
-                            <span class="text-primary h2 fw-700">Now</span>
+                            <span class="text-primary h2 fw-sm-700 fw-800">Now</span>
                         </div>
-                        <div class="arrow">
+                        <div class="arrow d-sm-block d-none">
                             <svg width="628" height="15" viewBox="0 0 628 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M627.707 8.20705C628.098 7.81653 628.098 7.18336 627.707 6.79284L621.343 0.428878C620.953 0.0383535 620.319 0.0383536 619.929 0.428878C619.538 0.819402 619.538 1.45257 619.929 1.84309L625.586 7.49995L619.929 13.1568C619.538 13.5473 619.538 14.1805 619.929 14.571C620.319 14.9615 620.953 14.9615 621.343 14.571L627.707 8.20705ZM8.74228e-08 8.5L627 8.49995L627 6.49995L-8.74228e-08 6.5L8.74228e-08 8.5Z" fill="#CB6959"/>
                             </svg>
                         </div>
-                        <div class="right-title text-end">
+
+                        <div class="arrow d-sm-none d-block my-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="41" viewBox="0 0 16 41" fill="none">
+                                <path d="M7.29289 40.7071C7.68342 41.0976 8.31658 41.0976 8.70711 40.7071L15.0711 34.3431C15.4616 33.9526 15.4616 33.3195 15.0711 32.9289C14.6805 32.5384 14.0474 32.5384 13.6569 32.9289L8 38.5858L2.34315 32.9289C1.95262 32.5384 1.31946 32.5384 0.928932 32.9289C0.538408 33.3195 0.538408 33.9526 0.928932 34.3431L7.29289 40.7071ZM9 40L9 1.19249e-08L7 -1.19249e-08L7 40L9 40Z" fill="#CB6959"/>
+                            </svg>
+                        </div>
+
+                        <div class="right-title text-sm-end">
                             <span class="h2 text-primary fw-700">December 2024</span>
                         </div>
                     </div>
