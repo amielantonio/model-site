@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
            <section class="section--contact">
             <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 order-sm-0 order-2 mt-sm-0 mt-6">
                             <div class="">
                                 <span class="text-primary fw-bold">Email </span><br />
                                 <a href="mailto:hello@themodel.com.au" class="text-primary mt-3 td-none">hello@themodel.com.au</a>
