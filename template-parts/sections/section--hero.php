@@ -26,8 +26,8 @@ if( $haveGradient) {
     
     <div class="container">
         <div class="row hero-content">
-            <div class="col-5 px-sm-1">
-                <small class="subtitle">About Model</small>
+            <div class="col-md-5 col-12 px-sm-1">
+                <small class="subtitle"><?php echo $subtitle ?></small>
                 <h1 class="title"><?php echo $title?></h1>
             </div>
         </div>

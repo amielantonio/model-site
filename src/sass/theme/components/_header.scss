@@ -1,0 +1,112 @@
+.btn-mobile-menu {
+
+    
+
+    .burger {
+        width: 45px;
+        height: 3px;
+        background: var(--bs-melon);
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        transition: 0.3s all;
+
+        &:first-child {
+
+        }
+
+        &:nth-child(2) {
+            opacity: 1;
+        }
+
+        &:nth-child(3) {
+            
+        }
+    }
+
+    .burger-text {
+        color: $primary;
+        // font-family: Korolev;
+        font-size: 12px;
+        font-style: normal;
+        // font-weight: 700;
+        line-height: 120%; /* 12px */
+        letter-spacing: 2px;
+        font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+        display: flex;
+
+
+        .open {
+            opacity: 1;
+            position: absolute;
+            transition: 0.3s all;
+        }
+        .close {
+            opacity: 0;
+            position: absolute;
+            transition: 0.3s all;
+        }
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    //Active state
+    &.active {
+        .burger {
+
+            &:first-child {
+                transform: rotate(40deg) translate(7px, 8px)
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-40deg) translate(10px, -12px);
+            }
+        }
+
+        .burger-text {
+            .open {
+                opacity: 0;
+            }
+            .close {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+#main-nav {
+
+    @include media-breakpoint-down(sm) {
+        background: $cream;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        #main-menu {
+            margin-top: 80px;
+            height: 85vh;
+            
+            .menu-item {
+                .nav-link {
+                    color: $primary;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+                    line-height: normal;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+
+        .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+}

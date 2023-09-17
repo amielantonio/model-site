@@ -4,6 +4,8 @@
             border-color: $melon;
             background-color: $melon;
             box-shadow: none;
+            border: 0;
+
             &.collapsed {
                 background-color: transparent;
                 .navbar-toggler-icon {
@@ -13,6 +15,10 @@
                        
             .navbar-toggler-icon {
                 background-image: escape-svg($navbar-white-toggler-icon-bg);
+            }
+
+            @include media-breakpoint-down(sm) {
+                background-color: transparent;
             }
         }
     }

@@ -170,8 +170,20 @@ h4 {
     font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
 }
 
+.fw-sm-700 {
+    @include media-breakpoint-up(sm) {
+        font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+    }
+}
+
 .fw-800 {
     font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+}
+
+.fw-sm-800 {
+    @include media-breakpoint-up(sm) {
+        font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+    }
 }
 
 .lh--md {
@@ -184,8 +196,9 @@ h4 {
     font-style: normal;
     line-height: 1.1;
     font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+  
     @include media-breakpoint-down(md) {
-        font-size: 40px;
+        font-size: $h3-font-size;
     }
 }
 

@@ -18,6 +18,10 @@ body {
 .sticky-content {
     position: sticky;
     top: 135px;
+    @include media-breakpoint-down(sm) {
+        position: inherit;
+        top: auto;
+    }
 }
 
 .with-line {
@@ -30,6 +34,13 @@ body {
         left: 25px;
         width: 97%;
         border-bottom: 2px solid;
+    }
+
+    @include media-breakpoint-down(sm) {
+        &::after {
+            top: 10px;
+            width: 88%;
+        }
     }
 
     &.line-white {

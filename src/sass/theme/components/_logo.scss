@@ -10,7 +10,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &.mobile-active {
         .custom-logo {
             &:not(.custom-logo-m) {
                 opacity: 1;

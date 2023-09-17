@@ -27,4 +27,9 @@
             border-color: $melon;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 0;
+        margin-top: 72px;
+    }
 }

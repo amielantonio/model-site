@@ -2,3 +2,10 @@
 // Styling for bare HTML elements (like H1,a, img). These come with default styhling from the browser so we can redefine them here.
 
 @import "form";
+
+.container {
+    @include media-breakpoint-down(sm) {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+}

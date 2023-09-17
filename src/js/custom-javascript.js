@@ -3,12 +3,81 @@ window.addEventListener( 'DOMContentLoaded', function() {
     console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
+    formAnimate();
+    mobileNav();
 
+    let joshers = document.querySelector('josh-js');
 
-    const josh = new Josh();
+    if( joshers ) {
+        const josh = new Josh();
+    }
+    
 });
 
+/**
+ * Form events for floating labels
+ */
+const formAnimate = () => {
+    const $form = document.querySelector('.animated-form');
+    if( $form ) {
+        const $input = $form.querySelectorAll('.wpforms-field-large');
+        const $textArea = $form.querySelectorAll('textarea');
+        if( $input ) {
+            $input.forEach( _in => {
+    
+                _in.addEventListener('focus', () => {
+                    let $label = _in.previousElementSibling;
+        
+                    if( ! $label.classList.contains('float') ) {
+                        $label.classList.add('float');
+                    }
+                });
+        
+                _in.addEventListener('blur', () => {
+                    let $label = _in.previousElementSibling;
+        
+                    if( $label.classList.contains('float') && _in.value == "") {
+                        $label.classList.remove('float');
+                    }
+                    
+                });
+            });
+        }
+        
+    
+        if( $textArea ) {
+            $textArea.forEach( _in => {
+    
+                _in.addEventListener('focus', () => {
+                    let $label = _in.previousElementSibling;
+        
+                    if( ! $label.classList.contains('float') ) {
+                        $label.classList.add('float');
+                    }
+                });
+        
+                _in.addEventListener('blur', () => {
+                    let $label = _in.previousElementSibling;
+        
+                    if( $label.classList.contains('float') && _in.value == "") {
+                        $label.classList.remove('float');
+                    }
+                    
+                });
+            });
+        }
+    }
+    
 
+    
+    
+
+    
+}
+
+/**
+ * Animate the logo
+ */
 const logoAnimate = () => {
     console.log('logo animate initiated')
 
@@ -60,4 +129,20 @@ const headerScrollEvent = () => {
             $navLinks.forEach( _link => _link.classList.remove('text-primary'));
         }
     }
+}
+
+const mobileNav = () => {
+    const $mobileNav = document.querySelector('.btn-mobile-menu');
+    const $logo = document.querySelector('#main-nav .custom-logo-link');
+
+    // Add active class
+    $mobileNav.addEventListener('click', () => {
+        if( ! $mobileNav.classList.contains('active') ) {
+            $mobileNav.classList.add('active');
+            $logo.classList.add('mobile-active');
+        } else {
+            $mobileNav.classList.remove('active');
+            $logo.classList.remove('mobile-active');
+        }
+    });
 }
