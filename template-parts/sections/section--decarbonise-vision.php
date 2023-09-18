@@ -13,11 +13,11 @@
                 </h2>
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-6 text-white fs--base-lg">
-                <p class="mb-6 fw-300 lh--md fs--base-lg">
+                <p class="mb-6 fw-300 lh--md fs--sm-base-lg fs--base-md">
                     A net-zero carbon future cannot happen without decarbonising buildings, since buildings and the construction sector account account for 40% of all global energy-related CO2 emissions. 
                 </p>
 
-                <p class="fw-300 lh--md fs--base-md">
+                <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
                     Together with the ____, we have identified a structure and set of practices to guide building policies, including energy efficient retrofits, installing high performance equipment and promoting renewable energy. 
                 </p>
 

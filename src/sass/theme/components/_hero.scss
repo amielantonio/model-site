@@ -18,6 +18,10 @@
         @include media-breakpoint-up(xxl) {
             transform: translateY(250px);
         }
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            transform: translate(10px, 180px);
+        }
  
 
     }
@@ -49,6 +53,10 @@
             width: 100vw;
             object-fit: cover;
             z-index: -1;
+            @include media-breakpoint-down(sm) {
+                transform: translate(0%, -25%);
+                height: 57vh;
+            }
         }
 
         & > img {
@@ -62,12 +70,25 @@
             left: 50%;
             z-index: 120;
             transform: translate(-50%, -50%);
+            
+            @include media-breakpoint-down(sm) {
+                top: auto;
+                bottom: 0;
+                img {
+                    max-width: 290px;
+                    // width: 100%;
+                }
+            }
         }
 
         .hero-text {
             position: absolute;
             bottom: 40px;
             right: 20vw;
+            @include media-breakpoint-down(sm) {
+                bottom: 120px;
+                right: 10vw;
+            }
         }
     }
 }
@@ -99,7 +120,7 @@
 
     .title {
         color: #FFF;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.25);
         font-size: 60px;
         font-style: normal;
         line-height: 110%;

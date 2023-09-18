@@ -96,6 +96,34 @@ h4 {
     }
 }
 
+.fs--base-list {
+    font-size: $font-size-list;
+}
+
+.fs-xl--base-list {
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-list;
+    }
+}
+
+.fs-lg--base-list {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-list;
+    }
+}
+
+.fs-md--base-list {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-list;
+    }
+}
+
+.fs-sm--base-list {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-list;
+    }
+}
+
 
 .fs--base-sm {
     font-size: $font-size-base-sm;
@@ -155,9 +183,7 @@ h4 {
     }
 }
 
-.fw-300 {
-    font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
-}
+
 
 .fw-500-w-100 {
     font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
@@ -188,6 +214,26 @@ h4 {
     }
 }
 
+.fw-400 {
+    font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+}
+
+.fw-sm-400 {
+    @include media-breakpoint-up(sm) {
+        font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+    }
+}
+
+.fw-300 {
+    font-variation-settings: "ital" 0, "wght" 300, "wdth" 100;
+}
+
+.fw-sm-300 {
+    @include media-breakpoint-up(sm) {
+        font-variation-settings: "ital" 0, "wght" 300, "wdth" 125;
+    }
+}
+
 .lh--md {
     line-height: 1.6;
 }
@@ -199,7 +245,7 @@ h4 {
     line-height: 1.1;
     font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
   
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         font-size: $h3-font-size;
     }
 }

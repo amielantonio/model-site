@@ -3,6 +3,7 @@
     position: absolute;
     margin-top: 14%;
     margin-left: 10%;
+    
 
     
     .floating-title {
@@ -16,5 +17,9 @@
         line-height: normal;
         letter-spacing: 1.6px;
         text-transform: uppercase;
+    }
+
+    @include media-breakpoint-down(lg) {
+        display: none;
     }
 }

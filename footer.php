@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 				<div class="row mt-md-10">
-					<div class="col-12">
+				<div class="col-12">
 						<div id="colophon">
 							<nav class="d-sm-block d-flex flex-column">
 								<a href="#" class="text-primary fs--base-xs td-none me-sm-7 mb-sm-0 mb-4">Terms of Use</a>

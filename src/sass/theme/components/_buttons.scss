@@ -9,6 +9,10 @@
         margin-top: 0px;
         margin-left: 20px;
     }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 13px;
+    }
 }
  
 .btn-outline-melon,

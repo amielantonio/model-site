@@ -98,7 +98,7 @@
     overflow: hidden;
     position: relative;
     @include media-breakpoint-down(md) {
-        height: 1000px;
+        height: 1050px;
         padding-top:72px;
     }
     &::after {
@@ -179,7 +179,7 @@
             top: 70%;
         }
         @include media-breakpoint-down(md) {
-            top: 96%;
+            top: 102%;
             left: 0;
         }
         .outline {
@@ -191,6 +191,10 @@
             position: absolute;
             top: 54px;
             left: 23px;
+            @include media-breakpoint-down(sm) {
+                top: 17px;
+                left: 7px;
+            }
         }
         
         img {
@@ -203,7 +207,7 @@
 .vertical-link-container {
     height: 682px;
     @include media-breakpoint-down(md) {
-        height: 720px;
+        height: 565px;
     }
     .bg-cream {
         @include media-breakpoint-down(md) {
@@ -241,6 +245,13 @@
         text-decoration: none;
         z-index: 100;
         transform-origin: center;
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+            font-style: normal;
+            font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
+            line-height: 110%; /* 15.4px */
+            text-transform: uppercase;
+        }
         
         a {
             display: block;
@@ -250,7 +261,7 @@
                 font-variation-settings: "ital" 0, "wght" 700, "wdth" 100;
             }
             @include media-breakpoint-down(md) {
-                font-variation-settings: "ital" 0, "wght" 700, "wdth" 30;
+                font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
             }
         }
         &.vl-1 {

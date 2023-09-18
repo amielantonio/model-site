@@ -28,7 +28,7 @@
         }
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         padding-left: 0;
         margin-top: 72px;
     }
