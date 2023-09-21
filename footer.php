@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="mt-md-9 mt-5">
 							<span class="text-primary fw-bold">Email </span>
-							<a href="mailto:" class="text-primary mt-3">hello@themodel.com.au</a>
+							<a href="mailto:hello@themodel.com.au" class="text-primary mt-3">hello@themodel.com.au</a>
 						</div>
 
 						<div class="mt-md-6 mt-5">
