@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div class="d-flex align-items-center bordered-content border-white pt-sm-0 pt-4 ">
                                 <div>
                                     <h4 class="mb-md-36px">Model throws out conventional ways of how rentals work.</h4>
-                                    <p class="article-content mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
+                                    <p class="article-content fs--base-lg mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
                                         For us, there is an equal importance between craft and community-building, and enduring materials matter just as much as the mental wellbeing of our future residents.
                                     </p>
                                 </div>
@@ -206,7 +206,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
             <section class="section--with-divider mt-3 position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-section.png" ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . "/img/black-divider.png" ?>" alt="">
                 <div class="centered">
                     <img src="<?php  echo get_stylesheet_directory_uri() . "/img/model-outline-cream.png"?>" alt="">
                 </div>
