@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <p class="section-title text-white">The future is calling. Will you join us in answering?</p>
                 <div class="mt-5">
-                    <a href="#" class="btn btn-outline-light">get in touch <?php get_template_part( 'template-parts/svg/arrow-2' ) ?></a>
+                    <a href="<?php echo site_url('contact')?>" class="btn btn-outline-light">get in touch <?php get_template_part( 'template-parts/svg/arrow-2' ) ?></a>
                 </div>
             </div>
         </div>

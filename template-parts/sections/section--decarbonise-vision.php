@@ -54,7 +54,7 @@
             <p class="fs--base-lg text-white mb-4 mb-md-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
 
             <div>
-                <a href="" class="btn btn-outline-light">our roadmap <?php get_template_part( 'template-parts/svg/arrow' )?></a>
+                <a href="<?php echo site_url('vision'); ?>" class="btn btn-outline-light">our roadmap <?php get_template_part( 'template-parts/svg/arrow' )?></a>
             </div>
         </div>
     </div>

@@ -11,7 +11,7 @@
                             Climate action, community building,  and design innovation with a focus on mental wellbeing - these are the pillars upon which Model is built. They set the foundation for everything we do and are the threads that weave through each decision we make.
                         </p>
 
-                        <a href="" type="button" class="btn btn-outline-melon mt-3">Learn More <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
+                        <a href="<?php echo site_url('concept'); ?>" type="button" class="btn btn-outline-melon mt-3">Learn More <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
                     </div>
                 </div>
                 <!-- end content container-->
@@ -36,7 +36,7 @@
         <div class="row vertical-link-container">
             <div class="content-container bg-cream position-relative content-container-bottom">
                 <div class="vertical-link d-flex mb-4 d-none d-md-block">
-                    <a href="#" class="">THE CONCEPT</a>
+                    <a href="<?php echo site_url('concept'); ?>" class="">THE CONCEPT</a>
                 </div>
             </div>
 
