@@ -66,13 +66,13 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--large-content bg-primary" id="section--large-content-primary">
                 <div class="container text-white px-sm-0">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sd-3">
                             <h2 class="main-title text-white">Purpose</h2>
                         </div>
-                        <div class="col-sm-9 with-line line-white"></div>
+                        <div class="col-sd-9 with-line line-white"></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-3 mt-3 ps-md-4">
+                        <div class="col-sd-8 offset-sd-3 mt-3 ps-sd-4 pt-sd-0 pt-5">
                             <p class="headline">
                                 To cultivate places where there is no compromise between taking care of ourselves, each other, and the planet.
                             </p>
@@ -298,18 +298,22 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- end row-->
 
                     <div class="row mt-6">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between flex-wrap">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/GBCA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/LFIA.png" ?>" alt="">
-                        </div>
-                        <div class="d-flex justify-content-between">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt="">
                         </div>
+                        <!-- <div class="d-flex justify-content-between">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt="">
+                        </div> -->
                     </div>
                 </div>
             </section>

@@ -304,3 +304,30 @@ h4 {
         font-variation-settings: "ital" 0, "wght" 700, "wdth" 125;
     }
 }
+
+
+// Responsive Headings
+h1,
+.h1 {
+    @include media-breakpoint-down(xl) {
+        font-size: 40px;
+    }
+}
+h2,
+.h2 {
+    @include media-breakpoint-down(xl) {
+        font-size: 34px;
+    }
+}
+h3,
+.h3 {
+    @include media-breakpoint-down(xl) {
+        font-size: 28px;
+    }
+}
+h4,
+.h4 {
+    @include media-breakpoint-down(xl) {
+        font-size: 20px;
+    } 
+}

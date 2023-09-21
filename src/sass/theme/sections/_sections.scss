@@ -191,6 +191,10 @@
             position: absolute;
             top: 54px;
             left: 23px;
+            @include media-breakpoint-down(xl) {
+                top: 38px;
+                left: 16px;
+            }
             @include media-breakpoint-down(sm) {
                 top: 17px;
                 left: 7px;

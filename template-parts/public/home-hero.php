@@ -7,7 +7,7 @@
         </video>
         
         <div class="d-sm-block d-none">
-            <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>">
+            <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>" class="desktop-image">
         </div>
 
         <div class="d-sm-none d-block">
@@ -29,7 +29,7 @@
 
     <div class="row hero-content">
         <div class="col-md-6 offset-md-6">
-            <h1 class="display-2 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
+            <h1 class="h1 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
         </div>
     </div>
     

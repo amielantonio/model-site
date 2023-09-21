@@ -8,9 +8,11 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
     let joshers = document.querySelector('josh-js');
 
-    if( joshers ) {
-        const josh = new Josh();
-    }
+    const josh = new Josh();
+
+    // if( joshers ) {
+    //     const josh = new Josh();
+    // }
     
 });
 
@@ -67,11 +69,6 @@ const formAnimate = () => {
             });
         }
     }
-    
-
-    
-    
-
     
 }
 

@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <section class="section--dates" id="">
                 <div class="container">
-                    <div class="d-flex flex-sm-row flex-column">
+                    <div class="d-flex flex-sm-row flex-column align-items-sd-center align-items-start">
                         <div class="date-title">
                             <span class="text-primary h2 fw-sm-700 fw-800">Now</span>
                         </div>
@@ -158,7 +158,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-2">
                         <div class="col-sm-8 mt-2">
                             <!-- Desktop Arrow -->
-                           <div class="d-sm-block d-none">
+                           <div class="arrow d-sm-block d-none">
                                 <svg width="1028" height="15" viewBox="0 0 1028 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1027.71 8.20706C1028.1 7.81654 1028.1 7.18337 1027.71 6.79285L1021.34 0.428889C1020.95 0.0383643 1020.32 0.0383644 1019.93 0.428889C1019.54 0.819413 1019.54 1.45258 1019.93 1.8431L1025.59 7.49996L1019.93 13.1568C1019.54 13.5473 1019.54 14.1805 1019.93 14.571C1020.32 14.9615 1020.95 14.9615 1021.34 14.571L1027.71 8.20706ZM8.74228e-08 8.50005L1027 8.49996L1027 6.49996L-8.74228e-08 6.50005L8.74228e-08 8.50005Z" fill="#CB6959"/>
                                 </svg>

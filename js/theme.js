@@ -6148,10 +6148,12 @@
     mainNavEvents();
     formAnimate();
     mobileNav();
-    let joshers = document.querySelector('josh-js');
-    if (joshers) {
-      new Josh();
-    }
+    document.querySelector('josh-js');
+    new Josh();
+
+    // if( joshers ) {
+    //     const josh = new Josh();
+    // }
   });
 
   /**
