@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-
+ 
 
     <div class="floating-title-container d-none d-lg-block">
         <div class="floating-title">
@@ -48,7 +48,7 @@
     </div>
 
     <div class="container">
-        <div class="col-md-8 offset-md-4 p-md-4">
+        <div class="col-md-8 offset-sd-4 p-sd-4">
             <h2 class="section-title text-white mb-4 mb-md-6">Vision</h2>
             <p class="section-subtitle text-white mb-4 mb-md-6">Where we begin matters and so does the question of - where do we want to go from here?</p>
             <p class="fs--base-lg text-white mb-4 mb-md-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>

@@ -364,12 +364,7 @@
     background: $melon;
     padding-bottom: 255px;
     position: relative;
-    @include media-breakpoint-down(md) {
-        padding-bottom: 96px;
-        .section-subtitle {
-            font-size: 28px;
-        }
-    }
+    
     &::before {
         content: "";
         background: url(../img/vision-section.png) no-repeat;
@@ -381,6 +376,20 @@
         position: absolute;
         z-index: -1;
         transform: translateY(-40%);
+    }
+
+    @include media-breakpoint-down(lg) {
+        &::before {
+            background: url(../img/mobile-vision-section.png) no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 96px;
+        .section-subtitle {
+            font-size: 28px;
+        }
     }
 }
 

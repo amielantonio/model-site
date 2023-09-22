@@ -25062,14 +25062,6 @@ body {
   padding-bottom: 255px;
   position: relative;
 }
-@media (max-width: 767.98px) {
-  .section--vision {
-    padding-bottom: 96px;
-  }
-  .section--vision .section-subtitle {
-    font-size: 28px;
-  }
-}
 .section--vision::before {
   content: "";
   background: url(../img/vision-section.png) no-repeat;
@@ -25081,6 +25073,19 @@ body {
   position: absolute;
   z-index: -1;
   transform: translateY(-40%);
+}
+@media (max-width: 991.98px) {
+  .section--vision::before {
+    background: url(../img/mobile-vision-section.png) no-repeat;
+  }
+}
+@media (max-width: 767.98px) {
+  .section--vision {
+    padding-bottom: 96px;
+  }
+  .section--vision .section-subtitle {
+    font-size: 28px;
+  }
 }
 
 .section--call-to-action {
