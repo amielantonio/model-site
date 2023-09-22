@@ -25775,12 +25775,13 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   margin-top: 20px;
   padding: 0 25px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 1023.98px) {
   .callout h3, .callout .h3 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .callout p {
     padding: 0;
+    font-size: 18px;
   }
 }
 

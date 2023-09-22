@@ -33,12 +33,13 @@
         padding: 0 25px;
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(sd) {
         h3  {
-            font-size: 34px;
+            font-size: 28px;
         }
         p {
             padding: 0;
+            font-size: 18px;
         }
     }
 }

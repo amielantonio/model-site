@@ -92,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <div class="col-sm-6 mt-sm-0 mt-6">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3 img-hoverable">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3 img-hoverable img-fluid">
                         </div>
                     </div>
 
@@ -223,7 +223,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
 
                     <div class="row mt-6">
-                        <div class="col-sm-4 ps-md-0 pe-md-3">
+                        <div class="col-sd-4 col-8 offset-sd-0 offset-2 ps-md-0 pe-md-3">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/anti-status-quo.png"?>" alt="">
                                 <figcaption class="">
@@ -233,17 +233,17 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sd-4 col-8 offset-sd-0 offset-2">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/always-accountable.png" ?>" alt="">
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Always <br class="d-sm-block d-none" />accountable</h3>
+                                    <h3 class="text-white">Always <br class="d-sd-block d-none" />accountable</h3>
                                     <p class="text-white">Actions drive change, and that’s what we are here to do. We will happily be measured by the impact we make.</p>
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-sm-4 ps-md-3 pe-0">
+                        <div class="col-sd-4 col-8 offset-sd-0 offset-2 ps-md-3 pe-0">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/open-and-agile.png" ?>" alt="">
                                 <figcaption class="">
@@ -259,23 +259,23 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- end row-->
 
                     <div class="row mt-md-60px">
-                        <div class="col-sm-4 offset-sm-2 ps-md-0 pe-md-3">
+                        <div class="col-sd-4 col-8 offset-2 ps-md-0 pe-md-3">
                             <figure class="callout text-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/community-mavens.png" ?>" alt="">
                                 <figcaption>
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Community<br class="d-sm-block d-none"  /> mavens</h3>
+                                    <h3 class="text-white">Community<br class="d-sd-block d-none"  /> mavens</h3>
                                     <p class="text-white px-md-43px">Our focus on meaningful connection is powered by experience, empathy and expertise. We foster communities that thrive.</p>
                                 </figcaption>
                             </figure>
                             
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sd-4 col-8 offset-sd-0 offset-2">
                             <figure class="text-center callout">
                                 <img src="<?php echo get_stylesheet_directory_uri() . "/img/proud-placemakers.png" ?>" alt="">
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
-                                    <h3 class="text-white">Proud <br class="d-sm-block d-none"  /> Placemakers</h3>
+                                    <h3 class="text-white">Proud <br class="d-sd-block d-none"  /> Placemakers</h3>
                                     <p class="text-white">Our customers are our sole reason for being, this is something we never forget. With a laser focus on their needs and an obsession over every detail, we create a unique sense of place and homes like no other.</p>
                                 </figcaption>
                             </figure>
