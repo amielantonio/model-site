@@ -25637,8 +25637,10 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   height: 100vh;
   width: 100vw;
   background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  display: flex;
+  align-items: end;
 }
 .section--hero .hero-scroll-button {
   position: absolute;
@@ -25671,9 +25673,12 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   }
 }
 .section--hero .hero-content {
-  position: absolute;
+  position: relative;
   bottom: 0;
   padding-bottom: 156px;
+  width: 100%;
+  margin: 0 auto !important;
+  display: block;
 }
 
 .site-footer {

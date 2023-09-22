@@ -122,9 +122,11 @@
     height: 100vh;
     width: 100vw;
 
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover!important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    display: flex;
+    align-items: end;
 
     .hero-scroll-button {
         position: absolute;
@@ -159,9 +161,11 @@
     }
 
     .hero-content {
-        position: absolute;
+        position: relative;
         bottom: 0;
         padding-bottom: 156px;
-        // width: 100%;
+        width: 100%;
+        margin: 0 auto !important;
+        display: block;
     }
 }

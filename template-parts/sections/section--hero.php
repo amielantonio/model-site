@@ -24,9 +24,9 @@ if( $haveGradient) {
 
 <section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? $background : "" ?>">
     
-    <div class="container">
-        <div class="row hero-content">
-            <div class="col-md-7 col-12 px-sm-1">
+    <div class="container hero-content">
+        <div class="row">
+            <div class="col-md-6 col-12 px-sm-1">
                 <small class="subtitle"><?php echo $subtitle ?></small>
                 <h1 class="title"><?php echo $title?></h1>
             </div>
