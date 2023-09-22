@@ -137,7 +137,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6 pe-lg-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
                                 <div class="pe-lg-9">
-                                    <h4 class="mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form address all three issues?</h4>
+                                    <h4 class="mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form help address all three issues?</h4>
                                     <p class="headline-body mb-0 mt-lg-0 mt-5 pb-lg-0 pb-5">
                                         It spurred the vision to create something better, something worth sharing and something worth acting upon.
                                     </p>
@@ -152,7 +152,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-md-90px mt-5">
                         <div class="col-lg-6">
                             <p class="article-content mb-4 pe-lg-8">
-                                Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary project that echoes from existing developments Rory has led.
+                                Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary enterprise that echoes from existing developments Rory has led.
                             </p>
                             <p class="article-content mb-0 pe-lg-9 mt-lg-0 mt-5">
                                 This includes the development of carbon neutral, mid-rise residences in Australia as well as the ethical luxury resort - Song Saa Private Island, which has amassed a number of awards since opening and is regularly voted as one of the world’s top 10 hotels.
@@ -160,7 +160,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                         <div class="col-lg-6">
                             <p class="article-content mb-4 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
-                                Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge certified development.
+                                Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge development.
                             </p>
                         
                             <p class="article-content mb-0 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
@@ -190,11 +190,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </p>
 
                                 <p class="article-body article-content mb-36px">
-                                    Model is a purpose-first developer that’s leading the race to meet our emissions reductions target. One where decarbonisation isn’t a vague vision; it’s a commitment etched into the very foundation of who we are. Model is more than just a structure, it is a shift in redefining how we can and should live. Join us. 
+                                    Model is a purpose-first developer that’s leading the race to meet our emissions reductions target. One where decarbonisation isn’t a vague vision; it’s a commitment etched into the very foundation of who we are. Model is more than just a structure, it is a shift in redefining how we can and should live.
                                 </p>
 
                                 <p class="article-body article-content">
-                                    To learn more about our founder, Rory, ,<br>
+                                    To learn more about our founder, Rory ,<br>
                                     visit his Linkedin profile <a href="https://www.linkedin.com/in/rory-hunter-melbourne/" target="_blank" class="text-dark">here.</a>
                                 </p>
 
@@ -277,7 +277,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <figcaption class="">
                                     <small class="text-primary">We are</small>
                                     <h3 class="text-white">Proud <br class="d-sd-block d-none"  /> Placemakers</h3>
-                                    <p class="text-white">Our customers are our sole reason for being, this is something we never forget. With a laser focus on their needs and an obsession over every detail, we create a unique sense of place and homes like no other.</p>
+                                    <p class="text-white">Our residents are our reason for being, this is something we never forget. With a laser focus on their needs and an obsession over every detail, we create a unique sense of place and homes like no other.</p>
                                 </figcaption>
                             </figure>
                         </div>

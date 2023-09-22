@@ -94,13 +94,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                     'list'          => [
                         'Minimum 40% reduction in embodied carbon in every project from day one',
                         'A target for carbon positive developments with carbon neutrality as the bare minimum',
+                        'All electric and 100% powered by renewables',
                         'Restoration of local biodiversity loss',
                         'Sustainable and ethical funding',
                         '6 Star Green Star rating',
-                        '6 Star NABERS',
-                        '10 Star NatHERS',
-                        'Energy from electric sources and 100% powered by renewables',
-                        'Living Building Challenge Certification, the topmost international rating'
+                        '9 Star NatHERS',
+                        'Living Building Challenge Certification'
                     ]
                 ]); ?>
 
