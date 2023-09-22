@@ -24,7 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     get_template_part('template-parts/sections/section--hero', '' , [
         'title'     => 'Developing Change',
         'subtitle'  => 'About Model',
-        'noScroll'  => true
+        'noScroll'  => true,
+        'gradient'  => true,
     ])
     ?>
 

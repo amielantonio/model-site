@@ -22,7 +22,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php get_template_part('template-parts/sections/section--hero', '' , [
         'title'     => 'Get in Touch',
         'subtitle'  => 'Contact',
-        'noScroll'  => false
+        'noScroll'  => false,
+        'gradient'  => true
     ])?>
 
     <div id="content" tabindex="-1" class="">

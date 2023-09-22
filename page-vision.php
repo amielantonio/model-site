@@ -23,7 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php get_template_part('template-parts/sections/section--hero', '' , [
         'title'     => 'Beyond the Now',
         'subtitle'  => 'Our VIsion',
-        'noScroll'  => true
+        'noScroll'  => true,
+        'gradient' =>  true,
     ])?>
 
     <div id="content" tabindex="-1" class="">
