@@ -6,7 +6,7 @@ html {
     }
 }
 
-.home .wrapper {
+.wrapper {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -73,6 +73,15 @@ body {
     top: 25%;
     left: 15%;
     transform: translate(6%, 3%);
+
+    @include media-breakpoint-down(xxl) {
+        left: 10%;
+        transform: translate(-3%, 3%);
+    }
+
+    @include media-breakpoint-down(sd) {
+        transform: translate(-7%, 3%);
+    }
 }
 
 .width-300 {

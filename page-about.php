@@ -18,16 +18,17 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' ); 
 
 ?>
+<div class="wrapper" id="page-wrapper">
+    <!-- Header -->
+    <?php 
+    get_template_part('template-parts/sections/section--hero', '' , [
+        'title'     => 'Developing Change',
+        'subtitle'  => 'About Model',
+        'noScroll'  => true
+    ])
+    ?>
+
 <div class="" id="content" tabindex="-1">
-
-    <div>
-        <?php get_template_part('template-parts/sections/section--hero', '' , [
-            'title'     => 'Developing Change',
-            'subtitle'  => 'About Model',
-            'noScroll'  => true
-        ])?>
-    </div>
-
     <div class="row">
 
         <?php
@@ -41,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--content bg-cream" id="next-section">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-sm-5 pe-sm-0 mt-sm-5">
+                        <div class="col-sd-5 pe-sd-0 mt-sm-5">
                             <h4 class="h4-title">
                                 Model is a build-to-rent development, operations and investment group that's an ally to renters and the planet.
                             </h4>
@@ -54,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 Development done different. <b>That's Model</b>
                             </p>
                         </div>
-                        <div class="col-sm-6 offset-sm-1 pe-sm-0 ps-sm-4">
+                        <div class="col-sd-6 col-lg-10 offset-sd-1 offset-lg-2 pe-sd-0 ps-sd-4">
                             <img src="<?php echo get_stylesheet_directory_uri(). "/img/about-page-content.png" ?>" alt="">
                         </div>
                     </div>
@@ -160,7 +161,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p class="article-content mb-4 ps-md-3 pe-md-6">
                                 Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge certified development.
                             </p>
-                           
+                        
                             <p class="article-content mb-0 ps-md-3 pe-md-6">
                                 He is also the founder of The Song Saa Foundation, an independent NGO dedicated to preserving Cambodia’s marine environment while providing jobs, healthcare and education to the Koh Rong Archipelago.
                             </p>
@@ -180,7 +181,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </p>
 
                                 <p class="article-body article-content mb-36px loew-semibold">
-                                   This will be a built form that dismantles the rental norms. 
+                                This will be a built form that dismantles the rental norms. 
                                 </p>
 
                                 <p class="article-body article-content mb-36px">
@@ -193,7 +194,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                                 <p class="article-body article-content">
                                     To learn more about our founder, Rory, ,<br>
-                                    visit his Linkedin profile <a href="#" class="text-dark">here.</a>
+                                    visit his Linkedin profile <a href="https://www.linkedin.com/in/rory-hunter-melbourne/" target="_blank" class="text-dark">here.</a>
                                 </p>
 
                             </div>
@@ -330,7 +331,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </div><!-- .row -->
 
-</div><!-- #content -->
+    </div><!-- #content -->
+
+</div>
+<!-- END WRAPPER -->
+
 
 
 <?php 

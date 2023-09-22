@@ -29,7 +29,7 @@
     </div>
 
 
-    <div class="floating-title-container d-none d-md-block">
+    <div class="floating-title-container d-none d-lg-block">
         <div class="floating-title">
             <span class="text-primary">DECARBONISATION</span>
         </div>
@@ -41,7 +41,7 @@
 <section class="section--vision" id="section--vision">
 
     <!-- floating title -->
-    <div class="floating-title-container d-none d-md-block" style="margin-top: -8%">
+    <div class="floating-title-container d-none d-lg-block" style="margin-top: -8%">
         <div class="floating-title">
             <span class="text-white">VISION</span>
         </div>

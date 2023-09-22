@@ -35,7 +35,7 @@
 
         <div class="row vertical-link-container">
             <div class="content-container bg-cream position-relative content-container-bottom">
-                <div class="vertical-link d-flex mb-4 d-none d-md-block">
+                <div class="vertical-link d-flex mb-4 d-none d-sd-block">
                     <a href="<?php echo site_url('concept'); ?>" class="">THE CONCEPT</a>
                 </div>
             </div>

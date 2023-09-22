@@ -244,6 +244,10 @@ h4 {
     font-style: normal;
     line-height: 1.1;
     font-variation-settings: "ital" 0, "wght" 800, "wdth" 125;
+
+    @include media-breakpoint-down(xxl) {
+        font-size: $h2-font-size;
+    }
   
     @include media-breakpoint-down(lg) {
         font-size: $h3-font-size;
@@ -309,25 +313,25 @@ h4 {
 // Responsive Headings
 h1,
 .h1 {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
         font-size: 40px;
     }
 }
 h2,
 .h2 {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
         font-size: 34px;
     }
 }
 h3,
 .h3 {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
         font-size: 28px;
     }
 }
 h4,
 .h4 {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
         font-size: 20px;
     } 
 }

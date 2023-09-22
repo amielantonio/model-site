@@ -130,6 +130,9 @@
     // margin-bottom: -1px;
     z-index: -1;
     margin-bottom: -1px;
+    @include media-breakpoint-down(sd) {
+        margin-bottom: -4px;
+    }
 }
 
 .section--concept {
@@ -191,6 +194,10 @@
             position: absolute;
             top: 54px;
             left: 23px;
+            @include media-breakpoint-down(xl) {
+                top: 50px;
+                left: 20px;
+            }
             @include media-breakpoint-down(xl) {
                 top: 38px;
                 left: 16px;
@@ -551,6 +558,10 @@
     }
     .arrow {
         flex-basis: 53%;
+
+        svg {
+            width: 100%;
+        }
     }
     .right-title {
         flex-basis: 35%;

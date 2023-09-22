@@ -27,8 +27,11 @@
             @include media-breakpoint-down(laptop) {
                 font-size: 2.5em;
             }
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(xxl) {
                 font-size: 2em;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 1.5em;
             }
         }
  
@@ -94,10 +97,18 @@
             position: absolute;
             bottom: 40px;
             right: 20vw;
+            @include media-breakpoint-down(xxl) {
+                bottom: 20px;
+                right: 20vw;
+                width: 80px;
+            }
             @include media-breakpoint-down(xl) {
                 bottom: 5px;
                 right: 19vw;
                 width: 80px;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 60px;
             }
             @include media-breakpoint-down(sm) {
                 bottom: 120px;
