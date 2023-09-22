@@ -6081,10 +6081,13 @@
     mainNavEvents();
     formAnimate();
     mobileNav();
-    var joshers = document.querySelector('josh-js');
-    if (joshers) {
-      new Josh();
-    }
+    scrollResizeBinding();
+    document.querySelector('josh-js');
+    new Josh();
+
+    // if( joshers ) {
+    //     const josh = new Josh();
+    // }
   });
 
   /**
@@ -6134,13 +6137,14 @@
    * Animate the logo
    */
   var logoAnimate = function logoAnimate() {
-    console.log('logo animate initiated');
+    // console.log('logo animate initiated')
+
     var $main = document.querySelector('.custom-logo-link');
     $main.addEventListener('mouseenter', function () {
-      console.log('logo enter');
+      // console.log('logo enter');
     });
     $main.addEventListener('mouseleave', function () {
-      console.log('logo leave');
+      // console.log('logo leave');
     });
   };
 
@@ -6148,7 +6152,7 @@
    * Main navigation event handler, add all custom events for the header here
    */
   var mainNavEvents = function mainNavEvents() {
-    console.log('nav events initiated');
+    // console.log('nav events initiated')
 
     // add the onscroll event under main nav events for the header
     window.onscroll = function () {
@@ -6193,6 +6197,25 @@
         $mobileNav.classList.remove('active');
         $logo.classList.remove('mobile-active');
       }
+    });
+  };
+  var scrollResizeBinding = function scrollResizeBinding() {
+    console.log('binding');
+    window.addEventListener('scroll', function (e) {
+      var img = document.querySelectorAll('.saturates');
+      var doc = document.documentElement;
+      var ch = doc.clientHeight;
+      img.forEach(function (_i) {
+        console.log(_i.getBoundingClientRect().top);
+        console.log("ch:" + ch);
+        if (ch / 2.5 > _i.getBoundingClientRect().top) {
+          _i.classList.add('hovered');
+        } else if (0 > _i.getBoundingClientRect().top) {
+          _i.classList.remove('hovered');
+        } else {
+          _i.classList.remove('hovered');
+        }
+      });
     });
   };
 

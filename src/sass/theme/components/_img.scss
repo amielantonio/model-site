@@ -4,7 +4,18 @@
     filter: grayscale(1);
     transition: 0.3s filter;
 
+    &.open,
     &:hover {
+        filter: grayscale(0);
+    }
+}
+
+.grays {
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.3s filter;
+
+    &.hovered {
         filter: grayscale(0);
     }
 }
@@ -15,6 +26,16 @@
     transition: 0.3s filter;
 
     &:hover {
+        filter: saturate(1);
+    }
+}
+
+.saturates {
+    cursor: pointer;
+    filter: saturate(0);
+    transition: 0.3s filter;
+
+    &.hovered {
         filter: saturate(1);
     }
 }

@@ -6148,6 +6148,7 @@
     mainNavEvents();
     formAnimate();
     mobileNav();
+    scrollResizeBinding();
     document.querySelector('josh-js');
     new Josh();
 
@@ -6203,13 +6204,14 @@
    * Animate the logo
    */
   const logoAnimate = () => {
-    console.log('logo animate initiated');
+    // console.log('logo animate initiated')
+
     const $main = document.querySelector('.custom-logo-link');
     $main.addEventListener('mouseenter', () => {
-      console.log('logo enter');
+      // console.log('logo enter');
     });
     $main.addEventListener('mouseleave', () => {
-      console.log('logo leave');
+      // console.log('logo leave');
     });
   };
 
@@ -6217,7 +6219,7 @@
    * Main navigation event handler, add all custom events for the header here
    */
   const mainNavEvents = () => {
-    console.log('nav events initiated');
+    // console.log('nav events initiated')
 
     // add the onscroll event under main nav events for the header
     window.onscroll = function () {
@@ -6257,6 +6259,25 @@
       } else {
         $mobileNav.classList.remove('active');
         $logo.classList.remove('mobile-active');
+      }
+    });
+  };
+  const scrollResizeBinding = () => {
+    console.log('binding');
+    window.addEventListener('scroll', function (e) {
+      let img = document.querySelectorAll('.saturates');
+      let doc = document.documentElement;
+      let ch = doc.clientHeight;
+      if (img) {
+        img.forEach(_i => {
+          console.log(_i.getBoundingClientRect().top);
+          console.log("ch:" + ch);
+          if (ch / 2.5 > _i.getBoundingClientRect().top) {
+            _i.classList.add('hovered');
+          } else {
+            _i.classList.remove('hovered');
+          }
+        });
       }
     });
   };

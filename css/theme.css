@@ -25077,6 +25077,7 @@ body {
 @media (max-width: 991.98px) {
   .section--vision::before {
     background: url(../img/mobile-vision-section.png) no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 767.98px) {
@@ -25464,8 +25465,18 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   filter: grayscale(1);
   transition: 0.3s filter;
 }
-.img-greyscale-hoverable:hover,
+.img-greyscale-hoverable.open, .img-greyscale-hoverable:hover,
+.img-hoverable.open,
 .img-hoverable:hover {
+  filter: grayscale(0);
+}
+
+.grays {
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: 0.3s filter;
+}
+.grays.hovered {
   filter: grayscale(0);
 }
 
@@ -25475,6 +25486,15 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   transition: 0.3s filter;
 }
 .img-sat-hoverable:hover {
+  filter: saturate(1);
+}
+
+.saturates {
+  cursor: pointer;
+  filter: saturate(0);
+  transition: 0.3s filter;
+}
+.saturates.hovered {
   filter: saturate(1);
 }
 
@@ -25616,7 +25636,7 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
 .section--hero {
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -25654,7 +25674,6 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
   position: absolute;
   bottom: 0;
   padding-bottom: 156px;
-  width: 100%;
 }
 
 .site-footer {

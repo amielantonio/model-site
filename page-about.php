@@ -93,7 +93,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <div class="col-lg-6 mt-lg-0 mt-6">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-lg-3 img-hoverable img-fluid">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-lg-3 img-hovesrable img-fluid">
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <div class="col-lg-6 mt-lg-0 mt-5">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-lg-3 img-hoverable">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-lg-3 saturates">
                         </div>
                     </div>
 

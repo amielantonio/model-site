@@ -1,6 +1,6 @@
 <section class="section--call-to-action">
     <div class="bg-hoverable">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/img/cta-banner.png" ?>" alt="" class="img-sat-hoverable full-width">
+        <img src="<?php echo get_stylesheet_directory_uri() . "/img/cta-banner.png" ?>" alt="" class="saturates full-width">
     </div>
     <div class="container content">
         <div class="row">
