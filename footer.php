@@ -42,7 +42,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						
 						<div class="mt-sm-3 mt-5">
 							<p class="text-primary lh--md">
-								Model acknowledges the Traditional Owners of Country throughout Australia. We pay our respects to Elders past and present.
+							Model respectfully acknowledges the Traditional Owners of the land on which we live, work and
+create, and we pay ourrespects to Elders past and present. We recognise the unique place held by
+Aboriginal and Torres Strait Islander peoples as the original owners and custodians of the lands and
+waterways and we acknowledge their enduring cultural practices of caring for Country. 
 							</p>
 						</div>
 
