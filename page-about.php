@@ -81,8 +81,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <div class="row mt-5">
                         
-                        <div class="col-sm-6 pe-md-5 d-flex align-items-center">
-                            <div class="d-flex align-items-center bordered-content border-white pt-sm-0 pt-4 ">
+                        <div class="col-lg-6 pe-md-5 d-flex align-items-center">
+                            <div class="d-flex align-items-center bordered-content border-white pt-lg-0 pt-4  =pb-lg-0 pb-4">
                                 <div>
                                     <h4 class="mb-md-36px">Model throws out conventional ways of how rentals work.</h4>
                                     <p class="article-content fs--base-lg mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
@@ -91,19 +91,19 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 mt-sm-0 mt-6">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-md-3 img-hoverable img-fluid">
+                        <div class="col-lg-6 mt-lg-0 mt-6">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-purpose-featured.png" ?>" alt="" class="ms-lg-3 img-hoverable img-fluid">
                         </div>
                     </div>
 
                     <div class="row mt-md-8 mt-5">
-                        <div class="col-sm-6">
+                        <div class="col-lg-6">
                             <p class="article-content mb-0 pe-md-9">
                                 Our rental communities combine the magnetism of the world's most revered cultural hubs, the heartbeat of a home with innovative design, and the urgency to decarbonise our planet through the framework of regenerative development.
                             </p>
                         </div>
-                        <div class="col-sm-6 mt-sm-0 mt-6">
-                            <p class="article-content mb-0 ps-md-3 pe-md-6">
+                        <div class="col-lg-6 mt-lg-0 mt-6">
+                            <p class="article-content mb-0 ps-lg-3 pe-lg-6">
                                 Model is where the experience of hotel hospitality meets the warmth of family - an enriching and soulful space that feels not just lived in, but alive - creating the environment for renters to feel supported, grounded and empowered with a sense of certainty and security in their living situation.
                             </p>
                         </div>
@@ -119,13 +119,13 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--large-content bg-white" id="section--large-content-primary">
                 <div class="container text-dark px-sm-0">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-lg-3">
                             <h2 class="main-title">Story</h2>
                         </div>
-                        <div class="col-sm-9 with-line line-black"></div>
+                        <div class="col-lg-9 with-line line-black"></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-3 mt-1 ps-md-4">
+                        <div class="col-lg-8 offset-lg-3 mt-lg-1 mt-5 ps-lg-4">
                             <p class="headline">
                                 Model began as a question and an intention. We knew we were faced with a climate, housing and mental health crisis in Australia.
                             </p>
@@ -133,36 +133,36 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <div class="row mt-6">
                         
-                        <div class="col-sm-6 pe-md-5 d-flex align-items-center">
+                        <div class="col-lg-6 pe-lg-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
-                                <div class="pe-md-9">
-                                    <h4 class="mb-md-36px mt-sm-0 mt-5">We asked ourselves - not if, but how can the built form address all three issues?</h4>
-                                    <p class="headline-body mb-0 mt-sm-0 mt-5 pb-sm-0 pb-5">
+                                <div class="pe-lg-9">
+                                    <h4 class="mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form address all three issues?</h4>
+                                    <p class="headline-body mb-0 mt-lg-0 mt-5 pb-lg-0 pb-5">
                                         It spurred the vision to create something better, something worth sharing and something worth acting upon.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 mt-sm-0 mt-5">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-md-3 img-hoverable">
+                        <div class="col-lg-6 mt-lg-0 mt-5">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-featured-colored.png" ?>" alt="" class="ms-lg-3 img-hoverable">
                         </div>
                     </div>
 
                     <div class="row mt-md-90px mt-5">
-                        <div class="col-sm-6">
-                            <p class="article-content mb-4 pe-md-8">
+                        <div class="col-lg-6">
+                            <p class="article-content mb-4 pe-lg-8">
                                 Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary project that echoes from existing developments Rory has led.
                             </p>
-                            <p class="article-content mb-0 pe-md-9">
+                            <p class="article-content mb-0 pe-lg-9 mt-lg-0 mt-5">
                                 This includes the development of carbon neutral, mid-rise residences in Australia as well as the ethical luxury resort - Song Saa Private Island, which has amassed a number of awards since opening and is regularly voted as one of the world’s top 10 hotels.
                             </p>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="article-content mb-4 ps-md-3 pe-md-6">
+                        <div class="col-lg-6">
+                            <p class="article-content mb-4 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
                                 Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge certified development.
                             </p>
                         
-                            <p class="article-content mb-0 ps-md-3 pe-md-6">
+                            <p class="article-content mb-0 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
                                 He is also the founder of The Song Saa Foundation, an independent NGO dedicated to preserving Cambodia’s marine environment while providing jobs, healthcare and education to the Koh Rong Archipelago.
                             </p>
                         </div>
@@ -170,11 +170,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- -end row -->
 
                     <div class="row mt-sm-90px mt-4">
-                        <div class="col-sm-6">
+                        <div class="col-lg-6">
                             <img src="<?php echo get_stylesheet_directory_uri() . "/img/about-story-banner.png" ?>" alt="">
                         </div>
-                        <div class="col-sm-6">
-                            <div class="ps-md-3 pe-md-3">
+                        <div class="col-lg-6 mt-lg-0 mt-5">
+                            <div class="ps-lg-3 pe-lg-3">
                                 <h3 class="headline mb-md-43px">Making an impact at home</h3>
                                 <p class="article-body article-content mb-43px pe-md-3">
                                     Having travelled, lived in and experienced cultures around the world, Rory believes his greatest contribution can be back home in Australia, where the frameworks, policies and institutions have the capacity to amplify ideas and entrepreneurship. For Rory, the next decade is dedicated to addressing long-term challenges including climate action and biodiversity loss, and Model is a distinct example of how we do that. 
@@ -216,8 +216,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="bg-dark pb-125px">
                 <div class="container px-md-0">
                     <div class="row">
-                        <div class="col-sm-7 with-line line-white"></div>
-                        <div class="col-sm-5 text-end">
+                        <div class="col-lg-7 with-line line-white order-lg-0 order-1"></div>
+                        <div class="col-lg-5 text-lg-end mt-lg-0 mt-5">
                             <h2 class="h1 text-white fw-800">Model Values</h2>
                         </div>
                     </div>
@@ -287,10 +287,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="py-125px bg-cream d-sm-block d-none">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-lg-5">
                             <h2 class="h1 fw-800">Collaborators</h2>
                         </div>
-                        <div class="col-sm-6 offset-sm-1 ps-md-4 pt-3">
+                        <div class="col-lg-6 offset-lg-1 ps-md-4 pt-3">
                             <p class="lh--md">
                                 It takes collective effort to make change happen and we're proud to partner with these leaders who are as determined as we are in making a lasting and meaningful impact on the way we live.
                             </p>
@@ -299,7 +299,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- end row-->
 
                     <div class="row mt-6">
-                        <div class="d-flex justify-content-between flex-wrap">
+                        <div class="d-flex justify-sm-content-between justify-content-around flex-wrap">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/GBCA.png" ?>" alt="">
