@@ -16,7 +16,7 @@ if( isset($args['noScroll']) ) {
 $haveGradient = isset($args['gradient']) ? $args['gradient'] : false; 
 
 if( $haveGradient) {
-    $background = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url({$featuredImage}), lightgray 50% / cover no-repeat;";
+    $background = "background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%), url({$featuredImage}), lightgray 50% / cover no-repeat;";
 } else {
     $background = "background-image: url({$background});";
 }
