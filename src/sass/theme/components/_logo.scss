@@ -2,6 +2,8 @@
     position: relative;
 
     .custom-logo {
+        width: 46px;
+        height: 31px;
         &:not(.custom-logo-m) {
             position: absolute;
             left: 37px;
@@ -21,16 +23,16 @@
         
         }
         .custom-logo-o {
-            left: 44px;
+            left: 37px;
         }
         .custom-logo-d {
-            left: 74px;
+            left: 67px;
         }
         .custom-logo-e {
-            left: 105px;
+            left: 98px;
         }
         .custom-logo-l {
-            left: 135px;
+            left: 128px;
         }
     }
     

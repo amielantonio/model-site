@@ -41,23 +41,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-5 fs--base-sm pe-md-7">
 						
 						<div class="mt-sm-3 mt-5">
-							<p class="text-primary lh--md">
-							Model respectfully acknowledges the Traditional Owners of the land on which we live, work and
-create, and we pay our respects to Elders past and present. We recognise the unique place held by
-Aboriginal and Torres Strait Islander peoples as the original owners and custodians of the lands and
-waterways and we acknowledge their enduring cultural practices of caring for Country. 
-							</p>
+							<div class="">
+								<span class="text-primary fw-bold">Email </span>
+								<a href="mailto:hello@themodel.com.au" class="text-primary mt-3">hello@themodel.com.au</a>
+							</div>
+
+							<div class="mt-md-6 mt-5">
+								<span class="text-primary fw-bold">Decarbonisation white paper</span><br>
+								<a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-primary d-block pt-2">Download our white paper</a>
+							</div>
 						</div>
 
-						<div class="mt-md-9 mt-5">
-							<span class="text-primary fw-bold">Email </span>
-							<a href="mailto:hello@themodel.com.au" class="text-primary mt-3">hello@themodel.com.au</a>
-						</div>
-
-						<div class="mt-md-6 mt-5">
-							<span class="text-primary fw-bold">Decarbonisation white paper</span><br>
-							<a href="" class="text-primary d-block pt-2">Download our white paper</a>
-						</div>
+						
 
 					</div>
 					<!-- -END COL -->
@@ -84,6 +79,17 @@ waterways and we acknowledge their enduring cultural practices of caring for Cou
 						<?php get_template_part( 'template-parts/public/social-media' ) ?>
 					</div>
 					<!-- END COL-->
+				</div>
+
+				<div class="row mt-md-5">
+					<div class="col-lg-10 pe-lg-5">
+						<p class="text-primary lh--md fs--base-sm">
+							Model respectfully acknowledges the Traditional Owners of the land on which we live, work and
+	create, and we pay our respects to Elders past and present. We recognise the unique place held by
+	Aboriginal and Torres Strait Islander peoples as the original owners and custodians of the lands and
+	waterways and we acknowledge their enduring cultural practices of caring for Country. 
+						</p>
+					</div>
 				</div>
 
 				<div class="row mt-md-10">

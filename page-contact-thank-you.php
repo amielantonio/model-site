@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <main class="site-main" id="main">
 
-           <section class="section--contact">
+           <section class="section--contact" id="thank-you-submission">
             <div class="container">
                     <div class="row">
                         <div class="col-lg-3 order-sm-0 order-2 mt-sm-0 mt-6">
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </p>
 
                                 <p class="mt-5">
-                                    If you haven’t already, be sure to <a href="" class="text-dark">download our white paper</a> on decarbonising the future now.
+                                    If you haven’t already, be sure to <a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-dark">download our white paper</a> on decarbonising the future now.
                                 </p>
 
                                 <p class="mt-5">

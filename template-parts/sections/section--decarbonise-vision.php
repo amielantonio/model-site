@@ -14,15 +14,15 @@
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-6 text-white fs--base-lg">
                 <p class="mb-6 fw-300 lh--md fs--sm-base-lg fs--base-md">
-                    A net-zero carbon future cannot happen without decarbonising buildings, since buildings and the construction sector account account for 40% of all global energy-related CO2 emissions. 
+                We are at a moment of historical significance - where a shift towards a Net Zero future is both urgent and inevitable. The climate emergency is not a distant threat but a present reality, demanding immediate action. Policy changes are not gradual but increasingly rapid, and there is a coming tidal wave of net-zero capital that is eager to be deployed. 
                 </p>
 
                 <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
-                    Together with the ____, we have identified a structure and set of practices to guide building policies, including energy efficient retrofits, installing high performance equipment and promoting renewable energy. 
+                This white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. Read more to uncover why Tomorrow’s Too Late and what we can do now.
                 </p>
 
                 <div class="mt-6">
-                    <a href="#" class="btn btn-outline-melon">Download our white paper <?php get_template_part( 'template-parts/svg/arrow' )?></a>
+                    <a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="btn btn-outline-melon">Download our white paper <?php get_template_part( 'template-parts/svg/arrow' )?></a>
                 </div>
             </div>
         </div>

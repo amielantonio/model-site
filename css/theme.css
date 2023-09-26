@@ -25348,6 +25348,10 @@ body {
 .custom-logo-link {
   position: relative;
 }
+.custom-logo-link .custom-logo {
+  width: 46px;
+  height: 31px;
+}
 .custom-logo-link .custom-logo:not(.custom-logo-m) {
   position: absolute;
   left: 37px;
@@ -25358,16 +25362,25 @@ body {
   opacity: 1;
 }
 .custom-logo-link:hover .custom-logo-o, .custom-logo-link.mobile-active .custom-logo-o {
-  left: 44px;
+  left: 37px;
 }
 .custom-logo-link:hover .custom-logo-d, .custom-logo-link.mobile-active .custom-logo-d {
-  left: 74px;
+  left: 67px;
 }
 .custom-logo-link:hover .custom-logo-e, .custom-logo-link.mobile-active .custom-logo-e {
-  left: 105px;
+  left: 98px;
 }
 .custom-logo-link:hover .custom-logo-l, .custom-logo-link.mobile-active .custom-logo-l {
-  left: 135px;
+  left: 128px;
+}
+#main-nav.bg-cream .navbar-nav .nav-item .nav-link:hover::after {
+  border-bottom: 1px solid #CB6959;
+}
+#main-nav.bg-cream .navbar-nav .nav-item.current-menu-item .nav-link {
+  color: #232323 !important;
+}
+#main-nav.bg-cream .navbar-nav .nav-item.current-menu-item .nav-link::after {
+  border-bottom: 1px solid #232323;
 }
 #main-nav.bg-cream .navbar-toggler {
   border-color: #CB6959;
@@ -25398,19 +25411,31 @@ body {
 #main-nav .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   padding: 0;
-  border-bottom: 1px solid transparent;
+  position: relative;
 }
 @media (max-width: 767.98px) {
   #main-nav .navbar-nav .nav-item .nav-link {
     padding: 15px 0;
   }
 }
-#main-nav .navbar-nav .nav-item .nav-link:hover {
-  border-bottom-color: #F7F2E5;
+#main-nav .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 1px solid #F7F2E5;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s all;
+}
+#main-nav .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
 }
 #main-nav .navbar-nav .nav-item.current-menu-item .nav-link {
   color: #232323 !important;
-  border-bottom-color: #232323 !important;
+}
+#main-nav .navbar-nav .nav-item.current-menu-item .nav-link::after {
+  border-bottom: 1px solid #232323;
 }
 
 .home .navbar-nav .nav-item .nav-link {
@@ -25419,10 +25444,6 @@ body {
 
 body:not(.home) .navbar-nav .nav-item .nav-link {
   color: #CB6959;
-}
-body:not(.home) .navbar-nav .nav-item .nav-link:hover {
-  color: #232323;
-  border-bottom-color: #232323 !important;
 }
 
 .footer-main-menu-container {

@@ -6143,7 +6143,7 @@
 
   // Add your JS customizations here
   window.addEventListener('DOMContentLoaded', function () {
-    console.log('starting custom javascript');
+    // console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
     formAnimate();
@@ -6252,15 +6252,15 @@
     });
   };
   const scrollResizeBinding = () => {
-    console.log('binding');
     window.addEventListener('scroll', function (e) {
       let img = document.querySelectorAll('.saturates');
       let doc = document.documentElement;
       let ch = doc.clientHeight;
       if (img) {
         img.forEach(_i => {
-          console.log(_i.getBoundingClientRect().top);
-          console.log("ch:" + ch);
+          // console.log( _i.getBoundingClientRect().top);
+          // console.log("ch:" + ch);
+
           if (ch / 2.5 > _i.getBoundingClientRect().top) {
             _i.classList.add('hovered');
           } else {

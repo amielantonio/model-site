@@ -60,10 +60,10 @@ function model_custom_logo() {
 
 	$image = wp_get_attachment_image( $custom_logo_id, 'full', false, $custom_logo_attr );
 
-	$oImage = get_stylesheet_directory_uri(). "/img/logo-o.png";
-	$dImage = get_stylesheet_directory_uri(). "/img/logo-d.png";
-	$eImage = get_stylesheet_directory_uri(). "/img/logo-e.png";
-	$lImage = get_stylesheet_directory_uri(). "/img/logo-l.png";
+	$oImage = get_stylesheet_directory_uri(). "/img/logo-o.svg";
+	$dImage = get_stylesheet_directory_uri(). "/img/logo-d.svg";
+	$eImage = get_stylesheet_directory_uri(). "/img/logo-e.svg";
+	$lImage = get_stylesheet_directory_uri(). "/img/logo-l.svg";
 
 	$oHtml = "<img src='{$oImage}' class='custom-logo custom-logo-o'/>";
 	$dHtml = "<img src='{$dImage}' class='custom-logo custom-logo-d'/>";

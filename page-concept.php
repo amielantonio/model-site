@@ -99,7 +99,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         'Sustainable and ethical funding',
                         '6 Star Green Star rating',
                         '9 Star NatHERS',
-                        'Living Building Challenge Certification'
+                        'Living Building Challenge Certification',
+                        'Committed to Paris Climate Agreement goals'
                     ]
                 ]); ?>
 
