@@ -18,7 +18,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' ); 
 
 ?>
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper py-0" id="page-wrapper">
     <?php 
     get_template_part('template-parts/sections/section--hero', '' , [
         'title'     => 'A unique approach to placemaking',
@@ -134,7 +134,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
                 <?php 
-                $background = get_stylesheet_directory_uri() . "/img/design-innovation.png";
+                $background = get_stylesheet_directory_uri() . "/img/design-innovation.jpeg";
 
                 get_template_part('template-parts/sections/section--jumbotron', '', [
                     'title'      => 'Design Innovation',
@@ -154,7 +154,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         'Global design exemplars with a deep sense of place',
                         'Passive House design principles embraced on all projects',
                         'High functioning and built to last',
-                        'Focus on the health and well being of our residents in the design stage',
+                        'Focus on the health and wellbeing of our residents in the design stage',
                         'Thoughtful design that reflects the way residents work, live and move',
                         'Work From Home (WFH) and wellness spaces to support modern lifestyles',
                         'Local nuancing to celebrate neighbourhood characteristics',

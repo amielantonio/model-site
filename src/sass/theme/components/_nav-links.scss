@@ -45,6 +45,14 @@
                 }
             }
 
+
+            &.current-menu-item {
+                .nav-link {
+                    color: $black !important;
+                    border-bottom-color: $black !important;
+                }
+            }
+
         }
     }
 }
@@ -61,11 +69,16 @@
     }
 }
 
+
 body:not(.home) .navbar-nav {
     .nav-item {
 
         .nav-link {
             color: $primary;
+            &:hover {
+                color: $black;
+                border-bottom-color: $black !important;
+            }
         }
     }
 }

@@ -7,8 +7,11 @@ html {
 }
 
 .wrapper {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 130px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 80px;
+    }
 }
 
 .content-area {

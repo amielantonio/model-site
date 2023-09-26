@@ -18,11 +18,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' ); 
 
 ?>
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper py-0" id="page-wrapper">
     <!-- Header -->
     <?php 
     get_template_part('template-parts/sections/section--hero', '' , [
-        'title'     => 'Developing Change',
+        'title'     => 'Developing change',
         'subtitle'  => 'About Model',
         'noScroll'  => true,
         'gradient'  => true,
@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 we are on a path to decarbonising the built form and creating environments where residents can truly belong.
                             </p>
                             <p class="content">
-                                Development done different. <b>That's Model</b>
+                                Development done different. <b>That's Model.</b>
                             </p>
                         </div>
                         <div class="col-sd-6 col-lg-10 offset-sd-1 offset-lg-2 pe-sd-0 ps-sd-4">
@@ -308,14 +308,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
                             <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt="">
+                            <!-- <img class="img-black-hoverable" src="<?php #echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt=""> -->
+                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/fathom.png" ?>" alt="">
                         </div>
-                        <!-- <div class="d-flex justify-content-between">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt="">
-                        </div> -->
                     </div>
                 </div>
             </section>

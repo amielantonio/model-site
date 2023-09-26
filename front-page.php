@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper py-0" id="page-wrapper">
 
 	<?php get_template_part( 'template-parts/public/home-hero', '', []) ?>
 

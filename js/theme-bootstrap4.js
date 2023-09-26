@@ -6095,35 +6095,24 @@
    */
   var formAnimate = function formAnimate() {
     var $form = document.querySelector('.animated-form');
+    var $form2 = document.querySelector('.animated-form-7');
     if ($form) {
-      var $input = $form.querySelectorAll('.wpforms-field-large');
-      var $textArea = $form.querySelectorAll('textarea');
-      if ($input) {
-        $input.forEach(function (_in) {
+      $form.querySelectorAll('.wpforms-field-large');
+      $form.querySelectorAll('textarea');
+    }
+    if ($form2) {
+      var _$input = $form2.querySelectorAll('.wpcf7-form-control');
+      $form2.querySelectorAll('textarea');
+      if (_$input) {
+        _$input.forEach(function (_in) {
           _in.addEventListener('focus', function () {
-            var $label = _in.previousElementSibling;
+            var $label = _in.parentElement.previousElementSibling;
             if (!$label.classList.contains('float')) {
               $label.classList.add('float');
             }
           });
           _in.addEventListener('blur', function () {
-            var $label = _in.previousElementSibling;
-            if ($label.classList.contains('float') && _in.value == "") {
-              $label.classList.remove('float');
-            }
-          });
-        });
-      }
-      if ($textArea) {
-        $textArea.forEach(function (_in) {
-          _in.addEventListener('focus', function () {
-            var $label = _in.previousElementSibling;
-            if (!$label.classList.contains('float')) {
-              $label.classList.add('float');
-            }
-          });
-          _in.addEventListener('blur', function () {
-            var $label = _in.previousElementSibling;
+            var $label = _in.parentElement.previousElementSibling;
             if ($label.classList.contains('float') && _in.value == "") {
               $label.classList.remove('float');
             }
@@ -6205,17 +6194,17 @@
       var img = document.querySelectorAll('.saturates');
       var doc = document.documentElement;
       var ch = doc.clientHeight;
-      img.forEach(function (_i) {
-        console.log(_i.getBoundingClientRect().top);
-        console.log("ch:" + ch);
-        if (ch / 2.5 > _i.getBoundingClientRect().top) {
-          _i.classList.add('hovered');
-        } else if (0 > _i.getBoundingClientRect().top) {
-          _i.classList.remove('hovered');
-        } else {
-          _i.classList.remove('hovered');
-        }
-      });
+      if (img) {
+        img.forEach(function (_i) {
+          console.log(_i.getBoundingClientRect().top);
+          console.log("ch:" + ch);
+          if (ch / 2.5 > _i.getBoundingClientRect().top) {
+            _i.classList.add('hovered');
+          } else {
+            _i.classList.remove('hovered');
+          }
+        });
+      }
     });
   };
 

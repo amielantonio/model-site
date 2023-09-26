@@ -18,9 +18,9 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' ); 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper py-0" id="page-wrapper">
     <?php get_template_part('template-parts/sections/section--hero', '' , [
-        'title'     => 'Get in Touch',
+        'title'     => 'Get in touch',
         'subtitle'  => 'Contact',
         'noScroll'  => false,
         'gradient'  => true
@@ -50,9 +50,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div class="col-sm-8">
                                 <h4 class="">Change begins with a conversation</h4>
                                 <p class="content my-5">
-                                    We’re here for the questions and queries you may have. Please contact us via our email or form below and we will get back to you within 2-3 business days.
+                                    We’re here for the questions and queries you may have. Please contact us via our email or the form below and we will get back to you within 2-3 business days.
                                 </p>
-                                <?php echo do_shortcode('[wpforms id="39" title="false"]') ?>
+                                <?php echo do_shortcode('[contact-form-7 id="fdf1d8a" title="Contact form" html_class="animated-form-7"]') ?>
                             </div>
                         </div>
                 </div>

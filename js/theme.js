@@ -6162,35 +6162,24 @@
    */
   const formAnimate = () => {
     const $form = document.querySelector('.animated-form');
+    const $form2 = document.querySelector('.animated-form-7');
     if ($form) {
-      const $input = $form.querySelectorAll('.wpforms-field-large');
-      const $textArea = $form.querySelectorAll('textarea');
+      $form.querySelectorAll('.wpforms-field-large');
+      $form.querySelectorAll('textarea');
+    }
+    if ($form2) {
+      const $input = $form2.querySelectorAll('.wpcf7-form-control');
+      $form2.querySelectorAll('textarea');
       if ($input) {
         $input.forEach(_in => {
           _in.addEventListener('focus', () => {
-            let $label = _in.previousElementSibling;
+            let $label = _in.parentElement.previousElementSibling;
             if (!$label.classList.contains('float')) {
               $label.classList.add('float');
             }
           });
           _in.addEventListener('blur', () => {
-            let $label = _in.previousElementSibling;
-            if ($label.classList.contains('float') && _in.value == "") {
-              $label.classList.remove('float');
-            }
-          });
-        });
-      }
-      if ($textArea) {
-        $textArea.forEach(_in => {
-          _in.addEventListener('focus', () => {
-            let $label = _in.previousElementSibling;
-            if (!$label.classList.contains('float')) {
-              $label.classList.add('float');
-            }
-          });
-          _in.addEventListener('blur', () => {
-            let $label = _in.previousElementSibling;
+            let $label = _in.parentElement.previousElementSibling;
             if ($label.classList.contains('float') && _in.value == "") {
               $label.classList.remove('float');
             }

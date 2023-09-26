@@ -19,9 +19,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper py-0" id="page-wrapper">
     <?php get_template_part('template-parts/sections/section--hero', '' , [
-        'title'     => 'Beyond the Now',
+        'title'     => 'Beyond the now',
         'subtitle'  => 'Our VIsion',
         'noScroll'  => true,
         'gradient' =>  true,
@@ -239,8 +239,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
 
                         <div class="row align-items-center mt-36px">
-                            <div class="col-sm-6">
-                                <div class="border-bottom border-2 border-primary pb-5 pe-md-5">
+                            <div class="col-lg-5">
+                                <div class="border-bottom border-2 border-primary pb-5 pe-md-0">
                                     <p class="fw-500-w-100 lh--md fs--sm-base-lg fs--base-md">As both a developer and operator, Model will be creating a strong customer-focussed service ethic and brand. </p>
 
                                     <p class="fw-500-w-100 lh--md fs--sm-base-lg fs--base-md">Over time, we will look to scale out our operations platform and partner with other developers in the same way hotel managers do today.</p>
@@ -248,8 +248,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                             <!-- end col -->
 
-                            <div class="col-sm-6 text-end">
-                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/plans-for-expansion.png" ?>" alt="">
+                            <div class="col-sm-6 offset-lg-1 text-lg-end text-center">
+                                <img src="<?php echo get_stylesheet_directory_uri() . "/img/plans-for-expansion.jpg" ?>" alt="">
                             </div>
                         </div>
                     </div>

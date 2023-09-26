@@ -24514,8 +24514,12 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 .wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 130px;
+}
+@media (max-width: 991.98px) {
+  .wrapper {
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -24605,7 +24609,7 @@ body {
 .animated-form form textarea:focus {
   box-shadow: none !important;
 }
-.animated-form form label {
+.animated-form form .label {
   position: absolute !important;
   top: 28px;
   transition: 0.3s all;
@@ -24635,6 +24639,67 @@ body {
   left: 0;
 }
 .animated-form form [type=submit]:hover {
+  color: #232323 !important;
+  background: #ffffff !important;
+  border: 1px solid #232323 !important;
+}
+
+.wpcf7 {
+  max-width: 100%;
+}
+
+.animated-form-7 p, .animated-form-7 label {
+  position: relative;
+}
+.animated-form-7 [type=text],
+.animated-form-7 [type=email],
+.animated-form-7 [type=tel],
+.animated-form-7 textarea {
+  border: none !important;
+  border-bottom: 1px solid #CB6959 !important;
+  border-radius: 0 !important;
+  margin-bottom: 38px !important;
+  font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+}
+.animated-form-7 [type=text]:focus,
+.animated-form-7 [type=email]:focus,
+.animated-form-7 [type=tel]:focus,
+.animated-form-7 textarea:focus {
+  box-shadow: none !important;
+}
+.animated-form-7 .label {
+  position: absolute !important;
+  top: 0px;
+  z-index: 100;
+  transition: 0.3s all;
+}
+.animated-form-7 .float {
+  top: -15px;
+  font-size: 12px !important;
+  color: #CB6959 !important;
+}
+.animated-form-7 .wp-forms-field {
+  position: relative;
+}
+.animated-form-7 [type=submit] {
+  background-color: transparent !important;
+  color: #CB6959 !important;
+  text-transform: uppercase;
+  border: none;
+  border: 1px solid #CB6959 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+  max-width: 200px;
+  padding: 20px 20px !important;
+}
+.animated-form-7 [type=submit]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.animated-form-7 [type=submit]:hover {
   color: #232323 !important;
   background: #ffffff !important;
   border: 1px solid #232323 !important;
@@ -25343,6 +25408,10 @@ body {
 #main-nav .navbar-nav .nav-item .nav-link:hover {
   border-bottom-color: #F7F2E5;
 }
+#main-nav .navbar-nav .nav-item.current-menu-item .nav-link {
+  color: #232323 !important;
+  border-bottom-color: #232323 !important;
+}
 
 .home .navbar-nav .nav-item .nav-link {
   color: #F7F2E5;
@@ -25350,6 +25419,10 @@ body {
 
 body:not(.home) .navbar-nav .nav-item .nav-link {
   color: #CB6959;
+}
+body:not(.home) .navbar-nav .nav-item .nav-link:hover {
+  color: #232323;
+  border-bottom-color: #232323 !important;
 }
 
 .footer-main-menu-container {
@@ -25524,7 +25597,7 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
 }
 @media (min-width: 1400px) {
   .section--home-hero .hero-content {
-    transform: translateY(250px);
+    transform: translateY(230px);
   }
 }
 @media (max-width: 575.98px) {
@@ -25532,6 +25605,9 @@ body:not(.home) .navbar-nav .nav-item .nav-link {
     width: 100%;
     transform: translate(10px, 180px);
   }
+}
+.section--home-hero .hero-content .h1 {
+  font-size: 2.5em;
 }
 @media (max-width: 1449.98px) {
   .section--home-hero .hero-content .h1 {

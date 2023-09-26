@@ -1,7 +1,6 @@
 .animated-form  {
     form {
 
-
         [type="text"],
         [type="email"],
         textarea {
@@ -14,8 +13,8 @@
                 box-shadow: none !important;
             }
         }
-    
-        label {
+        
+        .label {
             position: absolute !important;
             top: 28px;
 
@@ -57,4 +56,72 @@
         }
     }
 }
+
+.wpcf7 {
+    max-width: 100%;
+}
+
+.animated-form-7  {
+    p, label {
+        position: relative;
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="tel"],
+    textarea {
+        border: none !important;
+        border-bottom: 1px solid $primary !important;
+        border-radius: 0 !important;
+        margin-bottom: 38px !important;
+        font-variation-settings: "ital" 0, "wght" 500, "wdth" 100;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+    
+    .label {
+        position: absolute !important;
+        top: 0px;
+        z-index: 100;
+        transition: 0.3s all;
+    }
+    .float {
+        top: -15px;
+        font-size: 12px !important;
+        color: $primary !important;
+    }
+
+    .wp-forms-field {
+        position: relative;
+    }
+
+    [type='submit'] {
+        background-color: transparent !important;
+        color: $primary !important;
+        text-transform: uppercase;
+        border: none;
+        border: 1px solid $primary !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+        max-width: 200px;
+        padding: 20px 20px !important;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+
+        &:hover {
+            color: $black !important;
+            background: $white !important;
+            border: 1px solid $black !important;
+        }
+    }
+}
+
 
