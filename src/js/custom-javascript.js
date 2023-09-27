@@ -11,9 +11,15 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
     const josh = new Josh();
 
-    // if( joshers ) {
-    //     const josh = new Josh();
-    // }
+    let modal = document.getElementById('vimeo-link');
+
+    modal.addEventListener('hidden.bs.modal', () => {
+        let iframe = modal.querySelector('iframe');
+        let attrib = iframe.getAttribute('src');
+
+        iframe.setAttribute('src', attrib);
+        
+    })
     
 });
 
