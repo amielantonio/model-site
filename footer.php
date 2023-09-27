@@ -89,16 +89,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	Aboriginal and Torres Strait Islander peoples as the original owners and custodians of the lands and
 	waterways and we acknowledge their enduring cultural practices of caring for Country. 
 						</p>
-					</div>
+					</div>1
 				</div>
 
 				<div class="row mt-md-10">
 				<div class="col-12">
 						<div id="colophon">
 							<nav class="d-sm-block d-flex flex-column">
-								<a href="#" class="text-primary fs--base-xs td-none me-sm-7 mb-sm-0 mb-4">Terms of Use</a>
+								<a href="<?php echo site_url('terms-of-use') ?>" class="text-primary fs--base-xs td-none me-sm-7 mb-sm-0 mb-4">Terms of Use</a>
 
-								<a href="#" class="text-primary fs--base-xs td-none me-sm-7 mb-4">Privacy</a>
+								<a href="<?php echo site_url('privacy-policy') ?>" class="text-primary fs--base-xs td-none me-sm-7 mb-4">Privacy</a>
 
 								<span class="fs--base-xs text-primary">Copyright 2023 &copy; Model Australia Pty Ltd.</span>
 							</nav>

@@ -10,7 +10,7 @@
             <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon.png" ?>" class="desktop-image">
         </div>
 
-        <div class="d-sm-none d-block">
+        <div class="d-sm-none d-block mobile-hero-m">
             <img src="<?php echo get_stylesheet_directory_uri() . "/img/model-logo-transparent-melon-m.png" ?>">
         </div>
         

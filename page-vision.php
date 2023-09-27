@@ -22,9 +22,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper py-0" id="page-wrapper">
     <?php get_template_part('template-parts/sections/section--hero', '' , [
         'title'     => 'Beyond the now',
-        'subtitle'  => 'Our VIsion',
+        'subtitle'  => 'Our Vision',
         'noScroll'  => true,
-        'gradient' =>  true,
+        'gradient'  => true,
+        'class'     => 'about'
     ])?>
 
     <div id="content" tabindex="-1" class="">

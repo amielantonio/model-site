@@ -85,6 +85,10 @@
         top: 0px;
         z-index: 100;
         transition: 0.3s all;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
     }
     .float {
         top: -15px;

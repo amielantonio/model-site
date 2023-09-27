@@ -1,6 +1,6 @@
 <div class="social-media-container">
     <nav class="social-media">
-        <a href="https://www.linkedin.com/in/rory-hunter-melbourne/" class="social-media__item" target="_blank">
+        <a href="https://www.linkedin.com/company/themodelau/" class="social-media__item" target="_blank">
             <?php get_template_part( 'template-parts/svg/linkedin' ); ?>
         </a>
         <a href="https://www.instagram.com/themodelau" class="social-media__item" target="_blank">

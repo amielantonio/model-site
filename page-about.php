@@ -22,10 +22,11 @@ $container = get_theme_mod( 'understrap_container_type' );
     <!-- Header -->
     <?php 
     get_template_part('template-parts/sections/section--hero', '' , [
-        'title'     => 'Developing change',
-        'subtitle'  => 'About Model',
-        'noScroll'  => true,
-        'gradient'  => true,
+        'title'         => 'Developing change',
+        'subtitle'      => 'About Model',
+        'noScroll'      => true,
+        'gradient'      => true,
+        'custom_class'  => 'about'
     ])
     ?>
 
@@ -301,15 +302,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                     <div class="row mt-6">
                         <div class="d-flex justify-sm-content-between justify-content-around flex-wrap">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/GBCA.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/LFIA.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
+
+                            <a href="https://www.passivhausassociation.com.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/APHA.png" ?>" alt="">
+                            </a>
+                            <a href="https://www.bakermckenzie.com/en/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/baker-mckenzie.png" ?>" alt="">
+                            </a>
+                            <a href="https://new.gbca.org.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/GBCA.png" ?>" alt="">
+                            </a>
+                            <a href="https://living-future.org.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/LFIA.png" ?>" alt="">
+                            </a>
+                            <a href="https://www.mustardcreative.com.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/mustard-creatives.png" ?>" alt="">
+                            </a>
+                            <a href="https://www.propertycouncil.com.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/PCA.png" ?>" alt="">
+                            </a>
+                            <a href="https://urbis.com.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/urbis.png" ?>" alt="">
+                            </a>
                             <!-- <img class="img-black-hoverable" src="<?php #echo get_stylesheet_directory_uri() . "/img/collaborators/vorhaben.png" ?>" alt=""> -->
-                            <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/fathom.png" ?>" alt="">
+                            <a href="https://fathomgroup.com.au/" target="_blank">
+                                <img class="img-black-hoverable" src="<?php echo get_stylesheet_directory_uri() . "/img/collaborators/fathom.png" ?>" alt="">
+                            </a>
+
                         </div>
                     </div>
                 </div>

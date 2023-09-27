@@ -4,6 +4,8 @@ $featuredImage = get_the_post_thumbnail_url();
 $background = $args['background'] ?? $featuredImage ?? "";
 $title = $args['title'] ?? "";
 $subtitle = $args['subtitle'] ?? "";
+$class = $args['class'] ?? "";
+
 
 if( isset($args['noScroll']) ) {
     $noScroll = $args['noScroll'];
@@ -22,7 +24,7 @@ if( $haveGradient) {
 }
 ?>
 
-<section class="section--hero bg-cream position-relative" id="section--hero" style="<?php echo $background != "" ? $background : "" ?>">
+<section class="section--hero bg-cream position-relative <?php echo $class ?>" id="section--hero" style="<?php echo $background != "" ? $background : "" ?>">
     
     <div class="container hero-content">
         <div class="row">

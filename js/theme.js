@@ -6213,6 +6213,7 @@
     // add the onscroll event under main nav events for the header
     window.onscroll = function () {
       headerScrollEvent();
+      mobileScroll();
     };
   };
 
@@ -6235,6 +6236,40 @@
         $navLinks.forEach(_link => _link.classList.remove('text-primary'));
       }
     }
+  };
+  const mobileScroll = () => {
+    const $body = document.querySelector('body');
+    const $header = document.getElementById('main-nav');
+    const _headerHeight = $header.offsetHeight;
+    $header.querySelectorAll('.nav-link');
+    document.querySelector('.btn-mobile-menu');
+    const $logo = document.querySelector('#main-nav .custom-logo-link');
+    if (798 > window.outerWidth) {
+      console.log('wtattttt?');
+      if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+        if ($body.classList.contains('home')) {
+          $logo.classList.add('mobile-active');
+        }
+      } else {
+        if ($body.classList.contains('home')) {
+          $logo.classList.remove('mobile-active');
+        }
+      }
+    }
+    window.addEventListener('resize', () => {
+      if (798 > window.outerWidth) {
+        console.log('wtattttt?');
+        if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+          if ($body.classList.contains('home')) {
+            $logo.classList.add('mobile-active');
+          }
+        } else {
+          if ($body.classList.contains('home')) {
+            $logo.classList.remove('mobile-active');
+          }
+        }
+      }
+    });
   };
   const mobileNav = () => {
     const $mobileNav = document.querySelector('.btn-mobile-menu');
