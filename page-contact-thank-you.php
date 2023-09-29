@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6">
                             <h4 class="">Thank you for taking the first step.</h4>
                             
-                            <div class="content my-5 pe-lg-5 lh--md fs--base-md">
+                            <div class="content my-4 pe-lg-5 lh--md fs--base-md">
                                 <p>
                                     We are excited to rethink the art and heart of living alongside like-minded partners and pioneers.
                                 </p>
@@ -60,14 +60,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     If you haven’t already, be sure to <a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-dark">download our white paper</a> on decarbonising the future now.
                                 </p> -->
 
-                                <p class="mt-5">
+                                <p class="mt-4">
                                     We look forward to speaking soon, 
                                 </p>
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="mt-7 fs--base-md">
+                                    <div class="mt-3 fs--base-md">
                                         <img src="<?php echo get_stylesheet_directory_uri() . "/img/rory-hunter-signature.png" ?>" alt="">
                                         <p class="fw-bold border-dark border-top border-1 pt-3 mt-3 mb-0">Rory Hunter</p>
                                         <span class="fw-300">Founder & CEO, Model</span>
