@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class="section--contact">
                 <div class="container">
                         <div class="row">
-                            <div class="col-sm-3 order-sm-0 order-2 mt-sm-0 mt-6">
+                            <div class="col-xl-3 col-md-4 order-sm-0 order-2 mt-sm-0 mt-6">
                                 <div class="">
                                     <span class="text-primary fw-bold">Email </span><br />
                                     <a href="mailto:hello@themodel.com.au" class="text-primary mt-3 td-none">hello@themodel.com.au</a>
@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-xl-8 col-md-8">
                                 <h4 class="">Change begins with a conversation</h4>
                                 <p class="content my-5">
                                     We’re here for the questions and queries you may have. Please contact us via our email or the form below and we will get back to you within 2-3 business days.
