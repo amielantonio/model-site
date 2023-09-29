@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         'subtitle'  => 'Our Vision',
         'noScroll'  => true,
         'gradient'  => true,
-        'class'     => 'about'
+        'class'     => 'vision'
     ])?>
 
     <div id="content" tabindex="-1" class="">

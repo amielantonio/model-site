@@ -6076,7 +6076,7 @@
 
   // Add your JS customizations here
   window.addEventListener('DOMContentLoaded', function () {
-    console.log('starting custom javascript');
+    // console.log('starting custom javascript');
     logoAnimate();
     mainNavEvents();
     formAnimate();
@@ -6084,10 +6084,12 @@
     scrollResizeBinding();
     document.querySelector('josh-js');
     new Josh();
-
-    // if( joshers ) {
-    //     const josh = new Josh();
-    // }
+    var modal = document.getElementById('vimeo-link');
+    modal.addEventListener('hidden.bs.modal', function () {
+      var iframe = modal.querySelector('iframe');
+      var attrib = iframe.getAttribute('src');
+      iframe.setAttribute('src', attrib);
+    });
   });
 
   /**
@@ -6146,6 +6148,7 @@
     // add the onscroll event under main nav events for the header
     window.onscroll = function () {
       headerScrollEvent();
+      mobileScroll();
     };
   };
 
@@ -6173,6 +6176,42 @@
       }
     }
   };
+  var mobileScroll = function mobileScroll() {
+    var $body = document.querySelector('body');
+    var $header = document.getElementById('main-nav');
+    var _headerHeight = $header.offsetHeight;
+    $header.querySelectorAll('.nav-link');
+    document.querySelector('.btn-mobile-menu');
+    var $logo = document.querySelector('#main-nav .custom-logo-link');
+
+    // if( 798 > window.outerWidth) {
+
+    if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+      // if( $body.classList.contains('home')) {
+      //     console.log('wtattttt?');
+      $logo.classList.add('mobile-active');
+      // }
+    } else {
+      // if( $body.classList.contains('home') ) {
+      $logo.classList.remove('mobile-active');
+      // }
+    }
+    // } // removeing because it's needed on all resolutions
+
+    window.addEventListener('resize', function () {
+      if (798 > window.outerWidth) {
+        if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+          if ($body.classList.contains('home')) {
+            $logo.classList.add('mobile-active');
+          }
+        } else {
+          if ($body.classList.contains('home')) {
+            $logo.classList.remove('mobile-active');
+          }
+        }
+      }
+    });
+  };
   var mobileNav = function mobileNav() {
     var $mobileNav = document.querySelector('.btn-mobile-menu');
     var $logo = document.querySelector('#main-nav .custom-logo-link');
@@ -6189,15 +6228,15 @@
     });
   };
   var scrollResizeBinding = function scrollResizeBinding() {
-    console.log('binding');
     window.addEventListener('scroll', function (e) {
       var img = document.querySelectorAll('.saturates');
       var doc = document.documentElement;
       var ch = doc.clientHeight;
       if (img) {
         img.forEach(function (_i) {
-          console.log(_i.getBoundingClientRect().top);
-          console.log("ch:" + ch);
+          // console.log( _i.getBoundingClientRect().top);
+          // console.log("ch:" + ch);
+
           if (ch / 2.5 > _i.getBoundingClientRect().top) {
             _i.classList.add('hovered');
           } else {

@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         'subtitle'      => 'About Model',
         'noScroll'      => true,
         'gradient'      => true,
-        'custom_class'  => 'about'
+        'class'  => 'about'
     ])
     ?>
 
@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6 pe-md-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content border-white pt-lg-0 pt-4  =pb-lg-0 pb-4">
                                 <div>
-                                    <h4 class="mb-md-36px">Model throws out conventional ways of how rentals work.</h4>
+                                    <h4 class="h4 mb-md-36px mt-xl-0 mt-4">Model throws out conventional ways of how rentals work.</h4>
                                     <p class="article-content fs--base-lg mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
                                         For us, there is an equal importance between craft and community-building, and enduring materials matter just as much as the mental wellbeing of our future residents.
                                     </p>
@@ -138,7 +138,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6 pe-lg-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
                                 <div class="pe-lg-9">
-                                    <h4 class="mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form help address all three issues?</h4>
+                                    <h4 class="h4 mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form help address all three issues?</h4>
                                     <p class="headline-body mb-0 mt-lg-0 mt-5 pb-lg-0 pb-5">
                                         It spurred the vision to create something better, something worth sharing and something worth acting upon.
                                     </p>

@@ -47,8 +47,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 
 							<div class="mt-md-6 mt-5">
-								<span class="text-primary fw-bold">Decarbonisation white paper</span><br>
-								<a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-primary d-block pt-2">Download our white paper</a>
+								<!-- <span class="text-primary fw-bold">Decarbonisation white paper</span><br>
+								<a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-primary d-block pt-2">Download our white paper</a> -->
 							</div>
 						</div>
 
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	Aboriginal and Torres Strait Islander peoples as the original owners and custodians of the lands and
 	waterways and we acknowledge their enduring cultural practices of caring for Country. 
 						</p>
-					</div>1
+					</div>
 				</div>
 
 				<div class="row mt-md-10">

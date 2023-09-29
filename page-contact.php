@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <p class="content my-5">
                                     We’re here for the questions and queries you may have. Please contact us via our email or the form below and we will get back to you within 2-3 business days.
                                 </p>
-                                <?php echo do_shortcode('[contact-form-7 id="fdf1d8a" title="Contact form" html_class="animated-form-7"]') ?>
+                                <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
                             </div>
                         </div>
                 </div>

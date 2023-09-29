@@ -6165,6 +6165,7 @@
   const formAnimate = () => {
     const $form = document.querySelector('.animated-form');
     const $form2 = document.querySelector('.animated-form-7');
+    const $form3 = document.querySelector('.animated-form-gform');
     if ($form) {
       $form.querySelectorAll('.wpforms-field-large');
       $form.querySelectorAll('textarea');
@@ -6174,6 +6175,43 @@
       $form2.querySelectorAll('textarea');
       if ($input) {
         $input.forEach(_in => {
+          _in.addEventListener('focus', () => {
+            let $label = _in.parentElement.previousElementSibling;
+            if (!$label.classList.contains('float')) {
+              $label.classList.add('float');
+            }
+          });
+          _in.addEventListener('blur', () => {
+            let $label = _in.parentElement.previousElementSibling;
+            if ($label.classList.contains('float') && _in.value == "") {
+              $label.classList.remove('float');
+            }
+          });
+        });
+      }
+    }
+    if ($form3) {
+      const $input = $form3.querySelectorAll('.gfield input');
+      const $textArea = $form3.querySelectorAll('.gfield textarea');
+      console.log($input);
+      if ($input) {
+        $input.forEach(_in => {
+          _in.addEventListener('focus', () => {
+            let $label = _in.parentElement.previousElementSibling;
+            if (!$label.classList.contains('float')) {
+              $label.classList.add('float');
+            }
+          });
+          _in.addEventListener('blur', () => {
+            let $label = _in.parentElement.previousElementSibling;
+            if ($label.classList.contains('float') && _in.value == "") {
+              $label.classList.remove('float');
+            }
+          });
+        });
+      }
+      if ($textArea) {
+        $textArea.forEach(_in => {
           _in.addEventListener('focus', () => {
             let $label = _in.parentElement.previousElementSibling;
             if (!$label.classList.contains('float')) {
@@ -6246,21 +6284,23 @@
     $header.querySelectorAll('.nav-link');
     document.querySelector('.btn-mobile-menu');
     const $logo = document.querySelector('#main-nav .custom-logo-link');
-    if (798 > window.outerWidth) {
-      console.log('wtattttt?');
-      if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
-        if ($body.classList.contains('home')) {
-          $logo.classList.add('mobile-active');
-        }
-      } else {
-        if ($body.classList.contains('home')) {
-          $logo.classList.remove('mobile-active');
-        }
-      }
+
+    // if( 798 > window.outerWidth) {
+
+    if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
+      // if( $body.classList.contains('home')) {
+      //     console.log('wtattttt?');
+      $logo.classList.add('mobile-active');
+      // }
+    } else {
+      // if( $body.classList.contains('home') ) {
+      $logo.classList.remove('mobile-active');
+      // }
     }
+    // } // removeing because it's needed on all resolutions
+
     window.addEventListener('resize', () => {
       if (798 > window.outerWidth) {
-        console.log('wtattttt?');
         if (document.body.scrollTop > _headerHeight || document.documentElement.scrollTop > _headerHeight) {
           if ($body.classList.contains('home')) {
             $logo.classList.add('mobile-active');

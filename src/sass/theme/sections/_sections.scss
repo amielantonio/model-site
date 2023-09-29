@@ -198,6 +198,10 @@
             top: 102%;
             left: 0;
         }
+        @include media-breakpoint-down(md) {
+            top: 90%;
+            left: 0;
+        }
         .outline {
             position: relative;
             z-index: 3;

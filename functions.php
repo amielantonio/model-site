@@ -95,3 +95,8 @@ add_action('wp_head', function() {
 	<meta name="theme-color" content="#ffffff">
 <?php
 });
+
+add_filter( 'wpcf7_form_autocomplete', function ( $autocomplete ) {
+    $autocomplete = 'off';
+    return $autocomplete;
+}, 10, 1 );

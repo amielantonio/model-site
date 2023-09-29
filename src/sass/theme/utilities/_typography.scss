@@ -329,9 +329,8 @@ h3,
         font-size: 28px;
     }
 }
-h4,
-.h4 {
-    @include media-breakpoint-down(xxl) {
-        font-size: 20px;
-    } 
-}
+// h4 {
+//     @include media-breakpoint-down(xxl) {
+//         font-size: 20px;
+//     } 
+// }
