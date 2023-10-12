@@ -100,3 +100,13 @@ add_filter( 'wpcf7_form_autocomplete', function ( $autocomplete ) {
     $autocomplete = 'off';
     return $autocomplete;
 }, 10, 1 );
+
+
+/**
+ * Get all website information under 
+ */
+function site_information () {
+	$generalInformation = [
+		// 'company_email' => get_field();
+	];
+}

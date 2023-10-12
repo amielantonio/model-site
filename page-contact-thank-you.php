@@ -53,12 +53,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                             
                             <div class="content my-4 pe-lg-5 lh--md fs--base-md">
                                 <p>
-                                    We are excited to rethink the art and heart of living alongside like-minded partners and pioneers.
+                                    We are excited to rethink the art and heart of living alongside like-minded partners and pioneers. 
                                 </p>
 
-                                <!-- <p class="mt-5">
-                                    If you haven’t already, be sure to <a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="text-dark">download our white paper</a> on decarbonising the future now.
-                                </p> -->
+                                <p class="mt-4">
+                                    If you haven’t already, be sure to <a href="https://themodel.com.au/wp-content/uploads/2023/10/MODEL_Tomorrow-its-too-late_Whitepaper_October-2023.pdf" target="_blank" class="text-dark">download our white paper</a> on decarbonising the future now. 
+                                </p>
 
                                 <p class="mt-4">
                                     We look forward to speaking soon, 

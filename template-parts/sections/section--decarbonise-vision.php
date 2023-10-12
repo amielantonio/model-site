@@ -13,21 +13,21 @@
                 </h2>
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-6 text-white fs--base-lg">
-                <p class="mb-6 fw-300 lh--md fs--sm-base-lg fs--base-md">
-                We are at a moment of historical significance - where a shift towards a Net Zero future is both urgent and inevitable. The climate emergency is not a distant threat but a present reality, demanding immediate action. Policy changes are not gradual but increasingly rapid, and there is a coming tidal wave of net-zero capital that is eager to be deployed. 
+                <p class="fw-300 lh--md fs--sm-base-lg fs--base-md">
+                    We are at a moment of historical significance - where a shift towards a Net Zero future is both urgent and inevitable. The climate emergency is not a distant threat but a present reality, demanding immediate action. Policy changes are not gradual but increasingly rapid, and there is a coming tidal wave of net-zero capital that is eager to be deployed. 
                 </p>
 
-                <!-- <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
-                    This white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. Read more to uncover why Tomorrow’s Too Late and what we can do now.
-                </p> -->
+                <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
+                    This white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. Read more to uncover why Tomorrow’s Too Late and what we can do now. 
+                </p>
 
                 <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
                     Our white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. It will be published here in the coming weeks.
                 </p>
 
-                <!-- <div class="mt-6">
-                    <a href="https://themodel.com.au/wp-content/uploads/2023/09/MODEL_Whitepaper_Concept_Digital-FA.pdf" target="_blank" class="btn btn-outline-melon">Download our white paper <?php get_template_part( 'template-parts/svg/arrow' )?></a>
-                </div> -->
+                <div class="mt-6">
+                    <a href="https://themodel.com.au/wp-content/uploads/2023/10/MODEL_Tomorrow-its-too-late_Whitepaper_October-2023.pdf" target="_blank" class="btn btn-outline-melon">Download our white paper <?php get_template_part( 'template-parts/svg/arrow' )?></a>
+                </div>
             </div>
         </div>
     </div>
