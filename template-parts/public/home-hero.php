@@ -1,9 +1,15 @@
+<?php 
+
+$hero = get_field('hero_section');
+
+?>
+
 <section class="section--home-hero" id="section--home-hero">
 
     <div class="section--home-hero__object">
 
         <video loop autoplay muted class="section--home-hero__video">
-            <source src="<?php echo get_stylesheet_directory_uri() . "/img/above-the-fold-video.mp4" ?>" type="video/mp4">
+            <source src="<?php echo $hero['video_url'] ?>" type="video/mp4">
         </video>
         
         <div class="d-sm-block d-none">
@@ -29,7 +35,7 @@
 
     <div class="row hero-content">
         <div class="col-md-6 offset-md-6">
-            <h1 class="h1 text-white fw-800">The new, Australian <br /> purpose-first <br /> build-to-rent group</h1>
+            <h1 class="h1 text-white fw-800"><?php echo $hero['hero_content']?></h1>
         </div>
     </div>
     

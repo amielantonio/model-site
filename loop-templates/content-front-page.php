@@ -7,6 +7,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' ); 
+
+
 ?>
 
 
@@ -24,11 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                         <div class="col-sm-9 ps-md-4">
                             <span class="fs-sm--base-xl fs--base-lg fw-sm-400 fw-300">
-                                <b class="fw-semibold">We are here to dismantle rental norms.</b> <br />
-                                To flip the script on old ways of living and being. 
-                                We are developing more than just spaces to come home to - 
-                                we are cultivating places where there is no compromise between taking care of ourselves, 
-                                each other, and the planet. <b class="fw-semibold">This is Model.</b>
+                                <?php echo the_content() ?>
                             </span>
                         </div>
                     </div>

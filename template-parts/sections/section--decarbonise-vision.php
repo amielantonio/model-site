@@ -1,3 +1,8 @@
+<?php 
+
+ $content = get_field('decarbonise_now');
+ $vision = get_field('vision');
+?>
 <!-- DECARBONISE -->
 <section class="section--decarbonise" id="section--decarbonsie">
     <video loop autoplay muted preload>
@@ -8,22 +13,21 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-6">
                 <h2 class="h1 text-white fw-700">
-                    Decarbonise.<br />
-                    Now.
+                   <?php echo $content['section_title'] ?>
                 </h2>
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-6 text-white fs--base-lg">
-                <p class="fw-300 lh--md fs--sm-base-lg fs--base-md">
-                    We are at a moment of historical significance - where a shift towards a Net Zero future is both urgent and inevitable. The climate emergency is not a distant threat but a present reality, demanding immediate action. Policy changes are not gradual but increasingly rapid, and there is a coming tidal wave of net-zero capital that is eager to be deployed. 
+                <p class="mb-6 fw-300 lh--md fs--sm-base-lg fs--base-md">
+                    <?php echo $content['section_subtitle'] ?>
                 </p>
 
-                <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
-                    This white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. Read more to uncover why Tomorrow’s Too Late and what we can do now. 
-                </p>
-
-                <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
-                    Our white paper demonstrates our case for Regenerative Decarbonisation in the build-to-rent sector in Australia and beyond. It will be published here in the coming weeks.
-                </p>
+                <?php if( !empty( $content['section_paragraph'] ) ) :?>
+                    <?php foreach( $content['section_paragraph'] as $p ) : ?>
+                        <p class="fw-300 lh--md fs-sm--base-md fs--base-list">
+                            <?php echo $p['content'] ?>
+                        </p>
+                    <?php endforeach; ?>
+                <?php endif; ?>
 
                 <div class="mt-6">
                     <a href="https://themodel.com.au/wp-content/uploads/2023/10/MODEL_Tomorrow-its-too-late_Whitepaper_October-2023.pdf" target="_blank" class="btn btn-outline-melon">Download our white paper <?php get_template_part( 'template-parts/svg/arrow' )?></a>
@@ -53,12 +57,12 @@
 
     <div class="container">
         <div class="col-md-8 offset-sd-4 p-sd-4">
-            <h2 class="section-title text-white mb-4 mb-md-6">Vision</h2>
-            <p class="section-subtitle text-white mb-4 mb-md-6">Where we begin matters and so does the question of, "where do we want to go from here?"</p>
-            <p class="fs--base-lg text-white mb-4 mb-md-6 fw-300 lh--md">Our goal is to extend our impact across Australia and globally as we set a new standard for what urban living should look, feel and be like.</p>
+            <h2 class="section-title text-white mb-4 mb-md-6"><?php echo $vision['section_title'] ?></h2>
+            <p class="section-subtitle text-white mb-4 mb-md-6"><?php echo $vision['section_subtitle'] ?></p>
+            <p class="fs--base-lg text-white mb-4 mb-md-6 fw-300 lh--md"><?php echo $vision['section_paragraph']?></p>
 
             <div>
-                <a href="<?php echo site_url('vision'); ?>" class="btn btn-outline-light">our roadmap <?php get_template_part( 'template-parts/svg/arrow' )?></a>
+                <a href="<?php echo $vision['button_link'] ?>" class="btn btn-outline-light"><?php echo $vision['button_text']?> <?php get_template_part( 'template-parts/svg/arrow' )?></a>
             </div>
         </div>
     </div>

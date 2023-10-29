@@ -1,3 +1,7 @@
+<?php 
+
+$theConcept = get_field('the_concept');
+?>
 <section class="section--concept" id="section--concept">
     <div class="container">
         <div class="row position-relative">
@@ -5,13 +9,13 @@
             <div class="content-container bg-cream content">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-10">
-                        <h2 class="h1 bd--b-primary pb-36px fw-800 text-danger">The <br /> Concept</h2>
+                        <h2 class="h1 bd--b-primary pb-36px fw-800 text-danger"><?php echo $theConcept['section_title'] ?></h2>
 
                         <p class="fs--base-lg fw-light mt-60px lh--md">
-                            Climate action, community building,  and design innovation with a focus on mental wellbeing - these are the pillars upon which Model is built. They set the foundation for everything we do and are the threads that weave through each decision we make.
+                            <?php echo $theConcept['section_content']?>
                         </p>
 
-                        <a href="<?php echo site_url('concept'); ?>" type="button" class="btn btn-outline-melon mt-3">Learn More <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
+                        <a href="<?php echo $theConcept['button_link'] ?>" type="button" class="btn btn-outline-melon mt-3"><?php echo $theConcept['button_text'] ?> <?php get_template_part( 'template-parts/svg/arrow' ) ?></a>
                     </div>
                 </div>
                 <!-- end content container-->
