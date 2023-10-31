@@ -17,6 +17,10 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' ); 
 
+$rfg = get_field('rent_for_good');
+$purpose = get_field('purpose');
+$story = get_field('story');
+$s2p = get_field( 'story_2nd_paragraph' );
 ?>
 <div class="wrapper py-0" id="page-wrapper">
     <!-- Header -->
@@ -46,16 +50,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row align-items-center">
                         <div class="col-sd-5 pe-sd-0 mt-sm-5">
                             <h4 class="h4-title">
-                                Model is a build-to-rent development, operations and investment group that's an ally to renters and the planet.
+                                <?php echo $rfg['section_title']?>
                             </h4>
 
-                            <p class="content">
-                                We are here to build more than just structures - <br />
-                                we are on a path to decarbonising the built form and creating environments where residents can truly belong.
-                            </p>
-                            <p class="content">
-                                Development done different. <b>That's Model.</b>
-                            </p>
+                            <?php if( ! empty( $rfg['section_content'] ) ) : ?>
+                                <?php foreach( $rfg['section_content'] as $content ) : ?>
+                                    <p class="content">
+                                       <?php echo $content['content'] ?>
+                                    </p>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                         </div>
                         <div class="col-sd-6 col-lg-10 offset-sd-1 offset-lg-2 pe-sd-0 ps-sd-4">
                             <img src="<?php echo get_stylesheet_directory_uri(). "/img/about-page-content.png" ?>" alt="">
@@ -77,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row">
                         <div class="col-sd-8 offset-sd-3 mt-3 ps-sd-4 pt-sd-0 pt-5">
                             <p class="headline">
-                                To cultivate places where there is no compromise between taking care of ourselves, each other, and the planet.
+                                <?php echo $purpose['featured_paragraph'] ?>
                             </p>
                         </div>
                     </div>
@@ -86,9 +90,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6 pe-md-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content border-white pt-lg-0 pt-4  =pb-lg-0 pb-4">
                                 <div>
-                                    <h4 class="h4 mb-md-36px mt-xl-0 mt-4">Model throws out conventional ways of how rentals work.</h4>
+                                    <h4 class="h4 mb-md-36px mt-xl-0 mt-4"><?php echo $purpose['paragraph_1_title'] ?></h4>
                                     <p class="article-content fs--base-lg mb-sm-0 mb-4 mt-sm-0 mt-6 pb-sm-0 pb-4">
-                                        For us, there is an equal importance between craft and community-building, and enduring materials matter just as much as the mental wellbeing of our future residents.
+                                        <?php echo $purpose['paragraph_1'] ?>
                                     </p>
                                 </div>
                             </div>
@@ -101,12 +105,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row mt-md-8 mt-5">
                         <div class="col-lg-6">
                             <p class="article-content mb-0 pe-md-9">
-                                Our rental communities combine the magnetism of the world's most revered cultural hubs, the heartbeat of a home with innovative design, and the urgency to decarbonise our planet through the framework of regenerative development.
+                                <?php echo $purpose['left_paragraph'] ?>
                             </p>
                         </div>
                         <div class="col-lg-6 mt-lg-0 mt-6">
                             <p class="article-content mb-0 ps-lg-3 pe-lg-6">
-                                Model is where the experience of hotel hospitality meets the warmth of family - an enriching and soulful space that feels not just lived in, but alive - creating the environment for renters to feel supported, grounded and empowered with a sense of certainty and security in their living situation.
+                                <?php echo $purpose['right_paragraph'] ?>
                             </p>
                         </div>
                     </div>
@@ -129,7 +133,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row">
                         <div class="col-lg-8 offset-lg-3 mt-lg-1 mt-5 ps-lg-4">
                             <p class="headline">
-                                Model began as a question and an intention. We knew we were faced with a climate, housing and mental health crisis in Australia.
+                                <?php echo $story['featured_paragraph'] ?>
                             </p>
                         </div>
                     </div>
@@ -138,9 +142,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="col-lg-6 pe-lg-5 d-flex align-items-center">
                             <div class="d-flex align-items-center bordered-content white">
                                 <div class="pe-lg-9">
-                                    <h4 class="h4 mb-md-36px mt-lg-0 mt-5">We asked ourselves - not if, but how can the built form help address all three issues?</h4>
+                                    <h4 class="h4 mb-md-36px mt-lg-0 mt-5"><?php echo $story['paragraph_1_title'] ?></h4>
                                     <p class="headline-body mb-0 mt-lg-0 mt-5 pb-lg-0 pb-5">
-                                        It spurred the vision to create something better, something worth sharing and something worth acting upon.
+                                        <?php echo $story['paragraph_1'] ?>
                                     </p>
                                 </div>
                             </div>
@@ -152,21 +156,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                     <div class="row mt-md-90px mt-5">
                         <div class="col-lg-6">
-                            <p class="article-content mb-4 pe-lg-8">
-                                Founded by hotelier, developer, community builder, entrepreneur and World Economic Forum Young Global Leader, Rory Hunter, Model is a visionary enterprise that echoes from existing developments Rory has led.
-                            </p>
-                            <p class="article-content mb-0 pe-lg-9 mt-lg-0 mt-5">
-                                This includes the development of carbon neutral, mid-rise residences in Australia as well as the ethical luxury resort - Song Saa Private Island, which has amassed a number of awards since opening and is regularly voted as one of the world’s top 10 hotels.
-                            </p>
+                            <?php if( ! empty($story['left_paragraph']) ) :  ?>
+                                <?php $x = 0; foreach( $story['left_paragraph'] as $p ) : ?>
+                                    <?php if( $x == 0  ) : ?>
+                                        <p class="article-content mb-4 pe-lg-8">
+                                            <?php echo $p['content'] ?>
+                                        </p>
+                                    <?php else : ?>
+                                        <p class="article-content mb-0 pe-lg-9 mt-lg-0 mt-5">
+                                            <?php echo $p['content']?>
+                                        </p>
+                                    <?php endif; ?>
+                                <?php $x++; endforeach; ?>
+                            <?php endif; ?>
                         </div>
                         <div class="col-lg-6">
-                            <p class="article-content mb-4 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
-                                Rory was also the founder and CEO of Song Saa Collective (2005-2021), a mission-driven real estate group based in Hong Kong which developed a range of residential and master planned communities, including the 230 hectare Song Saa Reserve - Asia's first Living Community Challenge development.
-                            </p>
-                        
-                            <p class="article-content mb-0 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
-                                He is also the founder of The Song Saa Foundation, an independent NGO dedicated to preserving Cambodia’s marine environment while providing jobs, healthcare and education to the Koh Rong Archipelago.
-                            </p>
+                            <?php if( ! empty($story['left_paragraph']) ) :  ?>
+                                <?php $x = 0; foreach( $story['right_paragraph'] as $p ) : ?>
+                                    <?php if( $x == 0  ) : ?>
+                                        <p class="article-content mb-4 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
+                                            <?php echo $p['content'] ?>
+                                        </p>
+                                    <?php else : ?>
+                                        <p class="article-content mb-0 ps-lg-3 pe-lg-6 mt-lg-0 mt-5">
+                                            <?php echo $p['content']?>
+                                        </p>
+                                    <?php endif; ?>
+                                <?php $x++; endforeach; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <!-- -end row -->
@@ -177,13 +194,22 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                         <div class="col-lg-6 mt-lg-0 mt-5">
                             <div class="ps-lg-3 pe-lg-3">
-                                <h3 class="headline mb-md-43px">Making an impact at home</h3>
-                                <p class="article-body article-content mb-43px pe-md-3">
-                                    Having travelled, lived in and experienced cultures around the world, Rory believes his greatest contribution can be back home in Australia, where the frameworks, policies and institutions have the capacity to amplify ideas and entrepreneurship. For Rory, the next decade is dedicated to addressing long-term challenges including climate action and biodiversity loss, and Model is a distinct example of how we do that. 
-                                </p>
-
-                                <p class="article-body article-content mb-36px loew-semibold">
-                                This will be a built form that dismantles the rental norms. 
+                                <h3 class="headline mb-md-43px"><?php echo $s2p['section_title']?></h3>
+                                <?php if( ! empty( $s2p['pargraphs'] ) ) : ?>
+                                    <?php $x = 0; foreach( $s2p['pargraphs'] as $p ) : ?>
+                                        <?php if( $x == 0 ) :  ?>
+                                            <p class="article-body article-content mb-43px pe-md-3">
+                                                <?php echo $p['content'] ?>
+                                            </p>
+                                        <?php else : ?>
+                                            <p class="article-body article-content <?php echo ($p['margin_bottom']) ? "mb-36px" : ""; ?>  <?php echo ($p['semibold']) ? "loew-semibold" : ""; ?>">
+                                                <?php echo $p['content'] ?>
+                                            </p>
+                                        <?php endif; ?>
+                                    <?php $x++; endforeach;?>
+                                <?php endif;?>
+                                <!-- <p class="article-body article-content mb-36px loew-semibold">
+                                    This will be a built form that dismantles the rental norms. 
                                 </p>
 
                                 <p class="article-body article-content mb-36px">
@@ -197,7 +223,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <p class="article-body article-content">
                                     To learn more about our founder, Rory ,<br>
                                     visit his Linkedin profile <a href="https://www.linkedin.com/in/rory-hunter-melbourne/" target="_blank" class="text-dark">here.</a>
-                                </p>
+                                </p> -->
 
                             </div>
                         </div>
