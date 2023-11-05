@@ -18,6 +18,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' ); 
 
 $form = get_field( 'contact_form_shortcode', 'option' );
+$email = get_field( 'company_email', 'option');
 ?>
 
 <div class="wrapper py-0" id="page-wrapper">
@@ -43,7 +44,7 @@ $form = get_field( 'contact_form_shortcode', 'option' );
                             <div class="col-xl-3 col-md-4 order-sm-0 order-2 mt-sm-0 mt-6">
                                 <div class="">
                                     <span class="text-primary fw-bold">Email </span><br />
-                                    <a href="mailto:hello@themodel.com.au" class="text-primary mt-3 td-none">hello@themodel.com.au</a>
+                                    <a href="mailto:<?php echo $email ?>" class="text-primary mt-3 td-none"><?php echo $email ?></a>
                                     <div class="mt-6 d-flex justify-content-start">
                                     <?php get_template_part( 'template-parts/public/social-media' ) ?>
                                     </div>

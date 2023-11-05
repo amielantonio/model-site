@@ -11,6 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
+$email = get_field( 'company_email', 'option');
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
@@ -43,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="mt-sm-3 mt-5">
 							<div class="">
 								<span class="text-primary fw-bold">Email </span>
-								<a href="mailto:hello@themodel.com.au" class="text-primary mt-3">hello@themodel.com.au</a>
+								<a href="mailto:<?php echo $email ?>" class="text-primary mt-3"><?php echo $email ?></a>
 							</div>
 
 							<div class="mt-md-6 mt-5">
