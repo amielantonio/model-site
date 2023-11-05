@@ -16,6 +16,8 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' ); 
+
+$form = get_field( 'contact_form_shortcode', 'option' );
 ?>
 
 <div class="wrapper py-0" id="page-wrapper">
@@ -49,10 +51,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                             <div class="col-xl-8 col-md-8">
                                 <h4 class="">Change begins with a conversation</h4>
-                                <p class="content my-5">
-                                    We’re here for the questions and queries you may have. Please contact us via our email or the form below and we will get back to you within 2-3 business days.
-                                </p>
-                                <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
+                                <div class="content my-5">
+                                    <?php the_content() ?>
+                                </div>
+                                <?php echo do_shortcode( $form ) ?>
                             </div>
                         </div>
                 </div>
